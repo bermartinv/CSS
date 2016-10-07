@@ -1,0 +1,17 @@
+/* Comenzamos la hoja de estilo de nuestra web */
+.portada{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/valencia.jpg');
+    position: relative;
+    background-attachment: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    filter:sepia(80%);
+}
+
+#portada span{
+    
+}
