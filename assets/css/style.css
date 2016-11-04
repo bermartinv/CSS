@@ -3,7 +3,7 @@
     
     background-size:cover;
     background-repeat: no-repeat;
-    background-image: url('../assets/images/valencia.jpg');
+    background-image: url('images/valencia.jpg');
     position: relative;
     background-attachment: fixed;
     //*align-items: center;*/ 
