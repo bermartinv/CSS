@@ -1,0 +1,130 @@
+/* Comenzamos la hoja de estilo de nuestra web */
+.portada{
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/valencia.jpg');
+    position: relative;
+    background-attachment: fixed;
+    //*align-items: center;*/ 
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    filter:grayscale(60%);
+}
+
+.portada .logo{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:row;
+    justify-content:space-between;
+    animation:appear 3s linear;  
+}
+
+.portada .logo span{
+    font-family: 'Indie Flower', cursive;
+    font-size:3rem;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-items:flex-end;
+    color:#00bfff;
+    position: relative;
+}
+
+.icon{
+    margin-left:-1em;
+    position:relative;
+    animation: arrow 4s infinite;
+}
+
+.menu{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;;
+    align-items:flex-end;
+    height:60vh;
+    list-style:none;
+}
+.menu li{
+    font-family: 'Roboto', sans-serif;
+    width:150px;
+    height:50px;
+    color:darkgreen;
+    margin:15px;
+    display:inline-block;
+    float:left;
+    font-size: 1.5rem;
+    border: 3px double green;
+    border-radius: 130px;
+    padding: 70px 20px;
+    text-align:center;
+}
+
+.menu li:hover{
+    border: 3px solid green;
+    background:seagreen;
+}
+
+.menu li a{
+    text-decoration:none;
+}
+
+.menu li:hover a{
+    animation:escalable_nav 1s infinite;
+}
+.menu:nth-child(1){
+    animation:appear 5s linear;
+}
+.menu:nth-child(2){
+    animation:appear 6s linear;
+}
+.menu:nth-child(3){
+    animation:appear 7s linear;
+}
+.menu:nth-child(4){
+    animation:appear 8s linear;
+}
+.menu:nth-child(5){
+    animation:appear 9s linear;
+}
+.copy{
+    position:absolute;
+    top:95%;
+    font-family:'verdana';
+    marquee-loop:infinite;
+    marquee-speed:normal;
+    marquee-style:scroll;
+}
+
+/* ANIMACIONES CSS */
+/* retardo de aparecer los elementos */
+@keyframes appear{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* flecha del logo */
+@keyframes arrow{
+    0%{
+        left:0px;
+    }
+    100%{
+        left:50px;
+    }
+}
+/* cambio tamaño del navegador */
+@keyframes escalable_nav{
+    0%{
+        font-size: 1.5rem;
+    }
+    100%{
+        font-size: 1.65rem;
+        font-weight:bold;
+        text-shadow:5px 2px 4px darkgreen;
+    }
+}
