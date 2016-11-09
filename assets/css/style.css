@@ -25,7 +25,7 @@
     font-family: 'Indie Flower', cursive;
     font-size:3rem;
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     flex-direction:row;
     align-items:flex-end;
     color:#00bfff;
@@ -38,16 +38,29 @@
     animation: arrow 4s infinite;
 }
 
+#logo{
+    width:200px;
+    height:200px;
+}
+
+#slide{
+    position: relative;
+    top:50px;
+    width:100px;
+    height:100px;
+    
+}
+
 .menu{
     display:flex;
     flex-direction:row;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     justify-content:space-between;;
     align-items:flex-end;
     height:60vh;
     list-style:none;
 }
-.menu li{
+.menu li a{
     font-family: 'Roboto', sans-serif;
     width:150px;
     height:50px;
@@ -62,15 +75,17 @@
     text-align:center;
 }
 
-.menu li:hover{
-    border: 3px solid green;
+.menu li:hover a{
     background:seagreen;
 }
 
 .menu li a{
     text-decoration:none;
+    color:darkgreen;
 }
-
+.menu li:nth-child(4) a{
+        margin-left:-8px;
+    }
 .menu li:hover a{
     animation:escalable_nav 1s infinite;
 }
@@ -117,7 +132,7 @@
         left:50px;
     }
 }
-/* cambio tamaño del navegador */
+/* cambio tamaño del nav */
 @keyframes escalable_nav{
     0%{
         font-size: 1.5rem;
@@ -126,5 +141,54 @@
         font-size: 1.65rem;
         font-weight:bold;
         text-shadow:5px 2px 4px darkgreen;
+    }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:1150px){
+    .icon{
+        animation:none;
+        opacity:0;
+    }
+}
+@media screen and (max-width:1000px){
+    #nick{
+        position:absolute;
+        display: none;
+    }
+    .menu{
+        flex-wrap: wrap;
+    }
+    .copy{
+        marquee-speed:none;
+    }
+    #logo{
+        display: none;
+    }
+    #slide{
+        top:20px;
+    }
+}
+@media screen and (max-width:520px){
+    .menu li{
+    width:90px;
+    height:30px;
+    margin:10px;
+    font-size: 1.0rem;
+    border: 3px double green;
+    border-radius: 130px;
+    padding: 50px 18px;
+    font-weight:bold;
+    text-shadow:5px 2px 4px darkgreen;
+    }
+    .menu li:hover{
+        animation:none;
+        border: 3px solid green;
+    }
+    .menu li:hover a{
+    animation:none;
+    }
+    .menu li:nth-child(4) a{
+        padding-left:-30px;
     }
 }

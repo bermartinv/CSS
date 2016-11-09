@@ -42,7 +42,8 @@
 <title>Aprende CSS3</title>
   
     <!-- El enlace a Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
         <!--  Use the following CSS rules to specify these families:
             font-family: 'Nothing You Could Do', cursive;
             font-family: 'Indie Flower', cursive;
@@ -59,16 +60,19 @@
   ga('create', 'UA-85220689-1', 'auto');
   ga('send', 'pageview');
 </script>
+<script type="text/javascript" src="assets/javascript/slides_logo.js"></script>
 </head>
 <body>
    <section class="portada">
       <div class="logo">
-          <img alt="logo bermartinv" src="assets/images/logo.png"/>
-          <span class="name">bermartinv</span>
+          <img id="logo" alt="logo bermartinv" src="assets/images/logo.png"/>
+          <span id="nick">bermartinv</span>
           <span class="icon"> &#10140; </span>
           <span class="name">Bernardo Martín Viudez</span>
-          <img alt="css3" src="assets/images/css.jpg" />
-      </div>
+          <picture class="slide_logo">
+              <img alt="css3" id="slide" srcs="assets/images/css3.gif" />
+          </picture>
+    </div>
       <nav>  
           <ul class="menu">
                <li><a href="index.html">Inicio</a></li>
@@ -78,9 +82,9 @@
                <li><a>Contacto</a></li>
           </ul>
      </nav> 
-          
-       <marquee class="copy"><span>&copy; Berana Social Media and Marketing 2016</span></marquee>   
-    </section>  
+       <marquee class="copy"><span>&copy; Berana Social Media and Marketing 2016</span></marquee>
+       
+   </section>  
        
 </body>
 </html>
