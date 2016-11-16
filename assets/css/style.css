@@ -1,4 +1,7 @@
 /* Comenzamos la hoja de estilo de nuestra web */
+body{
+    margin:0 auto;
+}
 .portada{
     
     background-size:cover;
