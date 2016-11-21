@@ -27,15 +27,16 @@ function titulo(){
 
 function ejemplo(){
     var show=false;
-    var items = document.querySelectorAll(".ejemplo");
+    var items = document.querySelectorAll(".pulsador");
 for (var i = 0; i < items.length;i++){
-  items[i].addEventListener("click",aparecer);
+  items[i].addEventListener("click",function aparecer(i));
 }
 
-function aparecer(){
+function aparecer(i){
   if (show == false){
-  this.firstElementChild.style.display = "block";  
-    ver = true
+  var ej = document.querySelectorAll(".ejemplo");
+      ej[i].style.display = "block";  
+    show = true;
   }else{
     this.firstElementChild.style.display = "none";
   show = false;
