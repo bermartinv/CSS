@@ -4,6 +4,7 @@ var cont = 0;
 window.onload = function(){
     slides_logo();
     titulo();
+    ejemplo();
 }
     
     
@@ -22,6 +23,25 @@ function titulo(){
     if ((window.innerWidth)<=520){
     document.getElementsByClassName("name")[0].innerHTML = "Aprende CSS";
     }
+}
+
+function ejemplo(){
+    var show=false;
+    var items = document.querySelectorAll(".ejemplo");
+for (var i = 0; i < items.length;i++){
+  items[i].addEventListener("click",aparecer);
+}
+
+function aparecer(){
+  if (show == false){
+  this.firstElementChild.style.display = "block";  
+    ver = true
+  }else{
+    this.firstElementChild.style.display = "none";
+  show = false;
+  }
+}
+
 }
 /*
 
