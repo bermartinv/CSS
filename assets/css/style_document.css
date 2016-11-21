@@ -30,7 +30,12 @@ header{
 /* * * * * * * * * * * * * * * * * * * * * * * */
 .menu_inf{
     text-decoration:none;
-    color:dimgray;
+    color:cornflowerblue;
+}
+.img_menu_inf{
+    width:40px;
+    height:40px;
+    vertical-align:text-bottom;
 }
 /* * * * * * * * * * * * * * * * * * * * * * * */
 /* * * * * * * * * * * NAVEGADOR * * * * * * * */
@@ -168,7 +173,29 @@ strong{
     margin:20px;
     }
 
+/* * * * * * * * COLUMNA1 * * * * * * * * * */
+/* * * * * * * * CONTENIDO * * * * * * * * * */
 
+.pulsador p{
+    display:inline;
+    width:200px;
+    margin-top: -10px;
+    margin-left: 50px;
+    border:solid 2px cornflowerblue; 
+    padding:8px 20px 8px 20px;
+    border-radius:25px;
+}
+.pulsador p:hover{
+    cursor:pointer;
+    background:azure;
+}
+.pulsador .flecha{
+    width:30px;
+    height:30px;
+    vertical-align: middle;
+    padding-left:5px;
+    
+}
 /* * * * * * * * * * * * * * * * * * * */
 /* * * * * * * R E D E S * * * * * * * */
 /* * * * * * * * * * * * * * * * * * * */
@@ -210,6 +237,7 @@ footer p{
     border-right:solid thin grey;
     font-size:0.9rem;
 }
+
 
 /* * * * * * * * * * * * * * * * * * * */
 /* * * * * * ANIMACIONES * * * * * * * */
