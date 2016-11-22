@@ -175,7 +175,9 @@ strong{
 
 /* * * * * * * * COLUMNA1 * * * * * * * * * */
 /* * * * * * * * CONTENIDO * * * * * * * * * */
-
+.pulsador{
+    margin-bottom: 15px;
+}
 .pulsador p{
     display:inline;
     width:200px;
@@ -197,7 +199,7 @@ strong{
     
 }
 .ejemplo{
-    display: none;
+    display: block;
 }
 /* * * * * * * * * * * * * * * * * * * */
 /* * * * * * * R E D E S * * * * * * * */

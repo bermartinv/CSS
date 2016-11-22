@@ -4,7 +4,6 @@ var cont = 0;
 window.onload = function(){
     slides_logo();
     titulo();
-    ejemplo();
 }
     
     
@@ -25,25 +24,3 @@ function titulo(){
     }
 }
 
-function ejemplo(){
-    var show=false;
-    var items = document.querySelectorAll(".pulsador");
-for (var i = 0; i < items.length;i++){
-  items[i].addEventListener("click",function aparecer(i));
-}
-
-function aparecer(i){
-  if (show == false){
-  var ej = document.querySelectorAll(".ejemplo");
-      ej[i].style.display = "block";  
-    show = true;
-  }else{
-    this.firstElementChild.style.display = "none";
-  show = false;
-  }
-}
-
-}
-/*
-
-*/
