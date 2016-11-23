@@ -199,7 +199,10 @@ strong{
     
 }
 .ejemplo{
-    display: block;
+    display: none;
+}
+.cursiva{
+    font-style: italic;
 }
 /* * * * * * * * * * * * * * * * * * * */
 /* * * * * * * R E D E S * * * * * * * */
@@ -207,7 +210,7 @@ strong{
 .redes{
     position:fixed;
     top:40%;
-    margin:0 !important;    
+    margin:0 !important; 
 }
 .redes a{
    display:block;

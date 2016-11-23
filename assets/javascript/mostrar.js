@@ -1,19 +1,24 @@
 window.onload = function(){
     mostrar();
-    alert("Hola que tal");
 } 
 
 function mostrar(){
-    alert ("Hola que tal")
-   /*var items = document.querySelectorAll(".pulsador");
-   
+    var items, show , imagenes;
+    show = false;
+    items = document.querySelectorAll(".pulsador");
+    imagenes = document.querySelectorAll(".flecha");
     for ( var i = 0 ; i < items.length ; i++){
-        items[i].addEventListener("click",aparecer)
+        items[i].addEventListener("click",aparecer);
     }
-    
+
     function aparecer(){
-        alert ("Hola que tal");
-        this.nextElementSibling.display = "block";
-        this.style.color = "red";
-    }*/
+        if (show == false){
+        this.nextElementSibling.style.display = "block";
+        show = true;
+        }else{
+        this.nextElementSibling.style.display = "none";
+        
+        show = false;
+        }
+    }
 }
