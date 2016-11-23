@@ -4,6 +4,8 @@ var cont = 0;
 window.onload = function(){
     slides_logo();
     titulo();
+    arrow_top();
+    alert("Hola");
 }
     
     
@@ -24,3 +26,20 @@ function titulo(){
     }
 }
 
+function arrow_top(){
+window.onscroll = function (e){
+    var posicion = e.pageY;
+   
+    if (posicion >=200){
+        flecha.style.visibility = "visible";
+    }else{
+        flecha.style.visibility = "hidden";
+    }
+    
+}
+ var flecha =document.getElementById("image_arrow_top");
+    flecha.onclick = function subir(){
+    window.scrollTo(0,0);
+}
+    
+}

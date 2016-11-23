@@ -228,19 +228,17 @@ strong{
 /* * * * * * * * * * * * * * * * * * * */
 /* * * F L E C H A   A R R I B A * * * */
 /* * * * * * * * * * * * * * * * * * * */
-.arrow_top{
-    /*position:fixed;
-    top:90%;
-    left:90%;*/
-    border:solid thin red;
-    position:absolute;
-    width:200px;
-    height: 200px;
+#arrow_top{
+    position:fixed;
+    top:80%;
+    left:90%;
 }
-/*.image_arrow_top{
-    width:500px;
-    height:500px;
-}*/
+#image_arrow_top{
+    display: none;
+    position: relative;
+    animation: up_down 3s infinite;
+    cursor:pointer;
+}
 
 /* * * * * * * * * * * * * * * * * * * */
 /* * * * * * F O O T E R * * * * * * * */
@@ -287,6 +285,18 @@ footer p{
         font-size: 1.65rem;
         font-weight:bold;
         text-shadow:5px 2px 4px darkgreen;
+    }
+}
+
+@keyframes up_down{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(45px);
+    }
+    100%{
+        transform: translateY(-45px);
     }
 }
 
