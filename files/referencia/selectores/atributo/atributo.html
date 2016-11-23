@@ -71,42 +71,68 @@
     </nav>
 </header>
 <div class="menu_inferior">
-    <p><a href="https://bermartinv.github.io/css/files/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> > <a class="menu_inf" href="../selectores_menu.html">Selectores</a>><a href="" class="menu_inf" href="">Relacionales</a></p>
+    <p><a href="https://bermartinv.github.io/css/files/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> > <a class="menu_inf" href="../selectores_menu.html">Selectores</a>><a href="" class="menu_inf" href="">Atributo</a></p>
 </div>
 <div class="contenido">
     <div class="columna1">  
               <article>
                      
-                         <p><strong>Descendente (E F) :  </strong>El seleceltor se dirige a todo elemento que es descendente de él. Es este caso sería todos los elementos F que desciende de E.</p>
+                         <p><strong>E[nombre_atributo] :  </strong>Indica el elemento E que tiene la etiqueta que nosotros indicamos.</p>
                          <div class="pulsador">
                          <p>Ejemplo<img src="/assets/images/double_arrow_bottom.png" class="flecha"></p>
                          </div>
                   <div class="ejemplo">
-                      <p data-height="265" data-theme-id="0" data-slug-hash="pNPxZv" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="descendente" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/pNPxZv/">descendente</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                      <p data-height="265" data-theme-id="0" data-slug-hash="mOmajW" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="E[nombre atributo]" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/mOmajW/">E[nombre atributo]</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                   </div>
-                  <p><strong>Hijo (E>F) :  </strong>Se selecciona un elemento F que es hijo directo de E.</p>
+                  <p><strong>E[nombre_atributo=valor] :  </strong>Indica el elemento que E que tiene una etiqueta especificada con un valor determinado</p>
                   <div class="pulsador">
                          <p>Ejemplo<img src="/assets/images/double_arrow_bottom.png" class="flecha"></p>
                          </div>
                   <div class="ejemplo">
-                      <p data-height="265" data-theme-id="0" data-slug-hash="GNmwwg" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="hijo" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/GNmwwg/">hijo</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                      <p data-height="265" data-theme-id="0" data-slug-hash="mOmajW" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="E[nombre atributo]" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/mOmajW/">E[nombre atributo]</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                   </div>
-                  <p><strong>Hermanos adyacentes (E + F) :  </strong>El selector selecciona todos los elementos de tipo F en el que este aparece inmediatamente despues de E y además F debe tener el mismo padre que E</p>
+                  <p><strong>E[nombre_atributo|=valor] :  </strong>Se selecciona el elemento E, el cual tiene un nombre de atributo cuyo valor es valor o empieza por valor y después un guión y mas letras. Se usa normalmente para el atributo<span class="cursiva"> lang</span>.</p>
                   <div class="pulsador">
                          <p>Ejemplo<img src="/assets/images/double_arrow_bottom.png" class="flecha"></p>
                   </div>
                   <div class="ejemplo">
-                      <p data-height="265" data-theme-id="0" data-slug-hash="eBWQar" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="hermano descendente" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/eBWQar/">hermano descendente</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                      <p data-height="265" data-theme-id="0" data-slug-hash="mOmajW" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="E[nombre atributo]" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/mOmajW/">E[nombre atributo]</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                   </div>
-                  <p><strong>Hermano general (E &#126; F):</strong>Seleccionaremos el elemento F que siga a in E, siempre y cuando ambos compartan el mismo padre directo.</p>
+                  <p><strong>E[nombre_atributo&#126;=valor] : </strong>Se selecciona el elemento con un atributo en el que al menos uno de sus valores sea el que especifiquemos.</p>
                 <div class="pulsador">
                          <p>Ejemplo<img src="/assets/images/double_arrow_bottom.png" class="flecha"></p>
                 </div>
-                <div class="jemplo">
-                    <p data-height="265" data-theme-id="0" data-slug-hash="XNRoMO" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="hermano general" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/XNRoMO/">hermano general</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                <div class="ejemplo">
+                    <p data-height="265" data-theme-id="0" data-slug-hash="WoOeva" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="Selectores de atributo II" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/WoOeva/">Selectores de atributo II</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                </div>
+                <p><strong>E[nombre_atributo^=valor] : </strong>Se selecciona el elemento E con un atributo en el que su valor empieza por <span class="cursiva">valor</span>.</p>
+                <div class="pulsador">
+                         <p>Ejemplo<img src="/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                </div>
+                <div class="ejemplo">
+                <p data-height="265" data-theme-id="0" data-slug-hash="WoOeva" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="Selectores de atributo II" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/WoOeva/">Selectores de atributo II</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                </div>
+                <p>
+                <strong>E[nombre_atributo$=valor] : </strong>Se selecciona el elemento E con un atributo en el que su valor termina por <span class="cursiva">valor</span>.</p>
+                <div class="pulsador">
+                         <p>Ejemplo<img src="/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                </div>
+                <div class="ejemplo">
+                <p data-height="265" data-theme-id="0" data-slug-hash="WoOeva" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="Selectores de atributo II" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/WoOeva/">Selectores de atributo II</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                </div>
+                <p>
+                <strong>E[nombre_atributo*=valor] : </strong>Se selecciona el elemento E con un atributo en el que su valor coincide con <span class="cursiva">valor</span> en cualquier parte dentro del atributo.</p>
+                <div class="pulsador">
+                         <p>Ejemplo<img src="/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                </div>
+                <div class="ejemplo">
+                <p data-height="265" data-theme-id="0" data-slug-hash="WoOeva" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="Selectores de atributo II" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/WoOeva/">Selectores de atributo II</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                 </div>
               </article>
@@ -135,5 +161,7 @@
         <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
         <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a> 
 </div>
-
+<div class="home">
+    <img src="../../../../assets/images/arrow_top.png" class="image_home"/>
+</div>
 </body>

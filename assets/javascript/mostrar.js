@@ -13,10 +13,10 @@ function mostrar(){
 
     function aparecer(){
         if (show == false){
-        this.nextElementSibling.style.display = "block";
+        this.nextElementSibling.style.display = "block";  this.firstChild.nextSibling.firstElementChild.src = 'https://bermartinv.github.io/css/assets/images/double_arrow_top.png';
         show = true;
         }else{
-        this.nextElementSibling.style.display = "none";
+        this.nextElementSibling.style.display = "none";  this.firstChild.nextSibling.firstElementChild.src ='https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png'; 
         
         show = false;
         }

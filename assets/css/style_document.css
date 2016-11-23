@@ -211,6 +211,7 @@ strong{
     position:fixed;
     top:40%;
     margin:0 !important; 
+    opacity:0.75;
 }
 .redes a{
    display:block;
@@ -223,6 +224,16 @@ strong{
 .redes a:nth-child(n):hover img{
     width:65px;
 }
+
+/* * * * * * * * * * * * * * * * * * * */
+/* * * F L E C H A   A R R I B A * * * */
+/* * * * * * * * * * * * * * * * * * * */
+.home{
+    position:fixed;
+    top:100%;
+    left:90%;
+}
+
 /* * * * * * * * * * * * * * * * * * * */
 /* * * * * * F O O T E R * * * * * * * */
 /* * * * * * * * * * * * * * * * * * * */
