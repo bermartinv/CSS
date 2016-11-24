@@ -234,7 +234,7 @@ strong{
     left:90%;
 }
 #image_arrow_top{
-    display: none;
+    visibility: hidden;
     position: relative;
     animation: up_down 3s infinite;
     cursor:pointer;
@@ -296,7 +296,7 @@ footer p{
         transform: translateY(45px);
     }
     100%{
-        transform: translateY(-45px);
+        transform: translateY(0px);
     }
 }
 

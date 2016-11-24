@@ -1,5 +1,8 @@
 window.onload = function(){
+    alert("Hola";)
     mostrar();
+    arrow_top();
+    alert("Hola";)
 } 
 
 function mostrar(){
@@ -21,4 +24,22 @@ function mostrar(){
         show = false;
         }
     }
+}
+
+function arrow_top(){
+window.onscroll = function (e){
+    var posicion = e.pageY;
+   
+    if (posicion >=100){
+        flecha.style.visibility = "visible";
+    }else{
+        flecha.style.visibility = "hidden";
+    }
+    
+}
+ var flecha =document.getElementById("image_arrow_top");
+    flecha.onclick = function subir(){
+    window.scrollTo(0,0);
+}
+    
 }
