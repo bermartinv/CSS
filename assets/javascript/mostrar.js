@@ -1,10 +1,9 @@
 window.onload = function(){
-    alert("Hola";)
-    mostrar();
-    arrow_top();
-    alert("Hola";)
+    alert ("rre");
+    /*mostrar();
+    arrow_top();*/
 } 
-
+/*
 function mostrar(){
     var items, show , imagenes;
     show = false;
@@ -25,12 +24,16 @@ function mostrar(){
         }
     }
 }
-
+*/
+/*
 function arrow_top(){
+    
+    alert("Hola";)
+    
 window.onscroll = function (e){
     var posicion = e.pageY;
    
-    if (posicion >=100){
+    if (posicion >=200){
         flecha.style.visibility = "visible";
     }else{
         flecha.style.visibility = "hidden";
@@ -43,3 +46,4 @@ window.onscroll = function (e){
 }
     
 }
+*/

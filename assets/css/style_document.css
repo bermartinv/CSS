@@ -234,7 +234,7 @@ strong{
     left:90%;
 }
 #image_arrow_top{
-    visibility: hidden;
+    /*visibility: hidden;*/
     position: relative;
     animation: up_down 3s infinite;
     cursor:pointer;
