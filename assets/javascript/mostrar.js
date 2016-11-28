@@ -1,9 +1,8 @@
 window.onload = function(){
-    alert ("rre");
-    /*mostrar();
-    arrow_top();*/
+    mostrar();
+    arrow_top();
 } 
-/*
+
 function mostrar(){
     var items, show , imagenes;
     show = false;
@@ -24,12 +23,9 @@ function mostrar(){
         }
     }
 }
-*/
-/*
-function arrow_top(){
-    
-    alert("Hola";)
-    
+
+
+function arrow_top(){    
 window.onscroll = function (e){
     var posicion = e.pageY;
    
@@ -46,4 +42,3 @@ window.onscroll = function (e){
 }
     
 }
-*/

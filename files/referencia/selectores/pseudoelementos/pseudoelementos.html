@@ -55,7 +55,7 @@
   ga('create', 'UA-85220689-1', 'auto');
   ga('send', 'pageview');
 </script>
-<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
+<script type="text/javascript" src="../../../../assets/javascript/mostrar.js"></script>
 </head>
 <body>
 <header>
@@ -71,38 +71,44 @@
     </nav>
 </header>
 <div class="menu_inferior">
-    <p><a href="https://bermartinv.github.io/css/files/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> > <a class="menu_inf" href="https://bermartinv.github.io/css/files//selectores_menu.html">Selectores</a>><a href="" class="menu_inf">Basicos</a></p>
+    <p><a href="https://bermartinv.github.io/css/files/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> > <a class="menu_inf" href="../selectores_menu.html">Selectores</a>><a href="" class="menu_inf" href="">Pseudoelementos</a></p>
 </div>
 <div class="contenido">
     <div class="columna1">  
-          <article>
-                         <p><strong>Tipo Selector :  </strong>Se indica el tipo de etiqueta a que se le va a definir las características con CSS. Además se puede declarar distintas etiquetas a la vez separadas entre "," si van a tener las mismas características.</p>
+              <article>
+                     
+                         <p><strong>Descendente (E F) :  </strong>El seleceltor se dirige a todo elemento que es descendente de él. Es este caso sería todos los elementos F que desciende de E.</p>
                          <div class="pulsador">
-                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
                          </div>
-                         <div class="ejemplo">
-                             <p data-height="265" data-theme-id="0" data-slug-hash="dOWKbv" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="tipo selector" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/dOWKbv/">tipo selector</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                  <div class="ejemplo">
+                      <p data-height="265" data-theme-id="0" data-slug-hash="pNPxZv" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="descendente" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/pNPxZv/">descendente</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <p><strong>Hijo (E>F) :  </strong>Se selecciona un elemento F que es hijo directo de E.</p>
+                  <div class="pulsador">
+                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
                          </div>
-                  <p><strong>Selector class :  </strong>Añadimos la etiqueta class y un nombre a aquellos elementos que le queramos dar cierta característica. El nombre del class lo podemos encontrar en distintos elementos y puede repetirse entre nuestro código.En nuestro codigo CSS lo definimos con un . y su nombre (<span class="cursiva">.name</span>)</p>
+                  <div class="ejemplo">
+                      <p data-height="265" data-theme-id="0" data-slug-hash="GNmwwg" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="hijo" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/GNmwwg/">hijo</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <p><strong>Hermanos adyacentes (E + F) :  </strong>El selector selecciona todos los elementos de tipo F en el que este aparece inmediatamente despues de E y además F debe tener el mismo padre que E</p>
                   <div class="pulsador">
                          <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
                   </div>
                   <div class="ejemplo">
-                  <p data-height="265" data-theme-id="0" data-slug-hash="jVmKMR" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="class name" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/jVmKMR/">class name</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                      <p data-height="265" data-theme-id="0" data-slug-hash="eBWQar" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="hermano descendente" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/eBWQar/">hermano descendente</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-              </div>
-                  <p><strong>Selector id :  </strong>El selector id una vez definido con un nombre, este solo puede aparecer una vez en el código que estamos trabajando.Nos referimos a este id en nuestro código CSS de la forma <span class="cursiva">#name</span></p>
+                  </div>
+                  <p><strong>Hermano general (E &#126; F):</strong>Seleccionaremos el elemento F que siga a in E, siempre y cuando ambos compartan el mismo padre directo.</p>
                 <div class="pulsador">
                          <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
                 </div>
                 <div class="ejemplo">
-                             <p data-height="265" data-theme-id="0" data-slug-hash="BQRVWq" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="selector id" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/BQRVWq/">selector id</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <p data-height="265" data-theme-id="0" data-slug-hash="XNRoMO" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="hermano general" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/XNRoMO/">hermano general</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                         
-                         </div>
-                  
-                         
+                </div>
               </article>
     </div>
     <div class="columna2">
