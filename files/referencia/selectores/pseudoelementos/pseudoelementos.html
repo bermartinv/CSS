@@ -77,38 +77,38 @@
     <div class="columna1">  
               <article>
                      
-                         <p><strong>Descendente (E F) :  </strong>El seleceltor se dirige a todo elemento que es descendente de él. Es este caso sería todos los elementos F que desciende de E.</p>
+                         <p><strong>::before / ::after </strong>No hace referencia al contenido que existe en el código, sino a una ubicación donde puede insertar el material adicional generado en el CSS. Aunque este contenido no forma parte del DOM, se le puede aplicar estilo.</p>
                          <div class="pulsador">
                          <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
                          </div>
                   <div class="ejemplo">
-                      <p data-height="265" data-theme-id="0" data-slug-hash="pNPxZv" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="descendente" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/pNPxZv/">descendente</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                      <p data-height="265" data-theme-id="0" data-slug-hash="woqVVe" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="pseudoelemetos" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/woqVVe/">pseudoelemetos</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                   </div>
-                  <p><strong>Hijo (E>F) :  </strong>Se selecciona un elemento F que es hijo directo de E.</p>
+                  <p><strong>::selection :  </strong>Coincide con el texto que está resaltado. Esto se soporta en WebKit y con el prefijo de fabricante -moz- en Firefox.</p>
                   <div class="pulsador">
                          <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
                          </div>
                   <div class="ejemplo">
-                      <p data-height="265" data-theme-id="0" data-slug-hash="GNmwwg" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="hijo" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/GNmwwg/">hijo</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                      <p data-height="265" data-theme-id="0" data-slug-hash="woqVVe" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="pseudoelemetos" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/woqVVe/">pseudoelemetos</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                   </div>
-                  <p><strong>Hermanos adyacentes (E + F) :  </strong>El selector selecciona todos los elementos de tipo F en el que este aparece inmediatamente despues de E y además F debe tener el mismo padre que E</p>
+                  <p><strong>:: first-letter / ::first-line :  </strong>Como su traducción al castellano indica, se refiere a la primera letra del contenido de un elemento y a la primera linea.</p>
                   <div class="pulsador">
                          <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
                   </div>
                   <div class="ejemplo">
-                      <p data-height="265" data-theme-id="0" data-slug-hash="eBWQar" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="hermano descendente" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/eBWQar/">hermano descendente</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                      <p data-height="265" data-theme-id="0" data-slug-hash="woqVVe" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="pseudoelemetos" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/woqVVe/">pseudoelemetos</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                   </div>
-                  <p><strong>Hermano general (E &#126; F):</strong>Seleccionaremos el elemento F que siga a in E, siempre y cuando ambos compartan el mismo padre directo.</p>
-                <div class="pulsador">
-                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
-                </div>
-                <div class="ejemplo">
-                    <p data-height="265" data-theme-id="0" data-slug-hash="XNRoMO" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="hermano general" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/XNRoMO/">hermano general</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                </div>
+                  <p><strong>::inactive-selection :</strong>Se aplica a selecciones inactivas (por ejemplo, cuando la ventana de documento está inactiva y, por lo tanto, no recibe eventos).</p>
+               
+                <p><strong>::spelling-error :</strong>Representa una parte del texto que ha sido marcado por el agente de usuario como mal escrito.</p>
+                <p><strong>::grammar-error :</strong>Representa una parte del texto que ha sido marcado por el agente de usuario como gramaticalmente incorrecto.</p>
+                <p><strong>::marker :</strong> Representa el cuadro marcador generado automáticamente de un elemento de lista.</p>
+                <p><strong>::placeholder :</strong> Representa el texto marcador de un input.</p>
+                <p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate" target="_blank">Enlace de interes </a></p>
               </article>
     </div>
     <div class="columna2">
