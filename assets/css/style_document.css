@@ -157,6 +157,30 @@ strong{
 .sub_menu li:hover a{
     animation:escalable_nav 1s infinite;
 }
+
+/* * * * * * * * COLUMNA1 * * * * * * * * * */
+/* ESTILO HERRAMIENTAS MEDIDAS RELATIVAS    */
+/* Y MEDIDAS ABSOLUTAS                      */
+ #solucion{
+        width:300px;
+        height:300px;
+        border: solid thin black;
+        border-radius:25px;
+        padding:10px;
+        margin:10px;
+    }
+#error{
+        color:crimson;
+        font-size:1.5em;
+        display: none;
+    }
+#transformar{
+    color:darkgrey;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 25px;
+    margin:10px;
+}
 /* * * * * * * * COLUMNA2 * * * * * * * * * */
 .columna2{
     width:20vw;   
