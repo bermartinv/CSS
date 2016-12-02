@@ -180,6 +180,7 @@ strong{
     border-style: solid;
     border-radius: 25px;
     margin:10px;
+    cursor:pointer;
 }
 /* * * * * * * * COLUMNA2 * * * * * * * * * */
 .columna2{
