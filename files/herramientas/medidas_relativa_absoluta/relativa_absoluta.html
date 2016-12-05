@@ -64,8 +64,8 @@
         <ul class="browser">
             <li><a href="https://bermartinv.github.io/css/index.html">Inicio</a></li>
             <li><a href="https://bermartinv.github.io/css/files/history.html">Historia</a></li>
-            <li class="active"><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
-            <li><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
+            <li class="active"><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
             <li><a href="">Contacto</a></li>
         </ul>
     </nav>
@@ -81,7 +81,8 @@
     <p>Debe elegir una medida, relativa o absoluta</p>    
     <input type="radio" name="tipo" id="relativa" value="relativa" />Relativa
     <input type="radio" name="tipo" id="absoluta" value="absoluta" />Absoluta
-    <input type="text" id="texto" maxlength="100" size="120"/>
+    <p>Introduzca el texto a transformar</p><input placeholder="máximo 20 caracteres" type="text" id="texto" maxlength="20" size="20"/>
+    <p>Seleccione el tipo de unidad</p>
     <select id="tipo_relativa" name="tipo_relativa">
         <option value="">Unidades relativas</option>
         <option value="em">em</option>
@@ -110,10 +111,9 @@
     <button id="transformar">Transformar</button>
     <p id='error'>Hay algún campo que está erroneamente completado, vuelva a repasar los campos</p>
 </div>
-<div id="solucion">
+            <div id="solucion">
     
-</div>  
-              
+</div>   
                          
           </article>
     </div>

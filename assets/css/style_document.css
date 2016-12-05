@@ -161,14 +161,16 @@ strong{
 /* * * * * * * * COLUMNA1 * * * * * * * * * */
 /* ESTILO HERRAMIENTAS MEDIDAS RELATIVAS    */
 /* Y MEDIDAS ABSOLUTAS                      */
- #solucion{
-        width:300px;
-        height:300px;
-        border: solid thin black;
-        border-radius:25px;
-        padding:10px;
-        margin:10px;
-    }
+.columna1 article{
+    width:100%; 
+}
+.formulario{
+    display:flex;
+    flex-direction:column;
+}
+.formulario p{
+    margin-bottom: 5px !important;
+}
 #error{
         color:crimson;
         font-size:1.5em;
@@ -181,7 +183,37 @@ strong{
     border-radius: 25px;
     margin:10px;
     cursor:pointer;
+    width: 100px;
+    display:flex;
 }
+#transformar:hover{
+    border-color:skyblue;
+    color:skyblue;
+}
+#solucion{
+        display:flex;
+        width:100%;
+        /*flex:1 0 auto;*/
+        height:300px;
+        border: solid thin black;
+        border-radius:25px;
+        padding:10px;
+        margin:10px;
+    }
+* input,* select{
+    margin-left:20px;
+}
+#tipo_relativa,#tipo_absoluta{
+    margin-top:10px;
+}
+.texto input[type="text"]{
+    display:flex;
+    flex:2 0 100%;
+}
+input:focus{
+    border:solid 2px skyblue;
+}
+
 /* * * * * * * * COLUMNA2 * * * * * * * * * */
 .columna2{
     width:20vw;   
@@ -229,6 +261,7 @@ strong{
 .cursiva{
     font-style: italic;
 }
+
 /* * * * * * * * * * * * * * * * * * * */
 /* * * * * * * R E D E S * * * * * * * */
 /* * * * * * * * * * * * * * * * * * * */
