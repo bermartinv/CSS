@@ -76,30 +76,90 @@
 <div class="contenido">
     <div class="columna1">  
           <article>
-                         <p><strong>Background:</strong> define los valores de fondo que podemos darle a un elemento.</p>
+               <p><strong>background:</strong> define los valores de fondo que podemos darle a un elemento.<span class="valores">&#60;background-color&#62; || &#60;background-image&#62; || &#60;background-repeat&#62; || &#60;background-attachment&#62; || &#60;background-position&#62; || &#60;inherit&#62;</span></p>
                          
-                         <p><strong>background-color : </strong>Establece un color de fondo para un elemento.<span class="cursiva">Valor por defecto transparent.</span></p>
+              <p><strong>background-color : </strong>Establece un color de fondo para un elemento.<span class="cursiva">Valor por defecto <span class="valores">transparent</span>.</span></p>
                     
-              <p><strong>background-image : </strong>Establece una imagen como fono para un elemento.<span class="cursiva">Valor por defecto none.</span></p>
-                         
-                         <p><strong>background-repeat : </strong>Controla la forma en la que la imagen de fondo que asignemos se repite.<span class="cursiva">Valor por defecto repeat.</span></p>
+              <p><strong>background-image : </strong>Establece una imagen como fono para un elemento.<span class="cursiva">Valor por defecto <span class="valores">none</span>.</span></p>
+              
+              <p><strong>background-repeat : </strong>Controla la forma en la que la imagen de fondo que asignemos se repite.<span class="cursiva">Valor por defecto <span class="valores">repeat</span>.</span></p>
                          <div class="pulsador">
                          <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
                         </div>
                         <div class="ejemplo">
                             <ul>
                                 <li>repeat</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>repeat-x</li>
+                                <li>repeat-y</li>
+                                <li>no-repeat</li>
+                                <li>inherit</li>
+                            </ul>
+                         </div>
+                         
+              <p><strong>background-position : </strong>Con esta característica definimos la posición donde queremos colocar la imagen de fondo en el elemento. Valor por defecto <span class="valores"> 0% 0%</span></p>
+                         
+              <p><strong>background-attachment : </strong> Define el comportamiento de la imagen de fondo. <span class="cursica">Su valor por defecto es scroll.</span></p>
+                          <div class="pulsador">
+                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                            <ul>
+                                <li>scroll</li>
+                                <li>fixed</li>
+                                <li>inherit</li>
                             </ul>
                           </div>
-                         <p><strong>background-position : </strong>Con esta característica definimos la posición donde queremos colocar la imagen de fondo en el elemento. Valor por defecto 0% 0%</p>
-                         
-                          <p><strong>background-attachment : </strong> Define el comportamiento de la imagen de fondo. <span class="cursica">Su valor por defecto es scroll.</span></p>
                           
-                          p><strong>background-size : </strong> Define el comportamiento de la imagen de fondo. <span class="cursica">Su valor por defecto es scroll.</span></p>
+              <p><strong>background-size : </strong> Define el comportamiento de la imagen de fondo. Actualmente tiene mucha importancia por los tamaños de monitores y facilita la vida al diseñador.<span class="cursica">Su valor por defecto es <span class="valores">auto</span>.</span></p>
+                          <div class="pulsador">
+                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                            <ul>
+                                <li>auto</li>
+                                <li>cover</li>
+                                <li>contain</li>
+                            </ul>
+                          </div>
+                          <p>Se pueden definir sus sintaxis de cuatro maneras distintas:</p>
+                          <div class="pulsador">
+                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                            <ul>
+                                <li>Palabras claves(anteiormente indicado)</li>
+                                <li>Un valor (indica el ancho y el alto es auto)</li>
+                                <li>Dos valores (indica el ancho y el alto)</li>
+                                <li>Combinar palabras claves con valores</li>
+                            </ul>
+                          </div>
+                          
+             <p><strong>background-origin : </strong> Define dónde pintar el fondo: a través de todo el elemento, dentro del borde o dentro del relleno. Es similar a background-clip excepto que redimensiona el fondo en lugar de recortarlo.</p>
+             <div class="pulsador">
+                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                            <ul>
+                                <li>border-box</li>
+                                <li>padding-box</li>
+                                <li>content-box</li>
+                                <li>inherit</li>
+                            </ul>
+                          </div>
+                          
+             <p><strong>background-clip : </strong> Permite controlar hasta qué punto una imagen o un color de fondo se extiende más allá del relleno o del contenido de un elemento.</p>
+             <div class="pulsador">
+                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                            <ul>
+                                <li>border-box</li>
+                                <li>padding-box</li>
+                                <li>content-box</li>
+                                <li>inherit</li>
+                            </ul>
+                          </div>
+                          
               </article>
     </div>
     <div class="columna2">
@@ -127,6 +187,6 @@
         <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a> 
 </div>
 <div id="arrow_top">
-    <img src="../../../../assets/images/arrow_top.png" id="image_arrow_top"/>
+    <img src="../../../assets/images/arrow_top.png" id="image_arrow_top"/>
 </div>
 </body>

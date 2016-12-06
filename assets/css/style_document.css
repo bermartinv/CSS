@@ -157,7 +157,16 @@ strong{
 .sub_menu li:hover a{
     animation:escalable_nav 1s infinite;
 }
-
+.ejemplo ul li{
+    font-size:1.3rem;
+    color:skyblue;
+}
+.ejemplo ul{
+    list-style-type:decimal;
+}
+.valores{
+    color:skyblue;
+}
 /* * * * * * * * COLUMNA1 * * * * * * * * * */
 /* ESTILO HERRAMIENTAS MEDIDAS RELATIVAS    */
 /* Y MEDIDAS ABSOLUTAS                      */
