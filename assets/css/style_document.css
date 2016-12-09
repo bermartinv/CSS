@@ -202,12 +202,13 @@ strong{
 #solucion{
         display:flex;
         width:100%;
-        /*flex:1 0 auto;*/
+        flex-direction:column;
         height:300px;
         border: solid thin black;
         border-radius:25px;
         padding:10px;
         margin:10px;
+    overflow:scroll;
     }
 * input,* select{
     margin-left:20px;
@@ -221,8 +222,15 @@ strong{
 }
 input:focus{
     border:solid 2px skyblue;
+    background:#ffd11a;
 }
 
+/* * * * * * * * COLUMNA1 * * * * * * * * * */
+/*           HERRAMIENTA BACKGROUND         */
+.background-position{
+    border:solid thin black;
+    margin-bottom: 10px;
+}
 /* * * * * * * * COLUMNA2 * * * * * * * * * */
 .columna2{
     width:20vw;   
@@ -291,7 +299,47 @@ input:focus{
 .redes a:nth-child(n):hover img{
     width:65px;
 }
-
+/* * * * * * * * * * * * * * * * * * * */
+/*E S T I L O  H E R R A M I E N T A S */
+/* * * * * * * * * * * * * * * * * * * */
+.herramienta{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.parte1{
+    display:flex;
+    flex-wrap: wrap;
+    width:40%;
+    border-right:solid thin red;
+}
+.parte1 select{
+    text-align:center;
+    margin-bottom:20px;
+}
+.parte1 input{
+    margin-bottom: 20px;
+}
+.parte2{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    width:60%;
+}
+.parte1 label{ 
+    font-family:"Average",serif;
+    font-size:1.3rem;
+    text-align:justify;
+    line-height:1.2em;
+    color:dimgray;
+    margin-bottom:30px;
+    margin-top:10px;
+}
+.lanzado{
+    border:solid thin green;
+}
 /* * * * * * * * * * * * * * * * * * * */
 /* * * F L E C H A   A R R I B A * * * */
 /* * * * * * * * * * * * * * * * * * * */
@@ -398,5 +446,15 @@ footer p{
     #image_arrow_top{
         width:60px;
         height:60px;
+    }
+    .herramienta{
+        flex-direction: column;
+    }
+    .parte1{
+        width:100%;
+    }
+    .parte2{
+        width:90%;
+        margin-left: 20px;
     }
 }
