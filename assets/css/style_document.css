@@ -200,16 +200,17 @@ strong{
     color:skyblue;
 }
 #solucion{
-        display:flex;
         width:100%;
-        flex-direction:column;
         height:300px;
         border: solid thin black;
-        border-radius:25px;
+        border-radius:0px;
         padding:10px;
         margin:10px;
-    overflow:scroll;
+        overflow:scroll;
     }
+.parte2{
+    background-attachment: scroll;
+}
 * input,* select{
     margin-left:20px;
 }

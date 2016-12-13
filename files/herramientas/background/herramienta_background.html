@@ -84,7 +84,17 @@
     <br/>    
     
     <label>background-image</label>
-    <input type="file" id="file" name="file"/>
+    <select id="file" name="file">
+        <option value="">Tamaño de imagen</option>
+        <option value="1">100 X 100 </option>
+        <option value="2">200 X 200</option>
+        <option value="3">300 X 300</option>
+        <option value="4">400 X 400</option>
+        <option value="5">500 X 500</option>
+        <option value="6">600 X 600</option>
+        <option value="7">700 X 700</option>
+
+    </select>
     <br/>
     
     <label>background-repeat</label>
@@ -121,19 +131,19 @@
        </div>
        <div>
      <label>Valor X en %</label>
-      <input type="number" max="100" min="0" id="positionX" name="positionX"/>
+      <input type="number" max="100" min="0" id="positionX" name="positionX" value="0" />
       </div>
       <div>
     <label>Valor Y en %</label>
-      <input type="number" max="100" min="0" id="positionY" name="positionY"/>
+      <input type="number" max="100" min="0" id="positionY" name="positionY" value="0"/>
        </div>
        <div>
        <label>Valor X en px</label>
-      <input type="number" max="100" min="0" id="positionX_px" name="positionX_px"/>
+      <input type="number"  min="0" id="positionX_px" name="positionX_px" maxlength="5" value="0"/>
        </div>
        <div>
     <label>Valor Y en px</label>
-      <input type="number" max="100" min="0"  id="positionY_px" name="positionY_px"/>
+      <input type="number"  min="0" maxlength="5"  id="positionY_px" name="positionY_px" value="0"/>
        </div>
        
      <br/>
@@ -144,6 +154,7 @@
         <option value="">Opciones background-attachment</option>
         <option value="scroll">scroll</option>
         <option value="fixed">fixed</option>
+        <option value="local">local</option>
         <option value="inherit">inherit</option>
     </select>
     <br/>
