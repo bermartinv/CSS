@@ -71,13 +71,68 @@
     </nav>
 </header>
 <div class="menu_inferior">
-    <p><a href="https://bermartinv.github.io/css/files/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> > <a class="menu_inf" href="https://bermartinv.github.io/css/files/referencia/propiedades/menu_propiedades.html">Propiedades</a> > <a href="" class="menu_inf">Degradado</a></p>
+    <p><a href="https://bermartinv.github.io/css/files/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> > <a class="menu_inf" href="https://bermartinv.github.io/css/files/propiedades/menu_propiedades.html">Propiedades</a> > <a href="" class="menu_inf">Degradados</a></p>
 </div>
 <div class="contenido">
     <div class="columna1">  
-          <article>
-               
-              </article>
+         <article>
+             <p>Los <strong>degradados lineales</strong> son aquellos donde los colores pasan a través de una transicion y los podemos ver que pasan de un color a otra através de distintas direcciones como puede ser de arriba a abajo, de izquierda a dereha o a lo largo de caulquier eje de coordenadas X Y . Esta característica la podremos aplicar sobre aquellos elementos que soportan imágenes de fondo.Usaremos la sentencia <span class="menu_inf">linear-gradient</span>. A continuación indicaremos ciertas cosas a tener en cuenta:</p>
+                         
+             <p><strong>1. Valores : </strong>Dentro de los paréntesis de <span class="cursiva">linear-gradient </span>especificaremos la dirección del degradado y algunas pautas de color.</p>
+                   
+             <p><strong>2. Dirección del degradado en grados : </strong>Podemos especificar la dirección del degradado através de angulos. Lo haremos con <span class="cursiva"><a href="https://bermartinv.github.io/css/files/referencia/unidades/angulo/angulo.html" title="enlace a deg">deg</a></span>. <span class="cursiva">0deg</span> apunta a la derecha y <span class="cursiva">90deg</span> hacia arriba.</p>
+                  
+            <p><strong>2. Dirección del degradado con palabras clave : </strong>También se puede especificar la dirección del degradado con las palabras claves <span class="cursiva">top, bottom, left, right</span>.</p>
+                  
+            <p><strong>3. Colores : </strong>Una vez indicado la dirección, habrá que proporcionar los colores, esta parte se compone del color que se utilizará y del porcentaje o longitud del degradado que se quiere.</p>
+                  
+            <p><strong>4. Degradados sin degradados : </strong>Se puede conseguir que los colores pasen de uno a otro pero sin que exista degradado para conseguir un color al otro. Esto provocará un efecto de rayas. Se consigue haciendo que el paso de un color a otro se coloque en la misma posición ambos colores. Vean en los ejemplos el numero 4.</p>
+                   <div class="pulsador">
+                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                         </div>
+                         <div class="ejemplo">
+                             <p data-height="265" data-theme-id="0" data-slug-hash="aBRQwB" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="aBRQwB" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/aBRQwB/">aBRQwB</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                         </div>
+             <p>Los <strong>degradados radiales : </strong>a diferencia del lineal este degradado empieza desde un punto hacia fuera de él de diferentes formas. Usaremos la sentencia <span class="menu_inf">radial-gradient</span> A continuación indicaremos ciertas cosas a tener en cuenta:</p>
+              <p><strong>1. Forma : </strong>La forma puede ser <span class="cursiva">circle o ellipse</span> siendo la última la predeterminada.</p> 
+              <p><strong>2. Tamaño : </strong>Pueden ser:</p> 
+                  <div class="pulsador">
+                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                            <ul>
+                                <li>closest-side</li>
+                                <li>closest-corner</li>
+                                <li>farthest-side</li>
+                                <li>farthest-corner</li>
+                            </ul>
+                          </div><br/><br/>
+                 <div class="pulsador">
+                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                          <p data-height="265" data-theme-id="0" data-slug-hash="RoqJmK" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="repeating linear gradient" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/RoqJmK/">repeating linear gradient</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                <p>Los <strong>degradados repetidos : </strong>se pueden crear patrones en que se repita el diseño de degradado que hayamos creado. Para ello tendremos que usar la característica <span class="menu_inf">repeating-linear-gradient</span> en el caso de un degradado lineal y si fuera radial <span class="menu_inf">repeating-radial-gradient</span>.</p>
+                        <div class="pulsador">
+                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                          <p data-height="265" data-theme-id="0" data-slug-hash="YpJBxq" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="radial-gradient" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/YpJBxq/">radial-gradient</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>  
+                        </div>            
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              <p class="menu_inf" >Más información:</p>
+              
+              <a href="http://www.cssmatic.com/es/gradient-generator#%27\"><span class="valores">Herramienta degradado 1 de cssmatic</span></a><br/>
+              <a href="http://westciv.com/tools/gradientsnustyle/index.html"><span class="valores">Herramienta degradado 2 de westciv</span></a> <br/>
+              <a href="https://patternizer.com/eszw"><span class="valores">Herramienta degradado 3 de patternizer</span></a><br/>
+              <a href="http://www.colorzilla.com/gradient-editor/"><span class="valores">Herramienta degradado 4 de colorzilla</span></a><br/>
+              <a href="http://lea.verou.me/css3patterns/"><span class="valores">Ejemplos degradados de Lea Verou</span></a><br/>
+               <a href="http://bgpatterns.com/"><span class="valores">Crea tus propios fondos de bgpatterns</span></a><br/>
+                               
+         </article>
     </div>
     <div class="columna2">
         <aside class="enlaces">
