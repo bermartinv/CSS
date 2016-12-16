@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable= yes ">
+<meta charset="UTF-8"> 
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Bernardo Martin Viudez">
+<meta name="application-name" content="Educacion basica CSS" >
+<meta name="keywords" content="css, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
+<meta name="robots" content="index,follow" >
+<link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
+<link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>    
+	<!-- Para más información visitar la página: http://www.w3schools.com/tags/tag_link.asp
+		href		Indica la dirección del link
+		hreflang	Indica el idioma del link, usa los mismo códigos que lang
+		media		Dispositivos:all	todos		aural		auditivo
+					     braille	braili		handheld	dispositivos de mano
+					     projection	proyector	print		varsión impresa
+					     screen	ordenador	ttv		maquinas escribir
+					     tv		television
+				Valores:     width		max/min			height			max/min
+					     device-width	max/min			device-height		max/min
+					     orientation	portrait/landscape	aspect-ratio		max/min
+					     device-aspect-ratio			color
+					     color-index				monochrome
+					     resolution					scan
+					     grid
+						media="screen and (max-height:700px)"
+						media="screen and (device-width:500px)"
+		
+				
+		sizes		Este atributo solo se usa con rel="icon"
+					<link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+					<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+					<link rel="icon" href="icon.svg" sizes="any" type="image/svg+xml">
+		
+		-->	
+<link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>	
+<title>Aprende CSS3</title><!DOCTYPE html>
+  
+    <!-- El enlace a Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+        <!--  Use the following CSS rules to specify these families:
+            font-family: 'Nothing You Could Do', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Roboto', sans-serif;
+        -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-85220689-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
+</head>
+<body>
+<header>
+    <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
+    <nav >
+        <ul class="browser">
+            <li><a href="https://bermartinv.github.io/css/index.html">Inicio</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/history.html">Historia</a></li>
+            <li class="active"><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="menu_inferior">
+    <p><a href="https://bermartinv.github.io/css/files/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> ><a href="" class="menu_inf">Navegadores</a></p>
+</div>
+<div class="contenido">
+    <div class="columna1">  
+          <article>
+                         <p><strong>Prefijos de los navegadores</strong>. Este tema es muy importante para que nuestras webs y aplicaciones funcionen bien para todos nuestros usuarios. CSS3 fue un punto de inflexión para los diseñadores web. Los navegadores se fueron poniendo al corriente poco a poco, y no todos fueron incluyendo las nuevas características de CSS al mismo tiempo. Cada navegador evoluciona de una forma distinta, incluso son capaces de crear nuevas características CSS que sólo se pueden usar en su navegador.</p>
+                         <div class="pulsador">
+                         <p>Prefijos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                         </div>
+                         <div class="ejemplo">
+                             <ul>
+                                 <li><img class="navegador_icon" src="https://lh4.googleusercontent.com/-gjxoCu8Fu3c/AAAAAAAAAAI/AAAAAAABWTs/rbrvG-G2yDI/s0-c-k-no-ns/photo.jpg"/> -webkit- <span class="normal">Chrome, Safari, Android, iOs </span></li>
+                                 <li><img class="navegador_icon" src="https://lh6.googleusercontent.com/-fhrLO8TWc5o/AAAAAAAAAAI/AAAAAAAAP4E/qZBNhp3iREM/s0-c-k-no-ns/photo.jpg"/> -moz- <span class="normal">Firefox</span></li>
+                                 <li><img class="navegador_icon" src="https://lh4.googleusercontent.com/-9xC5NXXYk9k/Unti-C6EoXI/AAAAAAAAApk/mWUDJ3OseHk/s90/CU01056D_1.jpg"/> -o- <span class="normal"> Opera</span></li>
+                                 <li><img class="navegador_icon" src="https://i.blogs.es/39e20a/internet_explorer_7/450_1000.png"/> -ms- <span class="normal"> Microsoft Internet Explorerhttp</span></li>
+                             </ul>
+                         </div><br/>
+                        <div class="pulsador">
+                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                         </div>
+                         <div class="ejemplo">
+                             <ul>
+                                 <li>background-image: radial-gradient(#FFF,#000);</li>
+                                 <li>background-image: -webkit-radial-gradient(#FFF,#000);</li>
+                                 <li>background-image: -moz-radial-gradient(#FFF,#000);</li>
+                                 <li>background-image: -o-radial-gradient(#FFF,#000);</li>
+                                 <li>background-image: -ms-radial-gradient(#FFF,#000);</li>
+                             </ul>
+
+                         </div>        
+                  <p><strong>Selector class :  </strong>Añadimos la etiqueta class y un nombre a aquellos elementos que le queramos dar cierta característica. El nombre del class lo podemos encontrar en distintos elementos y puede repetirse entre nuestro código.En nuestro codigo CSS lo definimos con un . y su nombre (<span class="cursiva">.name</span>)</p>
+                  <div class="pulsador">
+                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                  </div>
+                  <div class="ejemplo">
+                  <p data-height="265" data-theme-id="0" data-slug-hash="jVmKMR" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="class name" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/jVmKMR/">class name</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              </div>
+                  <p><strong>Selector id :  </strong>El selector id una vez definido con un nombre, este solo puede aparecer una vez en el código que estamos trabajando.Nos referimos a este id en nuestro código CSS de la forma <span class="cursiva">#name</span></p>
+                <div class="pulsador">
+                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                </div>
+                <div class="ejemplo">
+                             <p data-height="265" data-theme-id="0" data-slug-hash="BQRVWq" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="selector id" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/BQRVWq/">selector id</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                         
+                         </div>
+                  
+                         
+              </article>
+    </div>
+    <div class="columna2">
+        <aside class="enlaces">
+            <p>Mas información : </p>
+            <a href="https://css-tricks.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/csstricks.png"/></a>
+            <a href="https://www.html5rocks.com/es/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/html5rocks.jpg"/></a>
+            <a href="https://www.psd2html.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/responsiveHTMLCSS.jpg"></a>
+            <a href="http://getbootstrap.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/bootstrap.jpg"></a>
+            <a href="http://aprenderaprogramar.es/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/aprenderaprogramar.png"></a>
+        </aside> 
+    </div>
+ 
+       
+</div>
+    <hr>
+<footer>
+        
+<p>&copy;Berana Social Media and Marketing 2016</p><p>Contacto</p><p>Redes Sociales</p>
+</footer>
+<div class="redes">
+        <a href="http://facebook.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/face.png" target="_blank"></a>
+        <a href="https://twitter.com/bermartinv2" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/twitter.jpg" ></a>
+        <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
+        <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a> 
+</div>
+<div id="arrow_top">
+    <img src="../../../../assets/images/arrow_top.png" id="image_arrow_top"/>
+</div>
+</body>

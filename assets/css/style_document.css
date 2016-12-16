@@ -117,8 +117,7 @@ strong{
 }
 .contenido{
     display:flex;
-    flex-wrap:wrap;
-     
+    flex-wrap:wrap;    
 }
 
 /* * * * * * * * COLUMNA1 * * * * * * * * * */
@@ -136,7 +135,7 @@ strong{
 }
 .sub_menu li {
     font-family: 'Roboto', sans-serif;
-    
+    cursor:pointer;
     margin:25px;
     width:170px;
     height:170px;
@@ -166,6 +165,15 @@ strong{
 }
 .valores{
     color:skyblue;
+}
+.navegador_icon{
+    width:50px;
+    height:50px;
+    vertical-align:middle;
+}
+.normal{
+    color:#696969;
+    
 }
 /* * * * * * * * COLUMNA1 * * * * * * * * * */
 /* ESTILO HERRAMIENTAS MEDIDAS RELATIVAS    */
