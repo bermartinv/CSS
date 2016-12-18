@@ -171,10 +171,19 @@ strong{
     height:50px;
     vertical-align:middle;
 }
+
 .normal{
     color:#696969;
-    
 }
+
+code{
+    color:#6495ED;
+}
+
+.ejemplo ul li a{
+    color:#6495ED;
+}
+
 /* * * * * * * * COLUMNA1 * * * * * * * * * */
 /* ESTILO HERRAMIENTAS MEDIDAS RELATIVAS    */
 /* Y MEDIDAS ABSOLUTAS                      */
@@ -427,6 +436,9 @@ footer p{
 
 /* RESPONSIVE */
 @media screen and (max-width:850px){
+    bodt{
+        font-size:1.1rem;
+    }
     .browser{
         flex-direction: column;
         text-align:start;   

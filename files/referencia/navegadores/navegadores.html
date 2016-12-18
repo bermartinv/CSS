@@ -38,7 +38,7 @@
 		-->	
 <link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>	
 <title>Aprende CSS3</title><!DOCTYPE html>
-  
+    <link rel="stylesheet" href="https://bermartinv.github.io/bower_components/normalize-css/normalize.css" />
     <!-- El enlace a Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
@@ -101,24 +101,46 @@
                              </ul>
 
                          </div>        
-                  <p><strong>Selector class :  </strong>Añadimos la etiqueta class y un nombre a aquellos elementos que le queramos dar cierta característica. El nombre del class lo podemos encontrar en distintos elementos y puede repetirse entre nuestro código.En nuestro codigo CSS lo definimos con un . y su nombre (<span class="cursiva">.name</span>)</p>
+                  <p>Cuando se empezó a usar HTML5, los navegadores empezaron a actualizarse para poder usar la nuevas etiquetas, atributos y características. Con el navegador Internet Explorer no fue el caso y fué un rompecabezas para los diseñadores. Había elementos como section, article, header que desconocía el navegador, por lo que la solución fue buscarla en el lenguaje javascript.  Se crearon librerias javascript en las que si el navegador de Internet Explorer no sabía que hacer con ciertos nuevos elementos se le hacía entender con javascript. Para solucionar este problema añadimos en todos nuestro archivos en la parte del head el siguiente script:</p>
+                    <div class="pulsador">
+                         <p>Código<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                    </div>
+                      <div class="ejemplo">
+                      <code>&#60;&#33;&#45;&#45;[if lt IE 9]&#62;<br/>
+                          &#60;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&#62; &#60;&#47;script&#62;<br/>
+                          &#60;&#33;[endif]&#45;&#45;&#62;<br/>
+                          </code>
+	                   
+	                   <p>Con este código conseguimos que los navegadore IE9 e inferiores (IE8,IE7) interprete los nuevos elementos.</p>
+	               </div>
+                 
+                  <p><strong>Modernizr :  </strong>Según la definición que se hace de esta librería Javascript en su página web, es un conjunto de pruebas super rápidas , que se ejecutan a medida que carga la página web, y luego puedes usar los resultados para adaptar la experiencia al usuario. Nos permite detectar que elementos de nuestra web puede ser que no se ejecute igual en cada navegador. Se recomienda usar Firebug para Firefox o herramientas de desarrollador en el caso de Chrome o Explorer, para detectar aquellas etiquetas o elementos que puede que trabajen de distinta manera según el navegador.</p>
                   <div class="pulsador">
-                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
-                  </div>
-                  <div class="ejemplo">
-                  <p data-height="265" data-theme-id="0" data-slug-hash="jVmKMR" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="class name" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/jVmKMR/">class name</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-              </div>
-                  <p><strong>Selector id :  </strong>El selector id una vez definido con un nombre, este solo puede aparecer una vez en el código que estamos trabajando.Nos referimos a este id en nuestro código CSS de la forma <span class="cursiva">#name</span></p>
+                         <p>Pasos a seguir<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha" ></p>
+                    </div>
+                    <div class="ejemplo">
+                        <ul>
+                            <li>Descargar el archivo con el código fuente de <a href="https://modernizr.com/download?setclasses" target="_blank" title="Enlace aquí">Modernizr</a> (seleccionaremos sólo los modulos que vayamos a usar).</li>
+                            <li>Una vez descargado e incorporado al directorio de nuestro trabajo. Incorporaremos en nuestro código, añadiendo el siguiente código en cada head de nuestros archivos.</li>
+                            <code>&#60;script src=”../modernizr.js"&#62;&#60;/script&#62;</code>
+                            <li>Una vez instalado, podemos ejecutar nuestro proyecto. El desarrollador lo que debe hacer es comprobar aquellos elementos que un naveador antiguo puede provocar problemas de visualización. Entonces deberá crear las clases necesarias para que nuestro proyecto se pueda ver en todos los navedares de la misma manera.</li>
+                        </ul>   
+	                  
+                    </div>
+                    
+                 <p><strong>normalize.css : </strong> es un fichero CSS cuyo peso es insignificante en comparación a otras herramientas que puede tener nuestro proyecto. La finalidad es que nuestro proyecto se vea de la misma forma se ejecute en un navegador u otro.</p>
+                 
                 <div class="pulsador">
-                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
-                </div>
-                <div class="ejemplo">
-                             <p data-height="265" data-theme-id="0" data-slug-hash="BQRVWq" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="selector id" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/BQRVWq/">selector id</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                         
-                         </div>
-                  
+                         <p>Pasos a seguir<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha" ></p>
+                    </div>
+                    <div class="ejemplo">
+                        <ul>
+                            <li>Descargar el archivo con el código fuente de <a href="https://github.com/necolas/normalize.css/" target="_blank" title="Enlace aquí">normalize.css</a>.</li>
+                            <li>Una vez descargado e incorporado al directorio de nuestro trabajo. Incorporaremos en nuestro código, añadiendo el siguiente código en cada head de nuestros archivos.</li>
+                            <code>&#60;link rel="stylesheet" href="normalize.css" /&#62;</code>
+                        </ul>   
+	                  
+                    </div>         
                          
               </article>
     </div>
@@ -147,6 +169,6 @@
         <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a> 
 </div>
 <div id="arrow_top">
-    <img src="../../../../assets/images/arrow_top.png" id="image_arrow_top"/>
+    <img src="https://bermartinv.github.io/css/assets/images/arrow_top.png" id="image_arrow_top"/>
 </div>
 </body>
