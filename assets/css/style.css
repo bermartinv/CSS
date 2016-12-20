@@ -175,20 +175,6 @@ body{
     }
     .menu li a{
         font-family: 'Roboto', sans-serif;
-        width:75px;
-        height:25px;
-        color:darkgreen;
-        margin:9px;
-        display:inline-block;
-        float:left;
-        font-size: 1.0rem;
-        border: 3px double green;
-        border-radius: 130px;
-        padding: 40px 10px;
-        text-align:center;
-}
-    .menu li:nth-child(4)  a{
-        font-family: 'Roboto', sans-serif;
         width:95px;
         height:25px;
         color:darkgreen;
@@ -201,6 +187,7 @@ body{
         padding: 40px 10px;
         text-align:center;
 }
+
     .menu li:hover a{
         animation:none;
         
@@ -208,12 +195,15 @@ body{
 }
 @media screen and (max-width:520px){
     body{
-        background:lightgrey;
+        
+       
     }
     .portada{
         height:100%;
         width:100%;
-        background:lightgrey;
+        background-image:url('../../assets/images/valencia.svg');
+        
+       
     }
     .menu li a{
         width:50px;

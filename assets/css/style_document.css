@@ -358,6 +358,41 @@ input:focus{
 .lanzado{
     border:solid thin green;
 }
+.parte3{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    margin-left:20px;
+    
+}
+.parte3 p{
+    color: #6495ED !important;
+    font-size:1.1rem;
+}
+.parte3 p::first-letter{
+    font-size:1.1rem;
+}
+#codigo_html{
+    border:solid thin black;
+    color:#6495ED;
+    font-size:1.1rem;
+    display: none;
+    height:300px;
+    width: 400px;
+    margin:20px;
+    padding:10px;
+    /*position: absolute;*/
+}
+#copy_paste{
+    position: relative;
+    width:50px;
+    height:50px;
+    left:340px;
+    cursor: pointer;
+}
+
 /* * * * * * * * * * * * * * * * * * * */
 /* * * F L E C H A   A R R I B A * * * */
 /* * * * * * * * * * * * * * * * * * * */
