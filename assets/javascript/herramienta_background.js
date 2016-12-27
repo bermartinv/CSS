@@ -523,7 +523,9 @@ function herramienta_background(){
         
         clip_html.innerHTML = '';
         
-        position.innerHTML = '';
+        position_html.innerHTML = '';
+        
+        codigo_html.style.display = 'none';
         
     }
     
