@@ -1,0 +1,82 @@
+.none:hover{
+  cursor:pointer;
+  border-style:none;
+  border-color: cornflowerblue;
+}
+.hidden:hover{
+  cursor:pointer;
+  border-style: hidden;
+  border-color: cornflowerblue;
+}
+.dotted:hover{
+  cursor:pointer;
+  border-style: dotted;
+  border-color: cornflowerblue;
+}
+.dashed:hover{
+  cursor:pointer;
+  border-style:dashed;
+  border-color: cornflowerblue;
+}
+.solid:hover{
+  cursor:pointer;
+  border-style:solid;
+  border-color: cornflowerblue;
+}
+.double:hover{
+  cursor:pointer;
+  border-style:double;
+  border-color: cornflowerblue;
+}
+.groove:hover{
+  cursor:pointer;
+  border-style:groove;
+  border-color: cornflowerblue;
+}
+.ridge:hover{
+  cursor:pointer;
+  border-style:ridge;
+  border-color: cornflowerblue;
+}
+.inset:hover{
+  cursor:pointer;
+  border-style:inset;
+  border-color: cornflowerblue;
+}
+.outset:hover{
+  cursor:pointer;
+  border-style:outset;
+  border-color: cornflowerblue;
+}
+.thin:hover{
+  cursor:pointer;
+  border: solid thin cornflowerblue;
+}
+.medium:hover{
+  cursor:pointer;
+  border: solid medium cornflowerblue;
+}
+.thick:hover{
+  cursor:pointer;
+  border: solid thick cornflowerblue;
+}
+.btlr:hover{
+  cursor:pointer;
+  border:solid thick cornflowerblue;
+  border-top-left-radius: 20px;
+}
+.btrr:hover{
+  cursor:pointer;
+  border:solid thick cornflowerblue;
+  border-top-right-radius:20px;
+}
+.bbrr:hover{
+  cursor:pointer;
+  border:solid thick cornflowerblue;
+  border-bottom-right-radius: 20px;
+}
+.bblr:hover{
+  cursor:pointer;
+  border:solid thick cornflowerblue;
+  border-bottom-left-radius: 20px;
+}

@@ -12,7 +12,8 @@
 <link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
 <link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
 <link rel="stylesheet" href="https://bermartinv.github.io/bower_components/normalize-css/normalize.css" />
-	<!-- Para más información visitar la página: http://www.w3schools.com/tags/tag_link.asp
+<link rel="stylesheet" href="../../../assets/css/bordes.css" type="text/css"/>
+<!-- Para más información visitar la página: http://www.w3schools.com/tags/tag_link.asp
 		href		Indica la dirección del link
 		hreflang	Indica el idioma del link, usa los mismo códigos que lang
 		media		Dispositivos:all	todos		aural		auditivo
@@ -98,7 +99,17 @@
                             <li>border-left-width</li>
                         </ul>
                       </div><br/><br/>
-
+                <p> Además podemos definir el ancho del borde con palabras ya definidas</p>
+                <div class="pulsador">
+                       <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                      </div>
+                      <div class="ejemplo">
+                          <ul>
+                              <li class='thin'>thin</li>
+                              <li class='medium'>medium</li>
+                              <li class='thick'>thick</li>
+                          </ul>
+                        </div><br/><br/>
                 <p><strong>border-color: </strong> Especificamos el color del borde.
                   Al igual que la característica anterior podemos especificar
                   que borde del contenedor queremos darle color.</p>
@@ -130,6 +141,81 @@
                                <li>border-left-style</li>
                            </ul>
                          </div><br/><br/>
+                         <div class="pulsador">
+                                <p>Tipo de estilos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                               </div>
+                               <div class="ejemplo">
+                                   <ul>
+                                       <li class="none">none</li>
+                                       <li class="hidden">hidden</li>
+                                       <li class="dotted">dotted</li>
+                                       <li class="dashed">dashed</li>
+                                       <li class="solid">solid</li>
+                                       <li class="double">double</li>
+                                       <li class="groove">groove</li>
+                                       <li class="ridge">ridge</li>
+                                       <li class="inset">inset</li>
+                                       <li class="outset">outset</li>
+                                   </ul>
+                                 </div><br/><br/>
+                  <p><strong>La forma abreviada : </strong><span>
+                    &#60;border-width> &#60;border-color> &#60;border-style></span></p>
+                 <p><strong>border-radius : </strong> nos permite redondear las esquinas
+                   de los bordes. Anteriormente que existiera esta característica
+                   CSS los diseñadores web tenían que agregar las esquinas redondeadas
+                   con imagenes lo que hacía más costoso este diseño redondeado de los
+                   bordes.</p>
+                   <p> Podemos definir todos los bordes de igual tamaño en ese caso sólo
+                     pondremos una medida de nuestros bordes. </p>
+                   <p>Aunque también se puede definir una medida para cada esquina. </p>
+                   <div class="pulsador">
+                          <p>Orden definición bordes<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                         </div>
+                         <div class="ejemplo">
+                             <ul>
+                                 <li>superior-izquierda</li>
+                                 <li>superior-derecha</li>
+                                 <li>inferior-derecha</li>
+                                 <li>inferior-izquierda</li>
+
+                             </ul>
+                           </div><br/><br/>
+                    <p>También se pueden definir con dos valores. En cuyo caso,
+                      el primer valor sería para el borde superior-izquierda e
+                      inferior-derecha y el otro valor sería para superior-derecha
+                      e inferior-izquierda.</p>
+                    <p>Incluso podriamos definir sólo tres valores.En este caso,
+                        el primer valor define el borde superior-izquierda, el segundo
+                        valor define dos bordes el superior-derecha y el inferior-izquierda
+                         y el último valor define el borde inferior-derecha.</p>
+                    <p>Se puede ir más lejos y en vez de usar la forma abreviada podriamos definir cada valor por separado, indicando en cada momento a que lado del borde va asignado.</p>
+                    <div class="pulsador">
+                           <p>Definición bordes<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                          </div>
+                          <div class="ejemplo">
+                              <ul>
+                                  <li class='btlr'>border-top-left-radius</li>
+                                  <li class='btrr'>border-top-right-radius</li>
+                                  <li class='bbrr'>border-bottom-right-radius</li>
+                                  <li class='bblr'>border-bottom-left-radius</li>
+
+                              </ul>
+                            </div><br/><br/>
+          <p>Aún se puede rizar más el rizo en el caso de los bordes y es que se
+             pueden crear esquinas asimétricas y no serán circulares, si no
+             elípticas. Si a los bordes anteriormente mencionados le damos dos
+             valores se creará una esquina elíptica. También está la forma
+             abreviada en la cual se tendrá que separar el valor de los radios
+             horizontal y vertical con una barra inclinada.</p>
+          <p>Recordad que se pueden usar distintas unidades de medida para indicar el tamaño de los bordes que queremos darle.</p>
+             <div class="pulsador">
+                    <p>Códigos de ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                   </div>
+                   <div class="ejemplo">
+                     <p data-height="265" data-theme-id="0" data-slug-hash="MJVBRK" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="border" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/MJVBRK/">border</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                     </div><br/><br/>
+             <p><a class="menu_inf" title="Pulse aqui" href="https://bermartinv.github.io/css/files/herramientas/border/herramienta_border.html">Herramienta para ver como trabajan las características de border.</a></p>
                </article>
     </div>
     <div class="columna2">
