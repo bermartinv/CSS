@@ -57,7 +57,7 @@
   ga('create', 'UA-85220689-1', 'auto');
   ga('send', 'pageview');
 </script>
-<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
+<script type="text/javascript" async src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
 </head>
 <body>
 <header>
@@ -158,8 +158,8 @@
                                        <li class="outset">outset</li>
                                    </ul>
                                  </div><br/><br/>
-                  <p><strong>La forma abreviada : </strong><span>
-                    &#60;border-width> &#60;border-color> &#60;border-style></span></p>
+                  <p><strong>La forma abreviada : </strong><code>
+                    &#60;border-width> &#60;border-color> &#60;border-style></code></p>
                  <p><strong>border-radius : </strong> nos permite redondear las esquinas
                    de los bordes. Anteriormente que existiera esta característica
                    CSS los diseñadores web tenían que agregar las esquinas redondeadas
@@ -216,6 +216,57 @@
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                      </div><br/><br/>
              <p><a class="menu_inf" title="Pulse aqui" href="https://bermartinv.github.io/css/files/herramientas/border/herramienta_border.html">Herramienta para ver como trabajan las características de border.</a></p>
+          <p>Tenemos también la propiedad <strong>outline</strong>, la cual nos dibuja también un
+             borde alrededor de un elemento pero no podemos especificar ninguno
+              de los bordes además no pertenece al modelo de caja por lo que no
+               afectará a la posición del elemento ni a los adyacentes. Se puede
+               definir con su forma abreviada o con cada característica como sucedía
+                con <code>border</code>.</p>
+               <div class="pulsador">
+                      <p>Código de ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                     </div>
+                     <div class="ejemplo">
+                       <p data-height="265" data-theme-id="0" data-slug-hash="zNjEYj" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="outline" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/zNjEYj/">outline</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                       </div><br/><br/>
+          <p><strong>border-image : </strong> Es otra característica que podemos definir a nuestros bordes. Está definido por tres elementos</p>
+          <code> border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30% repeat;</code></br>
+          <code>  border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30 round;</code></br>
+          <code> border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30 20 15 22 stretch;</code></br>
+          <br/><br/>
+          <div class="pulsador">
+                 <p>Elementos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                </div>
+                <div class="ejemplo">
+                      <ul>
+                          <li>url('dirección de la imagen')</li>
+                          <li>medida : se puede poner las cuatro medidas o una. La unidad de medida es % (se puede especificar o no)</li>
+                          <li>estilo del borde
+                            <ul>
+                              <li>repeat</li>
+                              <li>round</li>
+                              <li>stretch</li>
+                              <li>space</li>
+                            </ul>
+                         </li>
+                      </ul>
+                    </div><br/><br/>
+          <p>También se puede especificar de una manera independiente cada característica</p>
+          <div class="pulsador">
+                 <p>Elementos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                </div>
+                <div class="ejemplo">
+                      <ul>
+                          <li>border-image-source: url ('dirección imagen')</li>
+                          <li>border-image-width : medida de ancho</li>
+                          <li>border-image-outset : especifica la cantidad por la cual el área de imagen de borde se extiende más allá de la caja de borde</li>
+                          <li>border-image-repeat : como se repite la imagen sobre el borde (round, repeat, stretch, space)</li>
+                          <li>border-image-slice : como se corta la imagen del borde.</p>
+                      </ul>
+                    </div><br/><br/>
+                    <p>Mas informacion :</p>
+                    <p><a class="menu_inf" title="Pulse aqui" href='https://www.w3.org/TR/css3-background/#border-radius' target="_blank">Especificación w3c border-radius</a></p>
+                    <p><a class = "menu_inf" title = "Pulse aqui" href='https://www.w3.org/TR/css3-background/#border-images' target="_blank"><p> Especificación w3c border-images</a></p>
                </article>
     </div>
     <div class="columna2">

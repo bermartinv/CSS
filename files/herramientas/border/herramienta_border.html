@@ -79,12 +79,153 @@
     <div class="parte1">
           <article>
            <div class="datos">
-   <form name='formulario_background' id='formulario'>
+   <form name='formulario_border' id='formulario'>
     <p></p>
-    <label>background-color</label>
-    <input type="color" name="color" id="color" value="#ffffff" size="50"/>
+    <label>Que tipo de borde desea formar:</label></br>
+    <input type="radio" name="border" id="border" value="borderRecto" /> Bordes rectos  </br>
+    <input type="radio" name="border" id="border" value = "bordeRadius"/> Bordes circulares </br>
+    <input type="radio" name="border" id="border" value = "eliptica"/> Bordes elípticos</br>
     <br/>
+<div  class="background-position">
+  <label>Elija el ancho de los bordes</label></br>
+  <input name="color" id="color" value="1color" type="radio">Todos los bordes mismo color</br>
+  <input name="color" id="color" value="4color" type="radio">Todos los bordes ditinto color</br>
+  <div id="1Color">
+    <label>Defina color</label>
+    <input type="color" name="color" id="color"/> <br/>
+  </div>
+  <div id="4Colores">
+    <label>Defina cada borde</label></br>
+    <label>Lado superior izquierda</label> <input type="color" name="colorTopLeft" id="colorTopLeft"/> <br/>
+    <label>Lado superior derecha</label> <input type="color" name="colorTopRight" id="colorTopRight"/> <br/>
+    <label>Lado inferior derecha</label> <input type="color" name="colorBottomRight" id="colorBottomRight"/> <br/>
+    <label>Lado inferior izquierda</label> <input type="color" name="colorBottomLeft" id="colorBottomLeft"/> <br/>
+  </div>
+</div>
+<div  class="background-position">
+  <label>Elija el estilo de los bordes</label></br>
+  <input name="estilo" id="estilo" value="1estilo" type="radio">Todos los bordes mismo estilo</br>
+  <input name="estilo" id="estilo" value="4estilo" type="radio">Todos los bordes ditinto estilo</br>
 
+  <div id="1Estilo">
+    <label>Defina que estilo quiere</label>
+      <select>
+        <option value="none">None</option>
+        <option value="hidden">Hidden</option>
+        <option value="dotted">Dotted</option>
+        <option value="dashed">Dashed</option>
+        <option value="solid">Solid</option>
+        <option value="double">Double</option>
+        <option value="groove">Groove</option>
+        <option value="ridge">Ridge</option>
+        <option value="inset">Inset</option>
+        <option value="outset">Outset</option>
+      </select>
+    </div>
+  <div id="4Estilo">
+    <label>Defina que estilo quiere para cada lado</label></br>
+    <label>Lado superior izquierda</label>
+    <select>
+      <option value="none">None</option>
+      <option value="hidden">Hidden</option>
+      <option value="dotted">Dotted</option>
+      <option value="dashed">Dashed</option>
+      <option value="solid">Solid</option>
+      <option value="double">Double</option>
+      <option value="groove">Groove</option>
+      <option value="ridge">Ridge</option>
+      <option value="inset">Inset</option>
+      <option value="outset">Outset</option>
+    </select></br>
+    <label>Lado superior derecha</label>
+    <select>
+      <option value="none">None</option>
+      <option value="hidden">Hidden</option>
+      <option value="dotted">Dotted</option>
+      <option value="dashed">Dashed</option>
+      <option value="solid">Solid</option>
+      <option value="double">Double</option>
+      <option value="groove">Groove</option>
+      <option value="ridge">Ridge</option>
+      <option value="inset">Inset</option>
+      <option value="outset">Outset</option>
+    </select></br>
+    <label>Lado inferior izquierda</label>
+    <select>
+      <option value="none">None</option>
+      <option value="hidden">Hidden</option>
+      <option value="dotted">Dotted</option>
+      <option value="dashed">Dashed</option>
+      <option value="solid">Solid</option>
+      <option value="double">Double</option>
+      <option value="groove">Groove</option>
+      <option value="ridge">Ridge</option>
+      <option value="inset">Inset</option>
+      <option value="outset">Outset</option>
+    </select></br>
+    <label>Lado inferior izquierda</label>
+    <select>
+      <option value="none">None</option>
+      <option value="hidden">Hidden</option>
+      <option value="dotted">Dotted</option>
+      <option value="dashed">Dashed</option>
+      <option value="solid">Solid</option>
+      <option value="double">Double</option>
+      <option value="groove">Groove</option>
+      <option value="ridge">Ridge</option>
+      <option value="inset">Inset</option>
+      <option value="outset">Outset</option>
+    </select>
+  </div>
+</div>
+<div  class="background-position"/>
+  <label>Elija el ancho de los bordes</label></br>
+  <input name="width" id="width" value="1width" type="radio">Todos los bordes mismo ancho</br>
+  <input name="width" id="width" value="4width" type="radio">Todos los bordes ditinto ancho</br>
+  <div id="1width">
+    <label>Ancho para todos los lados<input type="range" min="0" max="30" id="range1Width"/><spam id="valorRange1Width"></spam>
+  </div>
+  <div id="4width">
+    <label>Ancho Superior Izquierdo</label>
+      <input type="range" min="0" max="30" id="rangeTopLeftWidth"/>
+      <spam id="valorRangeTopLeftWidth"></spam></br>
+    <label>Ancho Superior Derecho</label></br>
+      <input type="range" min="0" max="30" id="rangeTopRightWidth"/>
+      <spam id="valorRangeTopRightWidth"></spam></br>
+    <label>Ancho Inferior Derecho</label></br>
+      <input type="range" min="0" max="30" id="rangeBottomRightwidth"/>
+      <spam id="valorRangeBottomRightWidth"></spam></br>
+    </label>
+    <label>Ancho Inferior Izquierdo</label></br>
+      <input type="range" min="0" max="30" id="rangeBottomLeftWidth"/>
+      <spam id="valorRangeBottomLeftWidth"></spam></br>
+  </div>
+</div>
+<div  class="background-position"/>
+<label>Elija el radio de los bordes</label></br>
+<input name="width" id="width" value="1radius" type="radio">Todos los bordes mismo radio</br>
+<input name="width" id="width" value="4radius" type="radio">Todos los bordes ditinto radio</br>
+<div id="1radius">
+  <label>Radio para todos los lados</label>
+    <input type="range" min="0" max="30" id="range1Width"/>
+    <spam id="valorRange1Width"></spam>
+</div>
+<div id="4radius">
+  <label>Radio Superior Izquierdo</label></br>
+    <input type="range" min="0" max="30" id="rangeTopLeftRadius"/>
+    <spam id="valorRangeTopLeftRadius"></spam></br>
+  <label>Radio Superior Derecho</label></br>
+    <input type="range" min="0" max="30" id="rangeTopRightRadius"/>
+    <spam id="valorRangeTopRightRadius"></spam></br>
+  <label>Radio Inferior Derecho</label></br>
+    <input type="range" min="0" max="30" id="rangeBottomRightRadius"/>
+    <spam id="valorRangeBottomRightRadius"></spam></br>
+  </label>
+  <label>Radio Inferior Izquierdo</label></br>
+    <input type="range" min="0" max="30" id="rangeBottomLeftRadius"/>
+    <spam id="valorRangeBottomLeftRadius"></spam></br>
+</div>
+</div>
     <label>background-image</label>
     <select id="file" name="file">
         <option value="">Tamaño de imagen</option>
