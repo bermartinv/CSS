@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
 <link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
 <link rel="stylesheet" href="https://bermartinv.github.io/bower_components/normalize-css/normalize.css" />
+<link rel="stylesheet" href="../../../assets/css/herramienta_border.css"/>
 	<!-- Para más información visitar la página: http://www.w3schools.com/tags/tag_link.asp
 		href		Indica la dirección del link
 		hreflang	Indica el idioma del link, usa los mismo códigos que lang
@@ -38,7 +39,7 @@
 
 		-->
 <link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
-<title>Aprende CSS3</title><!DOCTYPE html>
+<title>Aprende CSS3 - Herramienta border</title><!DOCTYPE html>
 
     <!-- El enlace a Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
@@ -48,16 +49,7 @@
             font-family: 'Indie Flower', cursive;
             font-family: 'Roboto', sans-serif;
         -->
-    <script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-85220689-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<script type="text/javascript" src="../../../assets/javascript/herramienta_background.js"></script>
+
 </head>
 <body>
 <header>
@@ -81,12 +73,12 @@
            <div class="datos">
    <form name='formulario_border' id='formulario'>
     <p></p>
-    <label>Que tipo de borde desea formar:</label></br>
+    <label>Que tipo de borde desea formar:</label></br></br>
     <input type="radio" name="border" id="border" value="borderRecto" /> Bordes rectos  </br>
     <input type="radio" name="border" id="border" value = "bordeRadius"/> Bordes circulares </br>
     <input type="radio" name="border" id="border" value = "eliptica"/> Bordes elípticos</br>
     <br/>
-<div  class="background-position">
+<div  class="background-position" id="color_border">
   <label>Elija el ancho de los bordes</label></br>
   <input name="color" id="color" value="1color" type="radio">Todos los bordes mismo color</br>
   <input name="color" id="color" value="4color" type="radio">Todos los bordes ditinto color</br>
@@ -102,7 +94,7 @@
     <label>Lado inferior izquierda</label> <input type="color" name="colorBottomLeft" id="colorBottomLeft"/> <br/>
   </div>
 </div>
-<div  class="background-position">
+<div  class="background-position" id="estilo_border">
   <label>Elija el estilo de los bordes</label></br>
   <input name="estilo" id="estilo" value="1estilo" type="radio">Todos los bordes mismo estilo</br>
   <input name="estilo" id="estilo" value="4estilo" type="radio">Todos los bordes ditinto estilo</br>
@@ -178,7 +170,7 @@
     </select>
   </div>
 </div>
-<div  class="background-position"/>
+<div  class="background-position" id="ancho">
   <label>Elija el ancho de los bordes</label></br>
   <input name="width" id="width" value="1width" type="radio">Todos los bordes mismo ancho</br>
   <input name="width" id="width" value="4width" type="radio">Todos los bordes ditinto ancho</br>
@@ -201,10 +193,10 @@
       <spam id="valorRangeBottomLeftWidth"></spam></br>
   </div>
 </div>
-<div  class="background-position"/>
+<div  class="background-position" id="redondos">
 <label>Elija el radio de los bordes</label></br>
-<input name="width" id="width" value="1radius" type="radio">Todos los bordes mismo radio</br>
-<input name="width" id="width" value="4radius" type="radio">Todos los bordes ditinto radio</br>
+<input name="width" id="width" value="1radius" type="radio"/>Todos los bordes mismo radio</br>
+<input name="width" id="width" value="4radius" type="radio"/>Todos los bordes ditinto radio</br>
 <div id="1radius">
   <label>Radio para todos los lados</label>
     <input type="range" min="0" max="30" id="range1Width"/>
@@ -226,115 +218,35 @@
     <spam id="valorRangeBottomLeftRadius"></spam></br>
 </div>
 </div>
-    <label>background-image</label>
-    <select id="file" name="file">
-        <option value="">Tamaño de imagen</option>
-        <option value="1">100 X 100 </option>
-        <option value="2">200 X 200</option>
-        <option value="3">300 X 300</option>
-        <option value="4">400 X 400</option>
-        <option value="5">500 X 500</option>
-        <option value="6">600 X 600</option>
-        <option value="7">700 X 700</option>
-
-    </select>
-    <br/>
-
-    <label>background-repeat</label>
-    <select id="repeat" name="repeat">
-        <option value="none">Opciones background-repeat</option>
-        <option value="repeat">repeat</option>
-        <option value="repeat-x">repeat-x</option>
-        <option value="repeat-y">repeat-y</option>
-        <option value="no-repeat">no-repeat</option>
-        <option value="inherit">inherit</option>
-    </select>
-    <br/>
-
-    <div class="background-position">
-     <label>background-position</label><br/>
-       <input type="radio" name="position" value="keyword" />Palabras clave
-       <input type="radio" name="position" value="%" />%
-       <input type="radio" name="position" value="posicion" />Posicion
-       <input type="radio" name="position" value="initial" />Initial
-       <input type="radio" name="position" value="inherit" />Inherit<br/>
-       <div>
-       <select id="position_keyword" name="position_keyword">
-        <option value="">Opciones Palabras clave</option>
-        <option value="left_top">left top</option>
-        <option value="left_cener">left center</option>
-        <option value="left_bottom">left bottom</option>
-        <option value="right_top">right top</option>
-        <option value="right_center">right center</option>
-        <option value="right_bottom">right bottom</option>
-        <option value="center_top">center top</option>
-        <option value="center_center">center center</option>
-        <option value="center_bottom">center bottom</option>
-    </select>
-       </div>
-       <div>
-     <label>Valor X en %</label>
-      <input type="number" max="100" min="0" id="positionX" name="positionX" value="0" />
-      </div>
-      <div>
-    <label>Valor Y en %</label>
-      <input type="number" max="100" min="0" id="positionY" name="positionY" value="0"/>
-       </div>
-       <div>
-       <label>Valor X en px</label>
-      <input type="number"  min="0" id="positionX_px" name="positionX_px" maxlength="5" value="0"/>
-       </div>
-       <div>
-    <label>Valor Y en px</label>
-      <input type="number"  min="0" maxlength="5"  id="positionY_px" name="positionY_px" value="0"/>
-       </div>
-
-     <br/>
-    </div>
-
-      <label>background-attachment</label>
-      <select id="attachment" name="attachment">
-        <option value="">Opciones background-attachment</option>
-        <option value="scroll">scroll</option>
-        <option value="fixed">fixed</option>
-        <option value="local">local</option>
-        <option value="inherit">inherit</option>
-    </select>
-    <br/>
-
-    <label>background-size</label>
-      <select id="size" name="size">
-        <option value="">Opciones background-size</option>
-        <option value="auto">auto</option>
-        <option value="cover">cover</option>
-        <option value="contain">contain</option>
-    </select>
-    <br/>
-
-    <label>background-origin</label>
-      <select id="origin" name="origin">
-        <option value="">Opciones background-origin</option>
-        <option value="border-box">border-box</option>
-        <option value="padding-box">padding-box</option>
-        <option value="content-box">content-box</option>
-        <option value="inherit">inherit</option>
-    </select>
-    <br/>
-
-    <label>background-clip</label>
-      <select id="clip" name="clip">
-        <option value="">Opciones background-origin</option>
-        <option value="border-box">border-box</option>
-        <option value="padding-box">padding-box</option>
-        <option value="content-box">content-box</option>
-        <option value="inherit">inherit</option>
-    </select>
-    <br/>
+<div  class="background-position" id="elipses">
+<label>Elija el valor de los bordes elípticios</label></br>
+<label>Radio Superior Izquierdo</label></br>
+  <input type="range" min="0" max="30" id="rangeTopLeft1Radius"/>
+  <spam id="valorRangeTopLeft1Radius"></spam></br>
+  <input type="range" min="0" max="30" id="rangeTopLeft2Radius"/>
+  <spam id="valorRangeTopLeft2Radius"></spam></br>
+<label>Radio Superior Derecho</label></br>
+  <input type="range" min="0" max="30" id="rangeTopRight1Radius"/>
+  <spam id="valorRangeTopRight1Radius"></spam></br>
+  <input type="range" min="0" max="30" id="rangeTopRight2Radius"/>
+  <spam id="valorRangeTopRight2Radius"></spam></br>
+<label>Radio Inferior Derecho</label></br>
+  <input type="range" min="0" max="30" id="rangeBottomRight1Radius"/>
+  <spam id="valorRangeBottomRight1Radius"></spam></br>
+  <input type="range" min="0" max="30" id="rangeBottomRight2Radius"/>
+  <spam id="valorRangeBottomRight2Radius"></spam></br>
+<label>Radio Inferior Izquierdo</label></br>
+  <input type="range" min="0" max="30" id="rangeBottomLeft1Radius"/>
+  <spam id="valorRangeBottomLeft1Radius"></spam></br>
+  <input type="range" min="0" max="30" id="rangeBottomLeft2Radius"/>
+  <spam id="valorRangeBottomLeft2Radius"></spam></br>
+</div>
+  <div id="botones">
      <input type="reset" name ="reset" value="Reset">
      <input type="button" value="Código HTML" name="codigo_html">
+  </div>
     </form>
 
-</div>
 
 
           </article>
@@ -378,4 +290,16 @@
 <div id="arrow_top">
     <img src="../../../../assets/images/arrow_top.png" id="image_arrow_top"/>
 </div>
+
+<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-85220689-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="../../../assets/javascript/herramienta_border.js"></script>
+
 </body>
