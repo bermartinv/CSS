@@ -88,10 +88,10 @@
   </div>
   <div id="4Colores">
     <label>Defina cada borde</label></br>
-    <label>Lado superior izquierda</label> <input type="color" name="colorFour" id="colorTopLeft"/> <br/>
-    <label>Lado superior derecha</label> <input type="color" name="colorFour" id="colorTopRight"/> <br/>
-    <label>Lado inferior derecha</label> <input type="color" name="colorFour" id="colorBottomRight"/> <br/>
-    <label>Lado inferior izquierda</label> <input type="color" name="colorFour" id="colorBottomLeft"/> <br/>
+    <label>Lado superior </label> <input type="color" name="colorFour" id="colorTop"/> <br/>
+    <label>Lado derecho </label> <input type="color" name="colorFour" id="colorRight"/> <br/>
+    <label>Lado inferior </label> <input type="color" name="colorFour" id="colorBottom"/> <br/>
+    <label>Lado izquierdo </label> <input type="color" name="colorFour" id="colorLeft"/> <br/>
   </div>
 </div>
 <div  class="background-position" id="estilo_border">
@@ -101,7 +101,7 @@
 
   <div id="1Estilo">
     <label>Defina que estilo quiere</label>
-      <select>
+      <select name="estiloAll">
         <option value="none">None</option>
         <option value="hidden">Hidden</option>
         <option value="dotted">Dotted</option>
@@ -116,8 +116,8 @@
     </div>
   <div id="4Estilo">
     <label>Defina que estilo quiere para cada lado</label></br>
-    <label>Lado superior izquierda</label>
-    <select>
+    <label>Lado superior </label>
+    <select name='estiloFour'>
       <option value="none">None</option>
       <option value="hidden">Hidden</option>
       <option value="dotted">Dotted</option>
@@ -129,8 +129,8 @@
       <option value="inset">Inset</option>
       <option value="outset">Outset</option>
     </select></br>
-    <label>Lado superior derecha</label>
-    <select>
+    <label>Lado derecho</label>
+    <select name='estiloFour'>
       <option value="none">None</option>
       <option value="hidden">Hidden</option>
       <option value="dotted">Dotted</option>
@@ -142,8 +142,8 @@
       <option value="inset">Inset</option>
       <option value="outset">Outset</option>
     </select></br>
-    <label>Lado inferior izquierda</label>
-    <select>
+    <label>Lado inferior </label>
+    <select name='estiloFour'>
       <option value="none">None</option>
       <option value="hidden">Hidden</option>
       <option value="dotted">Dotted</option>
@@ -155,8 +155,8 @@
       <option value="inset">Inset</option>
       <option value="outset">Outset</option>
     </select></br>
-    <label>Lado inferior izquierda</label>
-    <select>
+    <label>Lado izquierdo</label>
+    <select name='estiloFour'>
       <option value="none">None</option>
       <option value="hidden">Hidden</option>
       <option value="dotted">Dotted</option>
@@ -175,70 +175,72 @@
   <input name="width" id="width" value="1width" type="radio">Todos los bordes mismo ancho</br>
   <input name="width" id="width" value="4width" type="radio">Todos los bordes ditinto ancho</br>
   <div id="1width">
-    <label>Ancho para todos los lados<input type="range" min="0" max="30" id="range1Width"/><spam id="valorRange1Width"></spam>
+    <label>Ancho para todos los lados</label>
+    <input type="range"  name="widthAll" min="0" max="30" value="0" id="range1Width"/>
+    <spam id="valorRange1Width"></spam>
   </div>
   <div id="4width">
-    <label>Ancho Superior Izquierdo</label>
-      <input type="range" min="0" max="30" id="rangeTopLeftWidth"/>
-      <spam id="valorRangeTopLeftWidth"></spam></br>
-    <label>Ancho Superior Derecho</label></br>
-      <input type="range" min="0" max="30" id="rangeTopRightWidth"/>
+    <label>Ancho Superior </label></br>
+    <input type="range" min="0" max="30" value="0" id="rangeTopWidth" name="widthFour"/>
+    <spam id="valorRangeTopLeftWidth"></spam></br>
+    <label>Ancho Derecho</label></br>
+      <input type="range" min="0" max="30" value="0" id="rangeRightWidth" name="widthFour"/>
       <spam id="valorRangeTopRightWidth"></spam></br>
-    <label>Ancho Inferior Derecho</label></br>
-      <input type="range" min="0" max="30" id="rangeBottomRightwidth"/>
+    <label>Ancho Inferior</label></br>
+      <input type="range" min="0" max="30" value="0" id="rangeBottomwidth" name="widthFour"/>
       <spam id="valorRangeBottomRightWidth"></spam></br>
     </label>
     <label>Ancho Inferior Izquierdo</label></br>
-      <input type="range" min="0" max="30" id="rangeBottomLeftWidth"/>
-      <spam id="valorRangeBottomLeftWidth"></spam></br>
+      <input type="range" min="0" max="30" value="0" id="rangeLeftWidth" name="widthFour"/>
+      <spam id="valorRangeLeftWidth"></spam></br>
   </div>
 </div>
 <div  class="background-position" id="redondos">
 <label>Elija el radio de los bordes</label></br>
-<input name="width" id="width" value="1radius" type="radio"/>Todos los bordes mismo radio</br>
-<input name="width" id="width" value="4radius" type="radio"/>Todos los bordes ditinto radio</br>
+<input name="radioStyle" id="width" value="1radius" type="radio"/>Todos los bordes mismo radio</br>
+<input name="radioStyle" id="width" value="4radius" type="radio"/>Todos los bordes ditinto radio</br>
 <div id="1radius">
   <label>Radio para todos los lados</label>
-    <input type="range" min="0" max="30" id="range1Width"/>
+    <input type="range" min="0" max="30" value="0" id="range1Width" name="radioAll"/>
     <spam id="valorRange1Width"></spam>
 </div>
 <div id="4radius">
   <label>Radio Superior Izquierdo</label></br>
-    <input type="range" min="0" max="30" id="rangeTopLeftRadius"/>
+    <input type="range" min="0" max="30" value="0" id="rangeTopLeftRadius" name="radioFour"/>
     <spam id="valorRangeTopLeftRadius"></spam></br>
   <label>Radio Superior Derecho</label></br>
-    <input type="range" min="0" max="30" id="rangeTopRightRadius"/>
+    <input type="range" min="0" max="30" value="0" id="rangeTopRightRadius" name="radioFour"/>
     <spam id="valorRangeTopRightRadius"></spam></br>
   <label>Radio Inferior Derecho</label></br>
-    <input type="range" min="0" max="30" id="rangeBottomRightRadius"/>
+    <input type="range" min="0" max="30" value="0" id="rangeBottomRightRadius" name="radioFour"/>
     <spam id="valorRangeBottomRightRadius"></spam></br>
   </label>
   <label>Radio Inferior Izquierdo</label></br>
-    <input type="range" min="0" max="30" id="rangeBottomLeftRadius"/>
+    <input type="range" min="0" max="30" value="0" id="rangeBottomLeftRadius" name="radioFour"/>
     <spam id="valorRangeBottomLeftRadius"></spam></br>
 </div>
 </div>
 <div  class="background-position" id="elipses">
 <label>Elija el valor de los bordes elípticios</label></br>
 <label>Radio Superior Izquierdo</label></br>
-  <input type="range" min="0" max="30" id="rangeTopLeft1Radius"/>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeTopLeft1Radius"/>
   <spam id="valorRangeTopLeft1Radius"></spam></br>
-  <input type="range" min="0" max="30" id="rangeTopLeft2Radius"/>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeTopLeft2Radius"/>
   <spam id="valorRangeTopLeft2Radius"></spam></br>
 <label>Radio Superior Derecho</label></br>
-  <input type="range" min="0" max="30" id="rangeTopRight1Radius"/>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeTopRight1Radius"/>
   <spam id="valorRangeTopRight1Radius"></spam></br>
-  <input type="range" min="0" max="30" id="rangeTopRight2Radius"/>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeTopRight2Radius"/>
   <spam id="valorRangeTopRight2Radius"></spam></br>
 <label>Radio Inferior Derecho</label></br>
-  <input type="range" min="0" max="30" id="rangeBottomRight1Radius"/>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeBottomRight1Radius"/>
   <spam id="valorRangeBottomRight1Radius"></spam></br>
-  <input type="range" min="0" max="30" id="rangeBottomRight2Radius"/>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeBottomRight2Radius"/>
   <spam id="valorRangeBottomRight2Radius"></spam></br>
 <label>Radio Inferior Izquierdo</label></br>
-  <input type="range" min="0" max="30" id="rangeBottomLeft1Radius"/>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeBottomLeft1Radius"/>
   <spam id="valorRangeBottomLeft1Radius"></spam></br>
-  <input type="range" min="0" max="30" id="rangeBottomLeft2Radius"/>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeBottomLeft2Radius"/>
   <spam id="valorRangeBottomLeft2Radius"></spam></br>
 </div>
   <div id="botones">
