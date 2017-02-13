@@ -14,5 +14,7 @@
   display:none;
 }
 #botones{
-  display:none;
+}
+#solucion{
+  overflow: hidden;
 }

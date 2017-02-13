@@ -381,11 +381,11 @@ input[type='range']{
     border:solid thin black;
     color:#6495ED;
     font-size:1.1rem;
-    display: none;
     height:300px;
     width: 400px;
     margin:20px;
     padding:10px;
+    display:none;
     /*position: absolute;*/
 }
 #copy_paste{
