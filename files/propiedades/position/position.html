@@ -37,7 +37,7 @@
 
 		-->
 <link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
-<title>Aprende CSS3</title><!DOCTYPE html>
+<title>Aprende CSS3 | position</title><!DOCTYPE html>
     <link rel="stylesheet" href="https://bermartinv.github.io/bower_components/normalize-css/normalize.css" />
     <!-- El enlace a Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
@@ -131,46 +131,55 @@
                       ,<span class="menu_inf">bottom</span>,<span class="menu_inf"> z-index</span>. Destacar
                       que los valores pueden ser negativos y podemos usar las unidades <span class="cursiva" title="Enlace a tipo de unidades"><a
                       href="https://bermartinv.github.io/css/files/referencia/unidades/unidades_menu.html">(más información)</a></span> que queramos.</p>
-                  <p><strong>3. absolute</strong>.
-                    <div class="pulsador">
-                         <p>Código<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
-                    </div>
-                      <div class="ejemplo">
-                      <code>&#60;&#33;&#45;&#45;[if lt IE 9]&#62;<br/>
-                          &#60;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&#62; &#60;&#47;script&#62;<br/>
-                          &#60;&#33;[endif]&#45;&#45;&#62;<br/>
-                          </code>
-
-	                   <p>Con este código conseguimos que los navegadore IE9 e inferiores (IE8,IE7) interprete los nuevos elementos.</p>
-	               </div>
-
-                  <p><strong>Modernizr :  </strong>Según la definición que se hace de esta librería Javascript en su página web, es un conjunto de pruebas super rápidas , que se ejecutan a medida que carga la página web, y luego puedes usar los resultados para adaptar la experiencia al usuario. Nos permite detectar que elementos de nuestra web puede ser que no se ejecute igual en cada navegador. Se recomienda usar Firebug para Firefox o herramientas de desarrollador en el caso de Chrome o Explorer, para detectar aquellas etiquetas o elementos que puede que trabajen de distinta manera según el navegador.</p>
+                      <div class="pulsador">
+                           <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                      </div>
+                        <div class="ejemplo">
+                          <p data-height="265" data-theme-id="0" data-slug-hash="YNbNMx" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="position:relative" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/YNbNMx/">position:relative</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                   </div>
+                   <div class="pulsador">
+                        <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                   </div>
+                     <div class="ejemplo">
+                       <p data-height="265" data-theme-id="0" data-slug-hash="VPOpKy" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="postion:relative>position:absolute" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/VPOpKy/">postion:relative>position:absolute</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                     </div>
+                  <p><strong>3. absolute</strong>. La caja del elemento se coloca en la posición que le indiquemos usando
+                     las propiedades <span class="menu_inf">
+                     left</span>,<span class="menu_inf"> right</span>,<span class="menu_inf"> top</span>
+                     ,<span class="menu_inf">bottom</span>,<span class="menu_inf"> z-index</span>. El resto de
+                     elementos que  contiene nuestra web ocupan el lugar de la caja del elemento que le hemos dado la
+                     nueva posición.</p>
+                     <div class="pulsador">
+                          <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                     </div>
+                       <div class="ejemplo">
+                         <p data-height="265" data-theme-id="0" data-slug-hash="JEqoyr" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="position:absolute>position:relative" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/JEqoyr/">position:absolute>position:relative</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                         <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  </div>
                   <div class="pulsador">
-                         <p>Pasos a seguir<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha" ></p>
-                    </div>
+                       <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                  </div>
                     <div class="ejemplo">
-                        <ul>
-                            <li>Descargar el archivo con el código fuente de <a href="https://modernizr.com/download?setclasses" target="_blank" title="Enlace aquí">Modernizr</a> (seleccionaremos sólo los modulos que vayamos a usar).</li>
-                            <li>Una vez descargado e incorporado al directorio de nuestro trabajo. Incorporaremos en nuestro código, añadiendo el siguiente código en cada head de nuestros archivos.</li>
-                            <code>&#60;script src=”../modernizr.js"&#62;&#60;/script&#62;</code>
-                            <li>Una vez instalado, podemos ejecutar nuestro proyecto. El desarrollador lo que debe hacer es comprobar aquellos elementos que un naveador antiguo puede provocar problemas de visualización. Entonces deberá crear las clases necesarias para que nuestro proyecto se pueda ver en todos los navedares de la misma manera.</li>
-                        </ul>
-
-                    </div>
-
-                 <p><strong>normalize.css : </strong> es un fichero CSS cuyo peso es insignificante en comparación a otras herramientas que puede tener nuestro proyecto. La finalidad es que nuestro proyecto se vea de la misma forma se ejecute en un navegador u otro.</p>
-
-                <div class="pulsador">
-                         <p>Pasos a seguir<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha" ></p>
-                    </div>
-                    <div class="ejemplo">
-                        <ul>
-                            <li>Descargar el archivo con el código fuente de <a href="https://github.com/necolas/normalize.css/" target="_blank" title="Enlace aquí">normalize.css</a>.</li>
-                            <li>Una vez descargado e incorporado al directorio de nuestro trabajo. Incorporaremos en nuestro código, añadiendo el siguiente código en cada head de nuestros archivos.</li>
-                            <code>&#60;link rel="stylesheet" href="normalize.css" /&#62;</code>
-                        </ul>
-
-                    </div>
+                      <p data-height="265" data-theme-id="0" data-slug-hash="WRBGJN" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="position:absolute" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/WRBGJN/">position:absolute</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+               </div>
+                 <p><strong>4. fixed</strong>. El elemento se elimina del flujo del documento como sucedía con la
+                 posición. Los elementos que tengan este posicionamiento el elemento no depende de sus elementos padre sino que
+                 depende del posicionamiento del documento. Además lo podemos colocar usando las propiedades <span class="menu_inf">
+                 left</span>,<span class="menu_inf"> right</span>,<span class="menu_inf"> top</span>
+                 ,<span class="menu_inf">bottom</span>,<span class="menu_inf"> z-index</span>.</p>
+                 <div class="pulsador">
+                      <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                 </div>
+                   <div class="ejemplo">
+                     <p data-height="265" data-theme-id="0" data-slug-hash="xgNEEd" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="position:fixed" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/xgNEEd/">position:fixed</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                     <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              </div>
+                 <p><strong>5. inherit</strong>. El valor de posición no se hereda en forma de cascada a aquellos elementos
+                   que están dentro uno de otro. Por lo que podemos forzarlo dandole este tipo de posición, heredando el tipo de posicionamiento
+                 que tenga su elemento padre. </p>
 
               </article>
     </div>
