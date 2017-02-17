@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable= yes ">
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Bernardo Martin Viudez">
+<meta name="application-name" content="Educacion basica CSS" >
+<meta name="keywords" content="css, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
+<meta name="robots" content="index,follow" >
+<link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
+<link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
+	<!-- Para más información visitar la página: http://www.w3schools.com/tags/tag_link.asp
+		href		Indica la dirección del link
+		hreflang	Indica el idioma del link, usa los mismo códigos que lang
+		media		Dispositivos:all	todos		aural		auditivo
+					     braille	braili		handheld	dispositivos de mano
+					     projection	proyector	print		varsión impresa
+					     screen	ordenador	ttv		maquinas escribir
+					     tv		television
+				Valores:     width		max/min			height			max/min
+					     device-width	max/min			device-height		max/min
+					     orientation	portrait/landscape	aspect-ratio		max/min
+					     device-aspect-ratio			color
+					     color-index				monochrome
+					     resolution					scan
+					     grid
+						media="screen and (max-height:700px)"
+						media="screen and (device-width:500px)"
+
+
+		sizes		Este atributo solo se usa con rel="icon"
+					<link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+					<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+					<link rel="icon" href="icon.svg" sizes="any" type="image/svg+xml">
+
+		-->
+<link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
+<title>Aprende CSS3</title><!DOCTYPE html>
+    <link rel="stylesheet" href="https://bermartinv.github.io/bower_components/normalize-css/normalize.css" />
+    <!-- El enlace a Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+        <!--  Use the following CSS rules to specify these families:
+            font-family: 'Nothing You Could Do', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Roboto', sans-serif;
+        -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-85220689-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
+</head>
+<body>
+<header>
+    <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
+    <nav >
+        <ul class="browser">
+            <li><a href="https://bermartinv.github.io/css/index.html">Inicio</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/history.html">Historia</a></li>
+            <li class="active"><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="menu_inferior">
+    <p><a href="https://bermartinv.github.io/css/index.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> ><a class="menu_inf"  href="https://bermartinv.github.io/css/files/propiedades/menu_propiedades.html"> Propiedades</a> ><a href="" class="menu_inf"> position</p></a>
+</div>
+<div class="contenido">
+    <div class="columna1">
+          <article>
+                         <p><strong>Tipos de elementos</strong>: Antes de empezar a hablar del posicionamiento
+                            es importante distinguir los elementos como se comportan ya que esto
+                            influye en la manera que los veremos por pantalla.
+                            </p>
+                        <p><strong>1. Elementos en linea</strong>: estos elementos ocupan solo lo que ocupa su contenido. Estos elementos son: </br>
+                        <span class="menu_inf">a</span>,<span class="menu_inf">abbr</span>,<span class="menu_inf">acronym</span>,<span class="menu_inf">b</span>,<span class="menu_inf">basefont</span>,<span class="menu_inf">bdo</span>,<span class="menu_inf">big</span>,
+                        <span class="menu_inf">br</span>,<span class="menu_inf">cite</span>,<span class="menu_inf">code</span>,
+                        <span class="menu_inf">dfn</span>,<span class="menu_inf">em</span>,<span class="menu_inf">font</span>,<span class="menu_inf">i</span>,
+                        <span class="menu_inf">img</span>,<span class="menu_inf">input</span>,<span class="menu_inf">kbd</span>,<span class="menu_inf">label</span>
+                        ,<span class="menu_inf">q</span>,<span class="menu_inf">s</span>,<span class="menu_inf">samp</span>,<span class="menu_inf">select</span>,
+                        <span class="menu_inf">small<span>,<span class="menu_inf">span</span>,<span class="menu_inf">strike</span>,<span class="menu_inf">strong</span>,
+                        <span class="menu_inf">sub</span>,<span class="menu_inf">sup</span>,<span class="menu_inf">textarea</span>,<span class="menu_inf">tt</span>,
+                        <span class="menu_inf">u</span>,<span class="menu_inf">var</span>.</p>
+                        <p><strong>2. Elementos en bloque</strong>: estos elementos ocupan el espacio de una linea completa aunque por su contenido no se complete.
+                          Estos elementos son : </br>
+                        <span class="menu_inf">address</span>,<span class="menu_inf">blockquote</span>,<span class="menu_inf">center</span>,
+                        <span class="menu_inf">dir</span>,<span class="menu_inf">div</span>,<span class="menu_inf">dl</span>,<span class="menu_inf">fieldset</span>,
+                        <span class="menu_inf">form</span>,<span class="menu_inf">h1</span>,<span class="menu_inf">h2</span>,
+                        <span class="menu_inf">h3</span>,<span class="menu_inf">h4</span>,<span class="menu_inf">h5</span>,<span class="menu_inf">h6</span>,
+                        <span class="menu_inf">hr</span>,<span class="menu_inf">isindex</span>,<span class="menu_inf">menu</span>,<span class="menu_inf">noframes</span>
+                        ,<span class="menu_inf">noscript</span>,<span class="menu_inf">ol</span>,<span class="menu_inf">p</span>,<span class="menu_inf">pre</span>,
+                        <span class="menu_inf">table<span>,<span class="menu_inf">ul</span>.</p>
+                        <p> Los navegadores posicionan las etiquetas que escribimos con HTML como si fueran cajas.
+                          Estas cajas dependiendo si son elementos en linea o bloque se colocan uno al lado del otro
+                          o se coloca en la siguiente linea. Por lo que si queremos colocar algún elemento en un lugar
+                          determinado de nuestra web tenemos que utilizar las características CSS. Para este fin tenemos
+                           la característica <span class="menu_inf">position</span>.</p>
+                        <p><strong>position</strong></p>
+                         <div class="pulsador">
+                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                         </div>
+                         <div class="ejemplo">
+                           <ul>
+                             <li>static</li>
+                             <li>relative</li>
+                             <li>absolute</li>
+                             <li>fixed</li>
+                             <li>inherit</li>
+                           </ul>
+
+                         </div><br/>
+
+                  <p><strong>1. static</strong>. Por defecto todos los elementos tienen este posicionamiento.
+                     Cada elemento se coloca según si son elementos en linea o en bloque. Si se utiliza
+                     esta posición se ignoran los valores de las propiedades <span class="menu_inf">
+                       left</span>,<span class="menu_inf"> right</span>,<span class="menu_inf"> top</span>
+                       ,<span class="menu_inf">bottom</span>,<span class="menu_inf"> z-index</span>.</p>
+                  <p><strong>2. relative</strong>. Este posicionamietno permite que la caja de un elemento
+                      se pueda desplazar de su posicionamiento normal. El desplazamiento de este elemento
+                      no influye en el estado de los elementos que se encuentren alrededor. Su desplazamiento
+                      se realiza con las propiedades <span class="menu_inf">
+                      left</span>,<span class="menu_inf"> right</span>,<span class="menu_inf"> top</span>
+                      ,<span class="menu_inf">bottom</span>,<span class="menu_inf"> z-index</span>. Destacar
+                      que los valores pueden ser negativos y podemos usar las unidades <span class="cursiva" title="Enlace a tipo de unidades"><a
+                      href="https://bermartinv.github.io/css/files/referencia/unidades/unidades_menu.html">(más información)</a></span> que queramos.</p>
+                  <p><strong>3. absolute</strong>.
+                    <div class="pulsador">
+                         <p>Código<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                    </div>
+                      <div class="ejemplo">
+                      <code>&#60;&#33;&#45;&#45;[if lt IE 9]&#62;<br/>
+                          &#60;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&#62; &#60;&#47;script&#62;<br/>
+                          &#60;&#33;[endif]&#45;&#45;&#62;<br/>
+                          </code>
+
+	                   <p>Con este código conseguimos que los navegadore IE9 e inferiores (IE8,IE7) interprete los nuevos elementos.</p>
+	               </div>
+
+                  <p><strong>Modernizr :  </strong>Según la definición que se hace de esta librería Javascript en su página web, es un conjunto de pruebas super rápidas , que se ejecutan a medida que carga la página web, y luego puedes usar los resultados para adaptar la experiencia al usuario. Nos permite detectar que elementos de nuestra web puede ser que no se ejecute igual en cada navegador. Se recomienda usar Firebug para Firefox o herramientas de desarrollador en el caso de Chrome o Explorer, para detectar aquellas etiquetas o elementos que puede que trabajen de distinta manera según el navegador.</p>
+                  <div class="pulsador">
+                         <p>Pasos a seguir<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha" ></p>
+                    </div>
+                    <div class="ejemplo">
+                        <ul>
+                            <li>Descargar el archivo con el código fuente de <a href="https://modernizr.com/download?setclasses" target="_blank" title="Enlace aquí">Modernizr</a> (seleccionaremos sólo los modulos que vayamos a usar).</li>
+                            <li>Una vez descargado e incorporado al directorio de nuestro trabajo. Incorporaremos en nuestro código, añadiendo el siguiente código en cada head de nuestros archivos.</li>
+                            <code>&#60;script src=”../modernizr.js"&#62;&#60;/script&#62;</code>
+                            <li>Una vez instalado, podemos ejecutar nuestro proyecto. El desarrollador lo que debe hacer es comprobar aquellos elementos que un naveador antiguo puede provocar problemas de visualización. Entonces deberá crear las clases necesarias para que nuestro proyecto se pueda ver en todos los navedares de la misma manera.</li>
+                        </ul>
+
+                    </div>
+
+                 <p><strong>normalize.css : </strong> es un fichero CSS cuyo peso es insignificante en comparación a otras herramientas que puede tener nuestro proyecto. La finalidad es que nuestro proyecto se vea de la misma forma se ejecute en un navegador u otro.</p>
+
+                <div class="pulsador">
+                         <p>Pasos a seguir<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha" ></p>
+                    </div>
+                    <div class="ejemplo">
+                        <ul>
+                            <li>Descargar el archivo con el código fuente de <a href="https://github.com/necolas/normalize.css/" target="_blank" title="Enlace aquí">normalize.css</a>.</li>
+                            <li>Una vez descargado e incorporado al directorio de nuestro trabajo. Incorporaremos en nuestro código, añadiendo el siguiente código en cada head de nuestros archivos.</li>
+                            <code>&#60;link rel="stylesheet" href="normalize.css" /&#62;</code>
+                        </ul>
+
+                    </div>
+
+              </article>
+    </div>
+    <div class="columna2">
+        <aside class="enlaces">
+            <p>Mas información : </p>
+            <a href="https://css-tricks.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/csstricks.png"/></a>
+            <a href="https://www.html5rocks.com/es/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/html5rocks.jpg"/></a>
+            <a href="https://www.psd2html.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/responsiveHTMLCSS.jpg"></a>
+            <a href="http://getbootstrap.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/bootstrap.jpg"></a>
+            <a href="http://aprenderaprogramar.es/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/aprenderaprogramar.png"></a>
+        </aside>
+    </div>
+
+
+</div>
+    <hr>
+<footer>
+
+<p>&copy;Berana Social Media and Marketing 2016</p><p>Contacto</p><p>Redes Sociales</p>
+</footer>
+<div class="redes">
+        <a href="http://facebook.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/face.png" target="_blank"></a>
+        <a href="https://twitter.com/bermartinv2" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/twitter.jpg" ></a>
+        <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
+        <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a>
+</div>
+<div id="arrow_top">
+    <img src="https://bermartinv.github.io/css/assets/images/arrow_top.png" id="image_arrow_top"/>
+</div>
+</body>

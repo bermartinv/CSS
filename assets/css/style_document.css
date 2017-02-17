@@ -378,15 +378,19 @@ input[type='range']{
     font-size:1.1rem;
 }
 #codigo_html{
-    border:solid thin black;
-    color:#6495ED;
-    font-size:1.1rem;
-    height:300px;
-    width: 400px;
-    margin:20px;
-    padding:10px;
-    display:none;
-    /*position: absolute;*/
+
+}
+.codigo_html{
+  border:solid thin black;
+  color:#6495ED;
+  font-size:1.1rem;
+  
+  width: 400px;
+  margin:20px;
+  padding:10px;
+  display:none;
+  flex-direction : column;
+  /*position: absolute;*/
 }
 #copy_paste{
     position: relative;

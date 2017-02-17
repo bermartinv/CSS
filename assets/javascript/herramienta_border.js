@@ -18,14 +18,25 @@ var objVer = {
   borderTopWidth : '' ,
   borderRightWidth : '',
   borderBottomWidth : '',
-  borderLeftWidth: ''
+  borderLeftWidth: '',
+  borderTopLeftRadius : '',
+  borderTopRightRadius : '',
+  borderBottomRightRadius : '',
+  borderBottomLeftRadius : '',
+  borderAllRadius : '',
+  borderTopLRadius : '',
+  borderTopRRadius : '',
+  borderBottomRRadius : '',
+  borderBottomLRadius : ''
+
 
 };
 
 window.onload = function (){
   mostrarCodigo();
   herramienta_border();
-
+  reset();
+  copy_paste();
 
 }
 
@@ -66,35 +77,59 @@ function bordesElipses(){
   var solucion = document.getElementById('solucion');
   var elipStyle = document.getElementsByName('elipStyle');
   elipStyle[0].addEventListener('input',function(){
+                                  desaparecerCircular();
+                                  objVer.borderTopLeftRadius = 'border-top-left-radius: ' + this.value + 'px ' + elipStyle[1].value + 'px ;';
+                                  document.getElementById('borderTopLeftElipse').innerHTML = objVer.borderTopLeftRadius;
                                   solucion.style.borderTopLeftRadius = this.value +'px  '+elipStyle[1].value+'px';
                                   this.nextSibling.nextSibling.innerHTML = this.value+'px';
                                 });
   elipStyle[1].addEventListener('input',function(){
+                                  desaparecerCircular();
+                                  objVer.borderTopLeftRadius = 'border-top-left-radius: ' + elipStyle[0].value + 'px ' + this.value + 'px ;' ;
+                                  document.getElementById('borderTopLeftElipse').innerHTML = objVer.borderTopLeftRadius;
                                   solucion.style.borderTopLeftRadius = elipStyle[0].value +'px  '+this.value+'px';
                                   this.nextSibling.nextSibling.innerHTML = this.value+'px';
                                 });
   elipStyle[2].addEventListener('input',function(){
+                                  desaparecerCircular();
+                                  objVer.borderTopRightRadius = 'border-top-right-radius: ' + this.value + 'px ' + elipStyle[3].value + 'px ;';
+                                  document.getElementById('borderTopRightElipse').innerHTML = objVer.borderTopRightRadius;
                                   solucion.style.borderTopRightRadius = this.value +'px  '+elipStyle[3].value+'px';
                                   this.nextSibling.nextSibling.innerHTML = this.value+'px';
                                 });
   elipStyle[3].addEventListener('input',function(){
+                                  desaparecerCircular();
+                                  objVer.borderTopRightRadius = 'border-top-right-radius: ' + elipStyle[2].value + 'px ' + this.value + 'px ;' ;
+                                  document.getElementById('borderTopRightElipse').innerHTML = objVer.borderTopRightRadius;
                                   solucion.style.borderTopRightRadius = elipStyle[2].value +'px  '+this.value+'px';
                                   this.nextSibling.nextSibling.innerHTML = this.value+'px';
                                 });
   elipStyle[4].addEventListener('input',function(){
+                                  desaparecerCircular();
+                                  objVer.borderBottomRightRadius = 'border-bottom-right-radius: ' + this.value + 'px ' + elipStyle[5].value + 'px ;';
+                                  document.getElementById('borderBottomRightElipse').innerHTML = objVer.borderBottomRightRadius;
                                   solucion.style.borderBottomRightRadius = this.value +'px  '+elipStyle[5].value+'px';
                                   this.nextSibling.nextSibling.innerHTML = this.value+'px';
                                 });
   elipStyle[5].addEventListener('input',function(){
+                                  desaparecerCircular();
+                                  objVer.borderBottomRightRadius = 'border-bottom-right-radius: ' + elipStyle[4].value + 'px ' + this.value + 'px ;' ;
+                                  document.getElementById('borderBottomRightElipse').innerHTML = objVer.borderBottomRightRadius;
                                   solucion.style.borderBottomRightRadius = elipStyle[4].value +'px  '+this.value+'px';
                                   this.nextSibling.nextSibling.innerHTML = this.value+'px';
                                 });
   elipStyle[6].addEventListener('input',function(){
-                                  solucion.style.borderBottomRightRadius = this.value +'px  '+elipStyle[7].value+'px';
+                                  desaparecerCircular();
+                                  objVer.borderBottomLeftRadius = 'border-bottom-left-radius: ' + this.value + 'px ' + elipStyle[7].value + 'px ;';
+                                  document.getElementById('borderBottomLeftRadius').innerHTML = objVer.borderBottomLeftRadius;
+                                  solucion.style.borderBottomLeftRadius = this.value +'px  '+elipStyle[7].value+'px';
                                   this.nextSibling.nextSibling.innerHTML = this.value+'px';
                                 });
   elipStyle[7].addEventListener('input',function(){
-                                  solucion.style.borderBottomRightRadius = elipStyle[6].value +'px  '+this.value+'px';
+                                  desaparecerCircular();
+                                  objVer.borderBottomLeftRadius = 'border-bottom-left-radius: ' + elipStyle[6].value + 'px ' + this.value + 'px ;' ;
+                                  document.getElementById('borderBottomLeftRadius').innerHTML = objVer.borderBottomLeftRadius;
+                                  solucion.style.borderBottomLeftRadius = elipStyle[6].value +'px  '+this.value+'px';
                                   this.nextSibling.nextSibling.innerHTML = this.value+'px';
                                 });
 }
@@ -112,6 +147,10 @@ function accion(){
   var widthAll = document.getElementsByName('widthAll');
   var widthFour = document.getElementsByName('widthFour');
   var elipStyle = document.getElementsByName('elipStyle');
+  var radioAll = document.getElementsByName('radioAll');
+  var radioFour = document.getElementsByName('radioFour');
+  deshability(radioAll);
+  deshability(radioFour);
   deshability(colorAll);
   deshability(colorFour);
   deshability(estiloAll);
@@ -132,10 +171,14 @@ function unColor(obj,colorAll,colorFour){
   hability(colorAll);
   colorAll[0].addEventListener('input',function(){
                                           solucion.style.borderColor = this.value;
-                                          objVer.borderTopColor = '';document.getElementById('borderTopColor').innerHTML = objVer.borderTopColor;
-                                          objVer.borderRightColor = '';document.getElementById('borderRightColor').innerHTML = objVer.borderRightColor;
-                                          objVer.borderBottomColor = '';document.getElementById('borderBottomColor').innerHTML = objVer.borderBottomColor;
-                                          objVer.borderLeftColor = '';document.getElementById('borderLeftColor').innerHTML = objVer.borderLeftColor;
+                                          objVer.borderTopColor = '';
+                                          document.getElementById('borderTopColor').innerHTML = objVer.borderTopColor;
+                                          objVer.borderRightColor = '';
+                                          document.getElementById('borderRightColor').innerHTML = objVer.borderRightColor;
+                                          objVer.borderBottomColor = '';
+                                          document.getElementById('borderBottomColor').innerHTML = objVer.borderBottomColor;
+                                          objVer.borderLeftColor = '';
+                                          document.getElementById('borderLeftColor').innerHTML = objVer.borderLeftColor;
                                           objVer.borderColorAll = 'border-color: '+this.value+' ;';
                                           document.getElementById('borderAll').innerHTML = objVer.borderColorAll;
 
@@ -278,25 +321,52 @@ function unRadius(obj,radioAll,radioFour){
   deshability(radioFour);
   hability(radioAll);
   radioAll[0].addEventListener('input',function(){
-                                        solucion.style.borderRadius = this.value+'px';
-                                        this.nextSibling.nextSibling.innerHTML = this.value;
+                                        desaparecerRadius();
+                                        solucion.style.borderRadius = this.value + 'px';
+                                        this.nextSibling.nextSibling.innerHTML = this.value + 'px';
+                                        objVer.borderAllRadius = 'border-radius: ' + this.value + 'px;';
+                                        document.getElementById('borderAllRadius').innerHTML = objVer.borderAllRadius;
                                       })
 }
 function cuatroRadius(obj,radioAll,radioFour){
   var solucion = document.getElementById('solucion');
   deshability(radioAll);
   hability(radioFour);
-  radioFour[0].addEventListener('input',function(){solucion.style.borderTopLeftRadius = this.value+'px';
+  radioFour[0].addEventListener('input',function(){
+                                          desaparecerRadius();
+                                          objVer.borderAllRadius = '';
+                                          document.getElementById('borderAllRadius').innerHTML = objVer.borderAllRadius;
+                                          solucion.style.borderTopLeftRadius = this.value+'px';
                                           this.nextSibling.nextSibling.innerHTML = this.value+'px';
+                                          objVer.borderTopLRadius = 'border-top-left-radius: '+ this.value + 'px;';
+                                          document.getElementById('borderTopLRadius').innerHTML = objVer.borderTopLRadius;
                                         });
-  radioFour[1].addEventListener('input',function(){solucion.style.borderTopRightRadius = this.value+'px';
+  radioFour[1].addEventListener('input',function(){
+                                          desaparecerRadius();
+                                          objVer.borderAllRadius = '';
+                                          document.getElementById('borderAllRadius').innerHTML = objVer.borderAllRadius;
+                                          solucion.style.borderTopRightRadius = this.value+'px';
                                           this.nextSibling.nextSibling.innerHTML = this.value+'px';
+                                          objVer.borderTopRRadius = 'border-top-right-radius: '+ this.value + 'px;';
+                                          document.getElementById('borderTopRRadius').innerHTML = objVer.borderTopRRadius;
                                         });
-  radioFour[2].addEventListener('input',function(){solucion.style.borderBottomRightRadius = this.value+'px';
+  radioFour[2].addEventListener('input',function(){
+                                          desaparecerRadius();
+                                          objVer.borderAllRadius = '';
+                                          document.getElementById('borderAllRadius').innerHTML = objVer.borderAllRadius;
+                                          solucion.style.borderBottomRightRadius = this.value+'px';
                                           this.nextSibling.nextSibling.innerHTML = this.value+'px';
+                                          objVer.borderBottomRRadius = 'border-bottom-right-radius: '+ this.value + 'px;';
+                                          document.getElementById('borderBottomRRadius').innerHTML = objVer.borderBottomRRadius;
                                         });
-  radioFour[3].addEventListener('input',function(){solucion.style.borderBottomLeftRadius = this.value+'px';
+  radioFour[3].addEventListener('input',function(){
+                                          desaparecerRadius();
+                                          objVer.borderAllRadius = '';
+                                          document.getElementById('borderAllRadius').innerHTML = objVer.borderAllRadius;
+                                          solucion.style.borderBottomLeftRadius = this.value+'px';
                                           this.nextSibling.nextSibling.innerHTML = this.value+'px';
+                                          objVer.borderBottomLRadius = 'border-bottom-left-radius: '+ this.value + 'px;';
+                                          document.getElementById('borderBottomLRadius').innerHTML = objVer.borderBottomLRadius;
                                         });
 }
 
@@ -324,7 +394,8 @@ function mostrarCodigo(){
   var variable = 0;
   formulario.botonCodigo.addEventListener('click',function(){
                                     if (variable == 0){
-                                      document.getElementById('codigo_html').style.display = 'block';
+                                      document.getElementById('codigo_html').style.display = 'flex';
+
                                       variable = 1;
                                     }else{
                                       document.getElementById('codigo_html').style.display = 'none';
@@ -334,4 +405,64 @@ function mostrarCodigo(){
 
   formulario.reset.addEventListener('click',function(){herramienta_border(); });
 
+}
+
+function desaparecerRadius(){
+  objVer.borderTopLeftRadius = '';
+  document.getElementById('borderTopLeftElipse').innerHTML = objVer.borderTopLeftRadius;
+  objVer.borderTopRightRadius = '';
+  document.getElementById('borderTopRightElipse').innerHTML = objVer.borderTopRightRadius;
+  objVer.borderBottomRightRadius = '';
+  document.getElementById('borderBottomRightElipse').innerHTML = objVer.borderBottomRightRadius;
+  objVer.borderBottomLeftRadius = '';
+  document.getElementById('borderBottomLeftRadius').innerHTML = objVer.borderBottomLeftRadius;
+  objVer.borderTopLRadius = '';
+}
+
+function desaparecerCircular(){
+  objVer.borderAllRadius = '';
+  objVer.borderTopLRadius = '';
+  objVer.borderTopRRadius = '';
+  objVer.borderBottomRRadius = '';
+  objVer.borderBottomLRadius = '';
+  document.getElementById('borderAllRadius').innerHTML = objVer.borderAllRadius;
+  document.getElementById('borderTopLRadius').innerHTML = objVer.borderTopLRadius;
+  document.getElementById('borderTopRRadius').innerHTML = objVer.borderTopRRadius;
+  document.getElementById('borderBottomRRadius').innerHTML = objVer.borderBottomRRadius;
+  document.getElementById('borderBottomLRadius').innerHTML = objVer.borderBottomLRadius;
+}
+function reset(){
+  var botonReset = document.getElementById('reset');
+  botonReset.addEventListener('click',function(){
+                                    desaparecerCircular();
+                                    desaparecerRadius();
+                                    document.getElementById('borderLeftWidth').innerHTML = '';
+                                    document.getElementById('borderBottomWidth').innerHTML = '';
+                                    document.getElementById('borderRightWidth').innerHTML = '';
+                                    document.getElementById('borderTopWidth').innerHTML = '';
+                                    document.getElementById('borderWidthAll').innerHTML = '';
+                                    document.getElementById('borderStyleAll').innerHTML = '';
+                                    document.getElementById('borderBottomStyle').innerHTML = '';
+                                    document.getElementById('borderRightStyle').innerHTML = '';
+                                    document.getElementById('borderTopStyle').innerHTML = '';
+                                    document.getElementById('borderLeftStyle').innerHTML = '';
+                                    document.getElementById('borderLeftColor').innerHTML = '';
+                                    document.getElementById('borderBottomColor').innerHTML = '';
+                                    document.getElementById('borderRightColor').innerHTML = '';
+                                    document.getElementById('borderTopColor').innerHTML = '';
+                                    document.getElementById('borderAll').innerHTML = '';
+
+                                        });
+}
+function copy_paste(){
+  var boton = document.getElementById('copy_paste');
+  boton.addEventListener('click',function(event){
+
+                                    var codigo = document.querySelector('#html');
+                                    var range = document.createRange();
+                                    range.selectNode(codigo);
+                                    window.getSelection().addRange(range);
+                                    var resultado = document.execCommand('copy');
+                                    alert ('Hola que tal');
+                                      })
 }
