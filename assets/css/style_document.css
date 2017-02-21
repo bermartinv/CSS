@@ -378,13 +378,11 @@ input[type='range']{
     font-size:1.1rem;
 }
 #codigo_html{
-
 }
 .codigo_html{
   border:solid thin black;
   color:#6495ED;
   font-size:1.1rem;
-  
   width: 400px;
   margin:20px;
   padding:10px;
@@ -398,6 +396,12 @@ input[type='range']{
     height:50px;
     left:340px;
     cursor: pointer;
+}
+#img_copied{
+  display:none;
+  position:relative;
+  top:40%;
+  left:35%;
 }
 
 /* * * * * * * * * * * * * * * * * * * */

@@ -463,6 +463,15 @@ function copy_paste(){
                                     range.selectNode(codigo);
                                     window.getSelection().addRange(range);
                                     var resultado = document.execCommand('copy');
-                                    alert ('Hola que tal');
+                                    var copiadoImagen = document.getElementById('img_copied');
+                                    copiadoImagen.style.display = 'block';
+                                    copiadoImagen.style.position = 'relative';
+                                    var reiniciar = setTimeout(desaparecer,600);
+                                    function desaparecer(){
+                                      copiadoImagen.style.display = 'none';
+                                    }
+
+
+
                                       })
 }
