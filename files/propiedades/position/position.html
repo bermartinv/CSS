@@ -55,9 +55,12 @@
   ga('create', 'UA-85220689-1', 'auto');
   ga('send', 'pageview');
 </script>
+<script src="https://bermartinv.github.io/css/bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
+  <div class="loader"></div>
 <header>
     <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
     <nav >
@@ -109,21 +112,21 @@
                          </div>
                          <div class="ejemplo">
                            <ul>
-                             <li>static</li>
-                             <li>relative</li>
-                             <li>absolute</li>
-                             <li>fixed</li>
-                             <li>inherit</li>
+                             <li><a href="#static">static</a></li>
+                             <li><a href="#relative">relative</a></li>
+                             <li><a href="#absolute">absolute</a></li>
+                             <li><a href="#fixed">fixed</a></li>
+                             <li><a href="#inherit">inherit</a></li>
                            </ul>
 
                          </div><br/>
 
-                  <p><strong>1. static</strong>. Por defecto todos los elementos tienen este posicionamiento.
+                  <p id="static"><strong>1. static</strong>. Por defecto todos los elementos tienen este posicionamiento.
                      Cada elemento se coloca según si son elementos en linea o en bloque. Si se utiliza
                      esta posición se ignoran los valores de las propiedades <span class="menu_inf">
                        left</span>,<span class="menu_inf"> right</span>,<span class="menu_inf"> top</span>
                        ,<span class="menu_inf">bottom</span>,<span class="menu_inf"> z-index</span>.</p>
-                  <p><strong>2. relative</strong>. Este posicionamietno permite que la caja de un elemento
+                  <p id="relative"><strong>2. relative</strong>. Este posicionamietno permite que la caja de un elemento
                       se pueda desplazar de su posicionamiento normal. El desplazamiento de este elemento
                       no influye en el estado de los elementos que se encuentren alrededor. Su desplazamiento
                       se realiza con las propiedades <span class="menu_inf">
@@ -145,7 +148,7 @@
                        <p data-height="265" data-theme-id="0" data-slug-hash="VPOpKy" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="postion:relative>position:absolute" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/VPOpKy/">postion:relative>position:absolute</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                      </div>
-                  <p><strong>3. absolute</strong>. La caja del elemento se coloca en la posición que le indiquemos usando
+                  <p id="absolute"><strong>3. absolute</strong>. La caja del elemento se coloca en la posición que le indiquemos usando
                      las propiedades <span class="menu_inf">
                      left</span>,<span class="menu_inf"> right</span>,<span class="menu_inf"> top</span>
                      ,<span class="menu_inf">bottom</span>,<span class="menu_inf"> z-index</span>. El resto de
@@ -165,7 +168,7 @@
                       <p data-height="265" data-theme-id="0" data-slug-hash="WRBGJN" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="position:absolute" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/WRBGJN/">position:absolute</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
                       <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                </div>
-                 <p><strong>4. fixed</strong>. El elemento se elimina del flujo del documento como sucedía con la
+                 <p id="fixed"><strong>4. fixed</strong>. El elemento se elimina del flujo del documento como sucedía con la
                  posición. Los elementos que tengan este posicionamiento el elemento no depende de sus elementos padre sino que
                  depende del posicionamiento del documento. Además lo podemos colocar usando las propiedades <span class="menu_inf">
                  left</span>,<span class="menu_inf"> right</span>,<span class="menu_inf"> top</span>
@@ -177,7 +180,7 @@
                      <p data-height="265" data-theme-id="0" data-slug-hash="xgNEEd" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="position:fixed" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/xgNEEd/">position:fixed</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
                      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
               </div>
-                 <p><strong>5. inherit</strong>. El valor de posición no se hereda en forma de cascada a aquellos elementos
+                 <p id="inherit"><strong>5. inherit</strong>. El valor de posición no se hereda en forma de cascada a aquellos elementos
                    que están dentro uno de otro. Por lo que podemos forzarlo dandole este tipo de posición, heredando el tipo de posicionamiento
                  que tenga su elemento padre. </p>
 
@@ -210,4 +213,10 @@
 <div id="arrow_top">
     <img src="https://bermartinv.github.io/css/assets/images/arrow_top.png" id="image_arrow_top"/>
 </div>
+<script type="text/javascript">
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+</script>
 </body>
+</html>
