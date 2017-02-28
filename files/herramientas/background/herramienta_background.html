@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable= yes ">
-<meta charset="UTF-8"> 
+<meta charset="UTF-8">
 <meta name="description" content="Free Web tutorials">
 <meta name="keywords" content="HTML,CSS,XML,JavaScript">
 <meta name="author" content="Bernardo Martin Viudez">
@@ -11,7 +11,7 @@
 <meta name="robots" content="index,follow" >
 <link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
 <link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
-<link rel="stylesheet" href="https://bermartinv.github.io/bower_components/normalize-css/normalize.css" />    
+<link rel="stylesheet" href="https://bermartinv.github.io/bower_components/normalize-css/normalize.css" />
 	<!-- Para más información visitar la página: http://www.w3schools.com/tags/tag_link.asp
 		href		Indica la dirección del link
 		hreflang	Indica el idioma del link, usa los mismo códigos que lang
@@ -29,17 +29,17 @@
 					     grid
 						media="screen and (max-height:700px)"
 						media="screen and (device-width:500px)"
-		
-				
+
+
 		sizes		Este atributo solo se usa con rel="icon"
 					<link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
 					<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
 					<link rel="icon" href="icon.svg" sizes="any" type="image/svg+xml">
-		
-		-->	
-<link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>	
+
+		-->
+<link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
 <title>Aprende CSS3</title><!DOCTYPE html>
-  
+
     <!-- El enlace a Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
@@ -57,6 +57,7 @@
   ga('create', 'UA-85220689-1', 'auto');
   ga('send', 'pageview');
 </script>
+<script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
 <script type="text/javascript" src="../../../assets/javascript/herramienta_background.js"></script>
 </head>
 <body>
@@ -76,15 +77,15 @@
     <p><a href="https://bermartinv.github.io/css/files/herramientas.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a> > <a href="" class="menu_inf">background</a></p>
 </div>
 <div class="herramienta">
-    <div class="parte1">  
+    <div class="parte1">
           <article>
            <div class="datos">
    <form name='formulario_background' id='formulario'>
     <p></p>
     <label>background-color</label>
     <input type="color" name="color" id="color" value="#ffffff" size="50"/>
-    <br/>    
-    
+    <br/>
+
     <label>background-image</label>
     <select id="file" name="file">
         <option value="">Tamaño de imagen</option>
@@ -98,7 +99,7 @@
 
     </select>
     <br/>
-    
+
     <label>background-repeat</label>
     <select id="repeat" name="repeat">
         <option value="none">Opciones background-repeat</option>
@@ -109,8 +110,8 @@
         <option value="inherit">inherit</option>
     </select>
     <br/>
-    
-    <div class="background-position"> 
+
+    <div class="background-position">
      <label>background-position</label><br/>
        <input type="radio" name="position" value="keyword" />Palabras clave
        <input type="radio" name="position" value="%" />%
@@ -147,10 +148,10 @@
     <label>Valor Y en px</label>
       <input type="number"  min="0" maxlength="5"  id="positionY_px" name="positionY_px" value="0"/>
        </div>
-       
+
      <br/>
     </div>
-       
+
       <label>background-attachment</label>
       <select id="attachment" name="attachment">
         <option value="">Opciones background-attachment</option>
@@ -160,7 +161,7 @@
         <option value="inherit">inherit</option>
     </select>
     <br/>
-    
+
     <label>background-size</label>
       <select id="size" name="size">
         <option value="">Opciones background-size</option>
@@ -169,7 +170,7 @@
         <option value="contain">contain</option>
     </select>
     <br/>
-    
+
     <label>background-origin</label>
       <select id="origin" name="origin">
         <option value="">Opciones background-origin</option>
@@ -179,7 +180,7 @@
         <option value="inherit">inherit</option>
     </select>
     <br/>
-    
+
     <label>background-clip</label>
       <select id="clip" name="clip">
         <option value="">Opciones background-origin</option>
@@ -190,12 +191,12 @@
     </select>
     <br/>
      <input type="reset" name ="reset" value="Reset">
-     <input type="button" value="Código HTML" name="codigo_html">
+     <input type="button" value="Código HTML" name="botonCodigo" id='botonCodigo'>
     </form>
 
 </div>
-            
-                         
+
+
           </article>
     </div>
     <div class="parte2">
@@ -204,37 +205,47 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quod laudantium doloribus, voluptatem quae rem consequuntur facere, distinctio similique cumque nobis vel quos assumenda natus placeat itaque illo quasi possimus.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non molestias quas odit accusamus sit temporibus, dignissimos, sed tempore eligendi porro modi quae praesentium id aliquid dolore consequuntur quasi fugiat autem.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat minus aperiam perferendis ipsa possimus non esse facilis voluptas obcaecati, temporibus architecto tempora fuga commodi quaerat. Architecto rem nostrum, consequuntur illum.</p>
-            
-        </div>   
-    </div>
-    <div class="parte3">
-        <div id="codigo_html">
-            <img id="copy_paste" src="../../../assets/images/copy_paste.svg" title='copiar portapapeles'/> 
-            <div id="color_html"></div>
-            <div id="imagen_html"></div>
-            <div id="repeat_html"></div>
-            <div id="position_html"></div>
-            <div id="attachment_html"></div>
-            <div id="size_html"></div>
-            <div id="origin_html"></div>
-            <div id="clip_html"></div>
+
         </div>
     </div>
- 
-       
+    <div class="parte3">
+        <div id="codigo_html" class='codigo_html'>
+            <img id="copy_paste" src="../../../assets/images/copy_paste.svg" title='copiar portapapeles'/>
+            <div id='html'>
+              <div id="color_html"></div>
+              <div id="imagen_html"></div>
+              <div id="repeat_html"></div>
+              <div id="position_html"></div>
+              <div id="attachment_html"></div>
+              <div id="size_html"></div>
+              <div id="origin_html"></div>
+              <div id="clip_html"></div>
+          </div>
+          <div id='img_copied'>
+            <svg height="100" width="100">
+            <circle cx="50" cy="50" r="40" stroke="red" stroke-width="3" fill="transparent" />
+            <text x="21" y="55" fill="red">Copied!</text>
+            <circle cx="50" cy="50" r="33" stroke="red" stroke-width="3" fill="transparent" />
+            </svg>
+          </div>
+        </div>
+    </div>
+
+
 </div>
     <hr>
 <footer>
-        
+
 <p>&copy;Berana Social Media and Marketing 2016</p><p>Contacto</p><p>Redes Sociales</p>
 </footer>
 <div class="redes">
         <a href="http://facebook.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/face.png" target="_blank"></a>
         <a href="https://twitter.com/bermartinv2" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/twitter.jpg" ></a>
         <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
-        <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a> 
+        <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a>
 </div>
 <div id="arrow_top">
     <img src="../../../../assets/images/arrow_top.png" id="image_arrow_top"/>
 </div>
 </body>
+</html>
