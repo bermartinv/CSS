@@ -1,4 +1,7 @@
 window.onload = function(){
+
+  alert ('hola que tal');
+  /*
 var variable = 0.8;
 var muestra = setInterval(mostrar,100);
   function mostrar(){
@@ -8,5 +11,5 @@ var muestra = setInterval(mostrar,100);
     if (variable == 0){
       clearInterval(mostrar);
     }
-  }
+  }*/
 }
