@@ -1,0 +1,8 @@
+input[type=button]{
+  color:red;
+  line-height:2em;
+  background-color:blue;
+}
+body{
+  background-color:red;
+}
