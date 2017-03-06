@@ -1,8 +1,101 @@
-input[type=button]{
-  color:red;
+input[type=button],input[type=reset]{
+  color:#006699;
   line-height:2em;
-  background-color:blue;
+  background-color:rgba(255, 204, 204, 0.7);
+  border-radius:15px;
+  padding:0 15px 0 5px;
+  width:100px;
+  border:solid thin black;
+}
+input[type=button]:hover,input[type=reset]:hover{
+  border:solid 2px black;
+  box-shadow:2px 2px 15px black;
+  cursor:pointer;
 }
 label{
-  color:pink !important;
+  font-size:2em;
+}
+ul li{
+  list-style : none;
+}
+li{
+  padding-bottom:1.2rem;
+}
+input[type='radio']{
+  display:none;
+}
+input[type=radio]+label{
+  color:#606060   ;
+  padding:7px 5px 2px 51px;
+  display:inline-block;
+  position:relative;
+  font-size:1em;
+  border-radius:3px;
+  cursor:pointer;
+  /* se puede añadir transiciones
+  transition: all 0.3s ease; */
+}
+input[type=radio]+label:hover{
+  text-shadow: 2px 2px 8px #FF0000;
+}
+input[type=radio]+label:before{
+  content:'';
+  width:17px;
+  height:17px;
+  display:inline-block;
+  background:none;
+  border:solid 3px;
+  border-radius:50%;
+  position:absolute;
+  left:17px;
+  top:4px;
+}
+input[type=radio]+label:after{
+  content:'';
+  width:17px;
+  height:17px;
+  display:inline-block;
+  border:solid 3px;
+  border-radius:50%;
+  position:absolute;
+  left:17px;
+  top:4px;
+}
+
+input[type='radio']:checked + label{
+  color:#006699;
+}
+input[type='radio']:checked + label:before{
+  color:#006699;
+}
+input[type='radio']:checked + label:after{
+  content:'';
+  background:#006699;
+}
+.enunciado{
+  text-align:center;
+  padding-left:10%;
+  color:black !important;
+  text-decoration : underline !important;
+}
+.valores{
+  padding-left:5%;
+}
+#color_border,#estilo_border,#ancho_border,#redondos,#elipses{
+  background:rgba(255, 204, 204, 0.7);
+  position:relative;
+}
+input[type=color],select[name=estiloFour],select[name=estiloAll]{
+  position:absolute;
+  right:10px;
+  border-radius : 5%;
+  margin:0;
+  padding:0;
+}
+input[name=widthAll],input[name=widthFour],input[name=radioFour],
+input[name=radioAll],input[name=elipStyle]{
+  margin-left:30%;
+}
+.opacitable{
+  opacity:0.2;
 }

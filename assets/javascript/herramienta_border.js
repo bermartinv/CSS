@@ -32,13 +32,13 @@ var objVer = {
 
 };
 
-window.onload = function (){
+
   mostrarCodigo();
   herramienta_border();
   reset();
   copy_paste();
 
-}
+
 
 function herramienta_border(){
 
@@ -55,6 +55,8 @@ function bordesNormales(){
     document.getElementById('redondos').style.display= 'none';
     document.getElementById('elipses').style.display= 'none';
     accion();
+
+
 }
 
 function bordesCirculares(){
@@ -65,8 +67,20 @@ function bordesCirculares(){
   var radioStyle = document.getElementsByName('radioStyle');
   var radioAll = document.getElementsByName('radioAll');
   var radioFour = document.getElementsByName('radioFour');
-  radioStyle[0].addEventListener('click',function(event){unRadius(event,radioAll,radioFour);});
-  radioStyle[1].addEventListener('click',function(event){cuatroRadius(event,radioAll,radioFour);});
+  var radio1 = document.getElementById('1radius');
+  var radio4 = document.getElementById('4radius');
+  removeColor(radio1);
+  removeColor(radio4);
+    radioStyle[0].addEventListener('click',function(event){
+    unRadius(event,radioAll,radioFour);
+    removeColor(radio4);
+    addColor(radio1);
+  });
+  radioStyle[1].addEventListener('click',function(event){
+    cuatroRadius(event,radioAll,radioFour);
+    removeColor(radio1);
+    addColor(radio4);
+  });
 
 }
 function bordesElipses(){
@@ -149,6 +163,18 @@ function accion(){
   var elipStyle = document.getElementsByName('elipStyle');
   var radioAll = document.getElementsByName('radioAll');
   var radioFour = document.getElementsByName('radioFour');
+  var color1 = document.getElementById('1Color');
+  var color4 = document.getElementById('4Colores');
+  var estilo1 = document.getElementById('1Estilo');
+  var estilo4 = document.getElementById('4Estilo');
+  var width1 = document.getElementById('1width');
+  var width4 = document.getElementById('4width');
+  removeColor(color1);
+  removeColor(color4);
+  removeColor(estilo1);
+  removeColor(estilo4);
+  removeColor(width1);
+  removeColor(width4);
   deshability(radioAll);
   deshability(radioFour);
   deshability(colorAll);
@@ -157,12 +183,36 @@ function accion(){
   deshability(estiloFour);
   deshability(widthAll);
   deshability(widthFour);
-  radioColor[0].addEventListener('click',function(event){unColor(event,colorAll,colorFour);});
-  radioColor[1].addEventListener('click',function(event){cuatroColores(event,colorFour,colorAll);});
-  estilo[0].addEventListener('click',function(event){unEstilo(event,estiloAll,estiloFour);});
-  estilo[1].addEventListener('click',function(event){cuatroEstilos(event,estiloFour,estiloAll);});
-  width[0].addEventListener('click',function(event){unWidth(event,widthAll,widthFour);});
-  width[1].addEventListener('click',function(event){cuatroWidth(event,widthAll,widthFour);});
+  radioColor[0].addEventListener('click',function(event){
+    unColor(event,colorAll,colorFour);
+    addColor(color1);
+    removeColor(color4);
+  });
+  radioColor[1].addEventListener('click',function(event){
+    cuatroColores(event,colorFour,colorAll);
+    addColor(color4);
+    removeColor(color1);
+  });
+  estilo[0].addEventListener('click',function(event){
+    unEstilo(event,estiloAll,estiloFour);
+    addColor(estilo1);
+    removeColor(estilo4);
+  });
+  estilo[1].addEventListener('click',function(event){
+    cuatroEstilos(event,estiloFour,estiloAll);
+    addColor(estilo4);
+    removeColor(estilo1);
+  });
+  width[0].addEventListener('click',function(event){
+    unWidth(event,widthAll,widthFour);
+    addColor(width1);
+    removeColor(width4);
+  });
+  width[1].addEventListener('click',function(event){
+    cuatroWidth(event,widthAll,widthFour);
+    addColor(width4);
+    removeColor(width1);
+    });
 }
 
 function unColor(obj,colorAll,colorFour){
@@ -387,6 +437,8 @@ function mostrar(){
   document.getElementById('color_border').style.display= 'block';
   document.getElementById('estilo_border').style.display= 'block';
   document.getElementById('ancho_border').style.display= 'block';
+
+
 }
 
 function mostrarCodigo(){
@@ -417,6 +469,7 @@ function desaparecerRadius(){
   objVer.borderBottomLeftRadius = '';
   document.getElementById('borderBottomLeftRadius').innerHTML = objVer.borderBottomLeftRadius;
   objVer.borderTopLRadius = '';
+  document.getElementById('elipses').style.display= 'none';
 }
 
 function desaparecerCircular(){
@@ -430,12 +483,15 @@ function desaparecerCircular(){
   document.getElementById('borderTopRRadius').innerHTML = objVer.borderTopRRadius;
   document.getElementById('borderBottomRRadius').innerHTML = objVer.borderBottomRRadius;
   document.getElementById('borderBottomLRadius').innerHTML = objVer.borderBottomLRadius;
+  document.getElementById('redondos').style.display= 'none';
 }
 function reset(){
   var botonReset = document.getElementById('reset');
   botonReset.addEventListener('click',function(){
                                     desaparecerCircular();
                                     desaparecerRadius();
+                                    document.getElementById('color_borde').style.display='none';
+
                                     document.getElementById('borderLeftWidth').innerHTML = '';
                                     document.getElementById('borderBottomWidth').innerHTML = '';
                                     document.getElementById('borderRightWidth').innerHTML = '';
@@ -451,7 +507,14 @@ function reset(){
                                     document.getElementById('borderRightColor').innerHTML = '';
                                     document.getElementById('borderTopColor').innerHTML = '';
                                     document.getElementById('borderAll').innerHTML = '';
-
+                                    removeColor(document.getElementById('1Color'));
+                                    removeColor(document.getElementById('4Colores'));
+                                    removeColor(document.getElementById('1Estilo'));
+                                    removeColor(document.getElementById('4Estilo'));
+                                    removeColor(document.getElementById('1width'));
+                                    removeColor(document.getElementById('4width'));
+                                    removeColor(document.getElementById('1radius'));
+                                    removeColor(document.getElementById('4radius'));
                                         });
 }
 function copy_paste(){
@@ -459,6 +522,7 @@ function copy_paste(){
   boton.addEventListener('click',function(event){
 
                                     var codigo = document.querySelector('#html');
+                                    window.getSelection().removeAllRanges();
                                     var range = document.createRange();
                                     range.selectNode(codigo);
                                     window.getSelection().addRange(range);
@@ -474,4 +538,12 @@ function copy_paste(){
 
 
                                       })
+}
+function removeColor(elemento){
+
+  elemento.setAttribute('class','opacitable');
+
+}
+function addColor(elemento){
+  elemento.removeAttribute('class');
 }

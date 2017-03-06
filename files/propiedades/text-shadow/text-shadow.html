@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable= yes ">
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Bernardo Martin Viudez">
+<meta name="application-name" content="Educacion basica CSS" >
+<meta name="keywords" content="css, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
+<meta name="robots" content="index,follow" >
+<link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
+<link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
+	<!-- Para más información visitar la página: http://www.w3schools.com/tags/tag_link.asp
+		href		Indica la dirección del link
+		hreflang	Indica el idioma del link, usa los mismo códigos que lang
+		media		Dispositivos:all	todos		aural		auditivo
+					     braille	braili		handheld	dispositivos de mano
+					     projection	proyector	print		varsión impresa
+					     screen	ordenador	ttv		maquinas escribir
+					     tv		television
+				Valores:     width		max/min			height			max/min
+					     device-width	max/min			device-height		max/min
+					     orientation	portrait/landscape	aspect-ratio		max/min
+					     device-aspect-ratio			color
+					     color-index				monochrome
+					     resolution					scan
+					     grid
+						media="screen and (max-height:700px)"
+						media="screen and (device-width:500px)"
+
+
+		sizes		Este atributo solo se usa con rel="icon"
+					<link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+					<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+					<link rel="icon" href="icon.svg" sizes="any" type="image/svg+xml">
+
+		-->
+<link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
+<title>Aprende CSS3 | position</title><!DOCTYPE html>
+    <link rel="stylesheet" href="https://bermartinv.github.io/bower_components/normalize-css/normalize.css" />
+    <!-- El enlace a Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+        <!--  Use the following CSS rules to specify these families:
+            font-family: 'Nothing You Could Do', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Roboto', sans-serif;
+        -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-85220689-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--<script src="https://bermartinv.github.io/css/bower_components/jquery/dist/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
+
+
+
+</head>
+<body>
+  <div class="loader"></div>
+<header>
+    <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
+    <nav >
+        <ul class="browser">
+            <li><a href="https://bermartinv.github.io/css/index.html">Inicio</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/history.html">Historia</a></li>
+            <li class="active"><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="menu_inferior">
+    <p><a href="https://bermartinv.github.io/css/index.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> ><a class="menu_inf"  href="https://bermartinv.github.io/css/files/propiedades/menu_propiedades.html"> Propiedades</a> ><a href="" class="menu_inf"> text-shadow</p></a>
+</div>
+<div class="contenido">
+    <div class="columna1">
+          <article>
+                         <p><strong>Tipos de elementos</strong>: Antes de empezar a hablar del posicionamiento
+                            es importante distinguir los elementos como se comportan ya que esto
+                            influye en la manera que los veremos por pantalla.
+                            </p>
+                        <p><strong>1. Elementos en linea</strong>: estos elementos ocupan solo lo que ocupa su contenido. Estos elementos son: </br>
+                        <span class="menu_inf">a</span>,<span class="menu_inf">abbr</span>,<span class="menu_inf">acronym</span>,<span class="menu_inf">b</span>,<span class="menu_inf">basefont</span>,<span class="menu_inf">bdo</span>,<span class="menu_inf">big</span>,
+                        <span class="menu_inf">br</span>,<span class="menu_inf">cite</span>,<span class="menu_inf">code</span>,
+                        <span class="menu_inf">dfn</span>,<span class="menu_inf">em</span>,<span class="menu_inf">font</span>,<span class="menu_inf">i</span>,
+                        <span class="menu_inf">img</span>,<span class="menu_inf">input</span>,<span class="menu_inf">kbd</span>,<span class="menu_inf">label</span>
+                        ,<span class="menu_inf">q</span>,<span class="menu_inf">s</span>,<span class="menu_inf">samp</span>,<span class="menu_inf">select</span>,
+                        <span class="menu_inf">small<span>,<span class="menu_inf">span</span>,<span class="menu_inf">strike</span>,<span class="menu_inf">strong</span>,
+                        <span class="menu_inf">sub</span>,<span class="menu_inf">sup</span>,<span class="menu_inf">textarea</span>,<span class="menu_inf">tt</span>,
+                        <span class="menu_inf">u</span>,<span class="menu_inf">var</span>.</p>
+                        <p><strong>2. Elementos en bloque</strong>: estos elementos ocupan el espacio de una linea completa aunque por su contenido no se complete.
+                          Estos elementos son : </br>
+                        <span class="menu_inf">address</span>,<span class="menu_inf">blockquote</span>,<span class="menu_inf">center</span>,
+                        <span class="menu_inf">dir</span>,<span class="menu_inf">div</span>,<span class="menu_inf">dl</span>,<span class="menu_inf">fieldset</span>,
+                        <span class="menu_inf">form</span>,<span class="menu_inf">h1</span>,<span class="menu_inf">h2</span>,
+                        <span class="menu_inf">h3</span>,<span class="menu_inf">h4</span>,<span class="menu_inf">h5</span>,<span class="menu_inf">h6</span>,
+                        <span class="menu_inf">hr</span>,<span class="menu_inf">isindex</span>,<span class="menu_inf">menu</span>,<span class="menu_inf">noframes</span>
+                        ,<span class="menu_inf">noscript</span>,<span class="menu_inf">ol</span>,<span class="menu_inf">p</span>,<span class="menu_inf">pre</span>,
+                        <span class="menu_inf">table<span>,<span class="menu_inf">ul</span>.</p>
+                        <p> Los navegadores posicionan las etiquetas que escribimos con HTML como si fueran cajas.
+                          Estas cajas dependiendo si son elementos en linea o bloque se colocan uno al lado del otro
+                          o se coloca en la siguiente linea. Por lo que si queremos colocar algún elemento en un lugar
+                          determinado de nuestra web tenemos que utilizar las características CSS. Para este fin tenemos
+                           la característica <span class="menu_inf">position</span>.</p>
+                        <p><strong>position</strong></p>
+                         <div class="pulsador">
+                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                         </div>
+                         <div class="ejemplo">
+                           <ul>
+                             <li><a href="#static">static</a></li>
+                             <li><a href="#relative">relative</a></li>
+                             <li><a href="#absolute">absolute</a></li>
+                             <li><a href="#fixed">fixed</a></li>
+                             <li><a href="#inherit">inherit</a></li>
+                           </ul>
+
+                         </div><br/>
+
+                  <p id="static"><strong>1. static</strong>. Por defecto todos los elementos tienen este posicionamiento.
+                     Cada elemento se coloca según si son elementos en linea o en bloque. Si se utiliza
+                     esta posición se ignoran los valores de las propiedades <span class="menu_inf">
+                       left</span>,<span class="menu_inf"> right</span>,<span class="menu_inf"> top</span>
+                       ,<span class="menu_inf">bottom</span>,<span class="menu_inf"> z-index</span>.</p>
+                  <p id="relative"><strong>2. relative</strong>. Este posicionamietno permite que la caja de un elemento
+                      se pueda desplazar de su posicionamiento normal. El desplazamiento de este elemento
+                      no influye en el estado de los elementos que se encuentren alrededor. Su desplazamiento
+                      se realiza con las propiedades <span class="menu_inf">
+                      left</span>,<span class="menu_inf"> right</span>,<span class="menu_inf"> top</span>
+                      ,<span class="menu_inf">bottom</span>,<span class="menu_inf"> z-index</span>. Destacar
+                      que los valores pueden ser negativos y podemos usar las unidades <span class="cursiva" title="Enlace a tipo de unidades"><a
+                      href="https://bermartinv.github.io/css/files/referencia/unidades/unidades_menu.html">(más información)</a></span> que queramos.</p>
+                      <div class="pulsador">
+                           <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                      </div>
+                        <div class="ejemplo">
+                          <p data-height="265" data-theme-id="0" data-slug-hash="YNbNMx" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="position:relative" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/YNbNMx/">position:relative</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                   </div>
+                   <div class="pulsador">
+                        <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                   </div>
+                     <div class="ejemplo">
+                       <p data-height="265" data-theme-id="0" data-slug-hash="VPOpKy" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="postion:relative>position:absolute" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/VPOpKy/">postion:relative>position:absolute</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                     </div>
+                  <p id="absolute"><strong>3. absolute</strong>. La caja del elemento se coloca en la posición que le indiquemos usando
+                     las propiedades <span class="menu_inf">
+                     left</span>,<span class="menu_inf"> right</span>,<span class="menu_inf"> top</span>
+                     ,<span class="menu_inf">bottom</span>,<span class="menu_inf"> z-index</span>. El resto de
+                     elementos que  contiene nuestra web ocupan el lugar de la caja del elemento que le hemos dado la
+                     nueva posición.</p>
+                     <div class="pulsador">
+                          <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                     </div>
+                       <div class="ejemplo">
+                         <p data-height="265" data-theme-id="0" data-slug-hash="JEqoyr" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="position:absolute>position:relative" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/JEqoyr/">position:absolute>position:relative</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                         <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                  <div class="pulsador">
+                       <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                  </div>
+                    <div class="ejemplo">
+                      <p data-height="265" data-theme-id="0" data-slug-hash="WRBGJN" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="position:absolute" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/WRBGJN/">position:absolute</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+               </div>
+                 <p id="fixed"><strong>4. fixed</strong>. El elemento se elimina del flujo del documento como sucedía con la
+                 posición. Los elementos que tengan este posicionamiento el elemento no depende de sus elementos padre sino que
+                 depende del posicionamiento del documento. Además lo podemos colocar usando las propiedades <span class="menu_inf">
+                 left</span>,<span class="menu_inf"> right</span>,<span class="menu_inf"> top</span>
+                 ,<span class="menu_inf">bottom</span>,<span class="menu_inf"> z-index</span>.</p>
+                 <div class="pulsador">
+                      <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha" class="flecha"></p>
+                 </div>
+                   <div class="ejemplo">
+                     <p data-height="265" data-theme-id="0" data-slug-hash="xgNEEd" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="position:fixed" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/xgNEEd/">position:fixed</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                     <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+              </div>
+                 <p id="inherit"><strong>5. inherit</strong>. El valor de posición no se hereda en forma de cascada a aquellos elementos
+                   que están dentro uno de otro. Por lo que podemos forzarlo dandole este tipo de posición, heredando el tipo de posicionamiento
+                 que tenga su elemento padre. </p>
+
+              </article>
+    </div>
+    <div class="columna2">
+        <aside class="enlaces">
+            <p>Mas información : </p>
+            <a href="https://css-tricks.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/csstricks.png"/></a>
+            <a href="https://www.html5rocks.com/es/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/html5rocks.jpg"/></a>
+            <a href="https://www.psd2html.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/responsiveHTMLCSS.jpg"></a>
+            <a href="http://getbootstrap.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/bootstrap.jpg"></a>
+            <a href="http://aprenderaprogramar.es/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/aprenderaprogramar.png"></a>
+        </aside>
+    </div>
+
+
+</div>
+    <hr>
+<footer>
+
+<p>&copy;Berana Social Media and Marketing 2016</p><p>Contacto</p><p>Redes Sociales</p>
+</footer>
+<div class="redes">
+        <a href="http://facebook.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/face.png" target="_blank"></a>
+        <a href="https://twitter.com/bermartinv2" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/twitter.jpg" ></a>
+        <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
+        <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a>
+</div>
+<div id="arrow_top">
+    <img src="https://bermartinv.github.io/css/assets/images/arrow_top.png" id="image_arrow_top"/>
+</div>
+<script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
+</body>
+</html>
