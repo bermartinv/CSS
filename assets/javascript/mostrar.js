@@ -1,7 +1,8 @@
-window.onload = function(){
+
+
     mostrar();
     arrow_top();
-}
+
 
 function mostrar(){
 
@@ -33,10 +34,11 @@ function mostrar(){
 
 }
 
-
 function arrow_top(){
-window.onscroll = function (e){
-    var posicion = e.pageY;
+window.onscroll = function (){comprobar()};
+  function comprobar(){
+    var flecha =document.getElementById("image_arrow_top");
+    var posicion = window.scrollY;
 
     if (posicion >=200){
         flecha.style.visibility = "visible";
@@ -44,24 +46,17 @@ window.onscroll = function (e){
         flecha.style.visibility = "hidden";
     }
 
-}
- var flecha =document.getElementById("image_arrow_top");
-    flecha.onclick = function subir(){
-    window.scrollTo(0,0);
-}
- flecha.onclick = function (e){
-    var posicionY = window.pageYOffset;
-    setInterval(inicio,1);
-     function inicio(){
-         if (posicionY>=20){
-             window.scrollTo(0,posicionY);
-            posicionY = (posicionY - 10)
-         }else{
-                 clearInterval();
-             }
-     }
-
+      flecha.onclick = function (){
+        var llamada = setInterval(inicio,10);
+        function inicio(){
+          if (posicion>=20){
+              window.scrollTo(0,posicion);
+             posicion = (posicion - 10)
+          }else{
+                  clearInterval(llamada);
+              }
+        }
+      }
     }
-
 
 }
