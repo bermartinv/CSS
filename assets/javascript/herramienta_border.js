@@ -487,11 +487,15 @@ function desaparecerCircular(){
 }
 function reset(){
   var botonReset = document.getElementById('reset');
+  var solucion = document.getElementById('solucion');
   botonReset.addEventListener('click',function(){
                                     desaparecerCircular();
                                     desaparecerRadius();
-                                    document.getElementById('color_borde').style.display='none';
-
+                                    document.getElementById('color_border').style.display='none';
+                                    document.getElementById('estilo_border').style.display='none';
+                                    document.getElementById('ancho_border').style.display='none';
+                                    document.getElementById('redondos').style.display='none';
+                                    document.getElementById('elipses').style.display='none';
                                     document.getElementById('borderLeftWidth').innerHTML = '';
                                     document.getElementById('borderBottomWidth').innerHTML = '';
                                     document.getElementById('borderRightWidth').innerHTML = '';
@@ -515,6 +519,8 @@ function reset(){
                                     removeColor(document.getElementById('4width'));
                                     removeColor(document.getElementById('1radius'));
                                     removeColor(document.getElementById('4radius'));
+                                    solucion.style.border = 'solid thin black';
+                                    solucion.style.borderRadius = 0 + 'px';
                                         });
 }
 function copy_paste(){
