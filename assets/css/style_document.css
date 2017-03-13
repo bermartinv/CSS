@@ -26,7 +26,7 @@ a{
 /* * * * * * *  CABECERA   * * * * * * * * * */
 /* * * * * * * * * * * * * * * * * * * * * * */
 header{
-    display:flex;
+    display:flex !important;
     justify-content:space-between;
     align-items:center;
     height:15%;
@@ -394,17 +394,17 @@ input[type='range']{
   color:#6495ED;
   font-size:1.1rem;
   width: 400px;
-  margin:20px;
+  margin:10px;
   padding:10px;
   display:none;
   flex-direction : column;
-  /*position: absolute;*/
+  position:relative;
 }
 #copy_paste{
     position: relative;
     width:50px;
     height:50px;
-    left:340px;
+    left:0px;
     cursor: pointer;
 }
 #img_copied{
@@ -413,7 +413,6 @@ input[type='range']{
   top:40%;
   left:35%;
 }
-
 /* * * * * * * * * * * * * * * * * * * */
 /* * * F L E C H A   A R R I B A * * * */
 /* * * * * * * * * * * * * * * * * * * */
@@ -441,7 +440,7 @@ hr{
     text-align: center;
 }
 footer{
-    display: flex;
+    display: flex !important;
     justify-content:center;
     align-items:center;
     height: 20%;

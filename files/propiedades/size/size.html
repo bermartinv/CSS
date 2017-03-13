@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable= yes ">
 <meta charset="UTF-8">
@@ -9,13 +9,11 @@
 <meta name="application-name" content="Educacion basica CSS" >
 <meta name="keywords" content="css, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
 <meta name="robots" content="index,follow" >
-<link rel="stylesheet" type="text/css" href="https://bermartinv.github.io/css/assets/css/style_document.css" />
+<link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
 <link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
-<link rel="stylesheet" href="https://bermartinv.github.io/bower_components/normalize-css/normalize.css" />
-
 <link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
-<title>Aprende CSS3</title><!DOCTYPE html>
-
+<title>Aprende CSS3 | width / height</title><!DOCTYPE html>
+    <link rel="stylesheet" href="https://bermartinv.github.io/css/bower_components/normalize-css/normalize.css" />
     <!-- El enlace a Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
@@ -32,10 +30,14 @@
   ga('create', 'UA-85220689-1', 'auto');
   ga('send', 'pageview');
 </script>
+<script src="https://bermartinv.github.io/css/bower_components/jquery/dist/jquery.min.js"></script>
+
+
+
 
 </head>
 <body>
-  <div class='loader'></div>
+  <div class="loader"></div>
 <header>
     <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
     <nav >
@@ -48,20 +50,30 @@
         </ul>
     </nav>
 </header>
-
 <div class="menu_inferior">
-    <p><a href="https://bermartinv.github.io/css/files/referencia/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> ><a href="" class="menu_inf">Propiedades</a></p>
+    <p><a href="https://bermartinv.github.io/css/index.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> ><a class="menu_inf"  href="https://bermartinv.github.io/css/files/propiedades/menu_propiedades.html"> Propiedades</a> ><a href="" class="menu_inf"> width / height</p></a>
 </div>
 <div class="contenido">
     <div class="columna1">
-          <ul class="sub_menu">
-               <li><a href="https://bermartinv.github.io/css/files/propiedades/background/background.html">background</a></li>
-               <li><a href="https://bermartinv.github.io/css/files/propiedades/degradados/degradados.html">Degradados</a></li>
-               <li><a href="https://bermartinv.github.io/css/files/propiedades/bordes/bordes.html">border</a></li>
-               <li><a href="https://bermartinv.github.io/css/files/propiedades/position/position.html">position</a></li>
-               <li><a href="https://bermartinv.github.io/css/files/propiedades/text-shadow/text_shadow.html">text-shadow</a></li>
-               <li><a href="https://bermartinv.github.io/css/files/propiedades/size/size.html">width/height</a></li>
-          </ul>
+          <article>
+                         <p><strong>width / height :</strong> Como indica su traducción de estas palabras significan ancho y alto.
+
+                            </p>
+                        <p>1. Las medidas que podemos usar son <a href="../../referencia/unidades/relativas/relativas.html" target="_blank" title="Enlace a medidas relativas">relativas</a> o <a href="../../referencia/unidades/absolutas/absolutas.html" target="_blank" title="Enlace a medidas absolutas">absolutas</a>.</p>
+                        <p>2. Una de las cosas más importantes a tener en cuenta cuando usemos estas características en nuestro CSS, es que no es aplicable a elementos que sean de tipo <span class="cursiva">inline</span>. Un ejemplo de este elemento podría ser span, el cual si le damos altura y anchura el navegador lo ignorará.</p>
+                        <p>La unidad de medida tendrá que ir junto con la cantidad de medida, sin ningún espacio entre ellas, para que se pueda ejecutar.</p>
+                        <p>4. Habrá que tener en cuenta en el ancho y alto que queramos, el <span class="cursiva">padding</span> y el <span class="cursiva">margin</span> que tenga nuestro elemento ya que se sumará a la medida que hayamos especificado a su <span class="cursiva">height</span> y <span class="cursiva">width</span>.</p>
+                        <p>5. Uno de los posibles trucos que podemos hacer para conseguir que un elemento que sea inline podamos dotarle de <span class="cursiva">height</span> y <span class="cursiva">width</span> es dandole la siguiente característica CSS <span class="cursiva">display:inline-block;</span>, de esta manera conseguiremos poder definir sus características de <span class="cursiva">height</span> y <span class="cursiva">width</span>.</p>
+                        <div class="pulsador">
+                        <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                          <p data-height="265" data-theme-id="0" data-slug-hash="oZwYEb" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="width / height" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/oZwYEb/">width / height</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+                        </div><br/>
+
+              </article>
     </div>
     <div class="columna2">
         <aside class="enlaces">
@@ -87,6 +99,10 @@
         <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
         <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a>
 </div>
-<script type="text/javascript" src="../../assets/javascript/inicio.js"></script>
+<div id="arrow_top">
+    <img src="https://bermartinv.github.io/css/assets/images/arrow_top.png" id="image_arrow_top"/>
+</div>
+<script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
+<script type="text/javascript" src="../../../assets/javascript/mostrar.js"></script>
 </body>
 </html>
