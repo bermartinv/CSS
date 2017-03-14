@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable= yes ">
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Bernardo Martin Viudez">
+<meta name="application-name" content="Educacion basica CSS" >
+<meta name="keywords" content="css, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
+<meta name="robots" content="index,follow" >
+<link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
+<link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
+<link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
+<title>Aprende CSS3 | box-sizing</title><!DOCTYPE html>
+    <link rel="stylesheet" href="https://bermartinv.github.io/css/bower_components/normalize-css/normalize.css" />
+    <!-- El enlace a Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+        <!--  Use the following CSS rules to specify these families:
+            font-family: 'Nothing You Could Do', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Roboto', sans-serif;
+        -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-85220689-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script src="https://bermartinv.github.io/css/bower_components/jquery/dist/jquery.min.js"></script>
+
+
+
+
+</head>
+<body>
+  <div class="loader"></div>
+<header>
+    <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
+    <nav >
+        <ul class="browser">
+            <li><a href="https://bermartinv.github.io/css/index.html">Inicio</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/history.html">Historia</a></li>
+            <li class="active"><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="menu_inferior">
+    <p><a href="https://bermartinv.github.io/css/index.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> ><a class="menu_inf"  href="https://bermartinv.github.io/css/files/propiedades/menu_propiedades.html"> Propiedades</a> ><a href="" class="menu_inf"> box-sizing</p></a>
+</div>
+<div class="contenido">
+    <div class="columna1">
+          <article>
+                         <p>Desde el principio los modelos de caja de CSS se han medido sumando las medidasd de <span class="cursiva">width + padding + border</span>, o bien, <span class="cursiva"> height + padding + border</span>. Esto ocasionaba que se tuviera que ir sumando las medidas para calcular el tamaño exacto que queriamos que fueran nuestras cajas.</p>
+
+                        <p><strong>box-sizing :</strong>: Apareció para resolver todo estos problemas que ocasionaba los modelos de caja en CSS.</p>
+                        <div class="pulsador">
+                               <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                              </div>
+                              <div class="ejemplo">
+                                  <ul>
+                                      <li>content-box</li>
+                                      <li>border-box</li>
+                                      <li>padding-box</li>
+                                      <li>initial</li>
+                                      <li>inherit</li>
+                                  </ul>
+                                </div><br/><br/>
+                        <p>Hoy en día los navegadores usan el modelo de caja antes mencionado de <span class="cursiva">width + padding + border</span>, o bien, <span class="cursiva"> height + padding + border</span>.Pero con <span class="cursiva">box-sizing: border-box ;</span>, podemos cambiar el modelo de caja, donde el ancho y la altura que especifiquemos de un elemento no se ven afectados por el padding o el border.</p>
+                        <p>El valor <strong>content-box</strong> es para recuperar el modelo de caja originario.</p>
+                        <p><strong>padding-box</strong>:En este caso las propiedades width y height incluyen en padding pero no incluyen el border y el margin.</p>
+                        <img class="imagen_ejemplo" src="https://cssgurubd.files.wordpress.com/2015/01/box-model_css2_vs_css3.png?w=300&h=247"/>
+                        <p>Se recomienda usar en nuestro CSS</p>
+                        <span class="valores">html {</span>
+                        <span class="valores"> box-sizing: border-box;</span>
+                        <span class="valores">}</span></br>
+                        <span class="valores">*, *:before, *:after {</span>
+                        <span class="valores">box-sizing: border-box;</span>
+                        <span class="valores">      }</span></br></br>
+                        <a href="http://caniuse.com/#feat=css3-boxsizing" target="_blank" class="menu_inf">En este enlace puede saber más sobre en que navegadores puede usar esta característica CSS.</a></br></br>
+                        <div class="pulsador">
+                        <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                          <p data-height="265" data-theme-id="0" data-slug-hash="JWyYeN" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="box-sizing" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/JWyYeN/">box-sizing</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                        </div><br/>
+
+              </article>
+    </div>
+    <div class="columna2">
+        <aside class="enlaces">
+            <p>Mas información : </p>
+            <a href="https://css-tricks.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/csstricks.png"/></a>
+            <a href="https://www.html5rocks.com/es/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/html5rocks.jpg"/></a>
+            <a href="https://www.psd2html.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/responsiveHTMLCSS.jpg"></a>
+            <a href="http://getbootstrap.com/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/bootstrap.jpg"></a>
+            <a href="http://aprenderaprogramar.es/" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/aprenderaprogramar.png"></a>
+        </aside>
+    </div>
+
+
+</div>
+    <hr>
+<footer>
+
+<p>&copy;Berana Social Media and Marketing 2016</p><p>Contacto</p><p>Redes Sociales</p>
+</footer>
+<div class="redes">
+        <a href="http://facebook.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/face.png" target="_blank"></a>
+        <a href="https://twitter.com/bermartinv2" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/twitter.jpg" ></a>
+        <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
+        <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a>
+</div>
+<div id="arrow_top">
+    <img src="https://bermartinv.github.io/css/assets/images/arrow_top.png" id="image_arrow_top"/>
+</div>
+<script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
+<script type="text/javascript" src="../../../assets/javascript/mostrar.js"></script>
+</body>
+</html>

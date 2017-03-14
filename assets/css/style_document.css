@@ -193,7 +193,10 @@ code{
 .ejemplo ul li a{
     color:#6495ED;
 }
+.imagen_ejemplo{
+  margin-left:20%;
 
+}
 /* * * * * * * * COLUMNA1 * * * * * * * * * */
 /* ESTILO HERRAMIENTAS MEDIDAS RELATIVAS    */
 /* Y MEDIDAS ABSOLUTAS                      */
