@@ -68,7 +68,7 @@ body{
 .menu{
     display:flex;
     flex-direction:row;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     justify-content:space-between;;
     align-items:center;
     height:60vh;
