@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable= yes "/>
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Bernardo Martin Viudez">
+<meta name="application-name" content="Educacion basica CSS" >
+<meta name="keywords" content="css, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
+<meta name="robots" content="index,follow" >
+<link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
+<link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
+<link rel="stylesheet" href="https://bermartinv.github.io/css/bower_components/normalize-css/normalize.css" />
+<link rel="stylesheet" href="../../../assets/css/herramienta_border.css"/>
+<link rel="stylesheet" href="../../../assets/css/style_tools.css"/>
+<link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
+<title>Aprende CSS3 | border | Herramienta filter</title>
+
+    <!-- El enlace a Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+        <!--  Use the following CSS rules to specify these families:
+            font-family: 'Nothing You Could Do', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Roboto', sans-serif;
+        -->
+<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-85220689-1', 'auto');
+        ga('send', 'pageview');
+</script>
+
+
+
+</head>
+<body>
+<div class='loader'></div>
+<header>
+    <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
+    <nav >
+        <ul class="browser">
+            <li><a href="https://bermartinv.github.io/css/index.html">Inicio</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/history.html">Historia</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
+            <li class="active"><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
+            <li><a href="../../taller/menu_taller.html">Taller</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="menu_inferior">
+    <p><a href="https://bermartinv.github.io/css/files/herramientas.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a> > <a href="" class="menu_inf">filter</a></p>
+</div>
+<div class="herramienta">
+    <div class="parte1">
+          <article>
+           <div class="datos">
+   <form name='formulario_border' id='formulario_border'>
+    <select>
+      <option value='blur'>blur</option>
+      <option value='brightness'>brightness</option>
+      <option value='contrast'>contrast</option>
+      <option value='grayscale'>grayscale</option>
+      <option value='hue'>hue-rotate</option>
+      <option value='invert'>invert</option>
+      <option value='opacity'>opacity</option>
+      <option value='saturate'>saturate</option>
+      <option value='sepia'>sepia</option>
+    </select>
+
+    <label>Que tipo de borde desea formar:</label></br></br>
+    <input type="radio" name="border" id="borderRecto" value="borderRecto" /><label for='borderRecto'> Bordes rectos  </label></br>
+    <input type="radio" name="border" id="borderRadius" value = "bordeRadius"/> <label for="borderRadius">Bordes circulares </label></br>
+    <input type="radio" name="border" id="borderEliptica" value = "eliptica"/> <label for="borderEliptica">Bordes elípticos</label></br>
+    <br/>
+<div  class="background-position" id="color_border">
+  <label class="enunciado">Elija el color de los bordes</label></br>
+  <input name="color" id="color1" value="1color" type="radio"><label for="color1">Todos los bordes mismo color</label></br>
+  <input name="color" id="color4" value="4color" type="radio"><label for="color4">Todos los bordes ditinto color</label></br>
+  <div id="1Color">
+    <label class="valores">Defina color</label>
+    <input type="color" name="colorAll" id="color"/> <br/>
+  </div>
+  <div id="4Colores">
+    <label class="enunciado">Defina cada borde</label></br>
+    <label class="valores">Lado superior </label> <input type="color" name="colorFour" id="colorTop"/> <br/>
+    <label class="valores">Lado derecho </label> <input type="color" name="colorFour" id="colorRight"/> <br/>
+    <label class="valores">Lado inferior </label> <input type="color" name="colorFour" id="colorBottom"/> <br/>
+    <label class="valores">Lado izquierdo </label> <input type="color" name="colorFour" id="colorLeft"/> <br/>
+  </div>
+</div>
+<div  class="background-position" id="estilo_border">
+  <label class="enunciado">Elija el estilo de los bordes</label></br>
+  <input name="estilo" id="estilo1" value="1estilo" type="radio"><label for="estilo1">Todos los bordes mismo estilo</label></br>
+  <input name="estilo" id="estilo4" value="4estilo" type="radio"><label for="estilo4">Todos los bordes ditinto estilo</label></br>
+
+  <div id="1Estilo">
+    <label class="valores">Defina que estilo quiere</label>
+      <select name="estiloAll">
+        <option value="none">None</option>
+        <option value="hidden">Hidden</option>
+        <option value="dotted">Dotted</option>
+        <option value="dashed">Dashed</option>
+        <option value="solid">Solid</option>
+        <option value="double">Double</option>
+        <option value="groove">Groove</option>
+        <option value="ridge">Ridge</option>
+        <option value="inset">Inset</option>
+        <option value="outset">Outset</option>
+      </select>
+    </div>
+  <div id="4Estilo">
+    <label class="enunciado">Defina que estilo quiere para cada lado</label></br>
+    <label class="valores">Lado superior </label>
+    <select name='estiloFour'>
+      <option value="none">None</option>
+      <option value="hidden">Hidden</option>
+      <option value="dotted">Dotted</option>
+      <option value="dashed">Dashed</option>
+      <option value="solid">Solid</option>
+      <option value="double">Double</option>
+      <option value="groove">Groove</option>
+      <option value="ridge">Ridge</option>
+      <option value="inset">Inset</option>
+      <option value="outset">Outset</option>
+    </select></br>
+    <label class="valores">Lado derecho</label>
+    <select name='estiloFour'>
+      <option value="none">None</option>
+      <option value="hidden">Hidden</option>
+      <option value="dotted">Dotted</option>
+      <option value="dashed">Dashed</option>
+      <option value="solid">Solid</option>
+      <option value="double">Double</option>
+      <option value="groove">Groove</option>
+      <option value="ridge">Ridge</option>
+      <option value="inset">Inset</option>
+      <option value="outset">Outset</option>
+    </select></br>
+    <label class="valores">Lado inferior </label>
+    <select name='estiloFour'>
+      <option value="none">None</option>
+      <option value="hidden">Hidden</option>
+      <option value="dotted">Dotted</option>
+      <option value="dashed">Dashed</option>
+      <option value="solid">Solid</option>
+      <option value="double">Double</option>
+      <option value="groove">Groove</option>
+      <option value="ridge">Ridge</option>
+      <option value="inset">Inset</option>
+      <option value="outset">Outset</option>
+    </select></br>
+    <label class="valores">Lado izquierdo</label>
+    <select name='estiloFour'>
+      <option value="none">None</option>
+      <option value="hidden">Hidden</option>
+      <option value="dotted">Dotted</option>
+      <option value="dashed">Dashed</option>
+      <option value="solid">Solid</option>
+      <option value="double">Double</option>
+      <option value="groove">Groove</option>
+      <option value="ridge">Ridge</option>
+      <option value="inset">Inset</option>
+      <option value="outset">Outset</option>
+    </select>
+  </div>
+</div>
+<div  class="background-position" id="ancho_border">
+  <label class="enunciado">Elija el ancho de los bordes</label></br>
+  <input name="width" id="width1" value="1width" type="radio"><label for="width1">Todos los bordes mismo ancho</label></br>
+  <input name="width" id="width4" value="4width" type="radio"><label for="width4">Todos los bordes ditinto ancho</label></br>
+  <div id="1width">
+    <label class="valores">Ancho para todos los lados</label>
+    <input type="range"  name="widthAll" min="0" max="30" value="0" id="range1Width"/>
+    <spam id="valorRange1Width"></spam>
+  </div>
+  <div id="4width">
+    <label class="valores">Ancho Superior </label></br>
+    <input type="range" min="0" max="30" value="0" id="rangeTopWidth" name="widthFour"/>
+    <spam id="valorRangeTopLeftWidth"></spam></br>
+    <label class="valores">Ancho Derecho</label></br>
+      <input type="range" min="0" max="30" value="0" id="rangeRightWidth" name="widthFour"/>
+      <spam id="valorRangeTopRightWidth"></spam></br>
+    <label class="valores">Ancho Inferior</label></br>
+      <input type="range" min="0" max="30" value="0" id="rangeBottomwidth" name="widthFour"/>
+      <spam id="valorRangeBottomRightWidth"></spam></br>
+    </label>
+    <label class="valores">Ancho Inferior Izquierdo</label></br>
+      <input type="range" min="0" max="30" value="0" id="rangeLeftWidth" name="widthFour"/>
+      <spam id="valorRangeLeftWidth"></spam></br>
+  </div>
+</div>
+<div  class="background-position" id="redondos">
+<label class="enunciado">Elija el radio de los bordes</label></br>
+<input name="radioStyle" id="radius1" value="1radius" type="radio"/><label for="radius1">Todos los bordes mismo radio</label></br>
+<input name="radioStyle" id="radius4" value="4radius" type="radio"/><label for="radius4">Todos los bordes ditinto radio</label></br>
+<div id="1radius">
+  <label class="valores">Radio para todos los lados</label>
+    <input type="range" min="0" max="100" value="0" id="range1Width" name="radioAll"/>
+    <spam id="valorRange1Width"></spam>
+</div>
+<div id="4radius">
+  <label class="valores">Radio Superior Izquierdo</label></br>
+    <input type="range" min="0" max="100" value="0" id="rangeTopLeftRadius" name="radioFour"/>
+    <spam id="valorRangeTopLeftRadius"></spam></br>
+  <label class="valores">Radio Superior Derecho</label></br>
+    <input type="range" min="0" max="100" value="0" id="rangeTopRightRadius" name="radioFour"/>
+    <spam id="valorRangeTopRightRadius"></spam></br>
+  <label class="valores">Radio Inferior Derecho</label></br>
+    <input type="range" min="0" max="100" value="0" id="rangeBottomRightRadius" name="radioFour"/>
+    <spam id="valorRangeBottomRightRadius"></spam></br>
+  </label>
+  <label class="valores">Radio Inferior Izquierdo</label></br>
+    <input type="range" min="0" max="100" value="0" id="rangeBottomLeftRadius" name="radioFour"/>
+    <spam id="valorRangeBottomLeftRadius"></spam></br>
+</div>
+</div>
+<div  class="background-position" id="elipses">
+<label class="enunciado">Elija el valor de los bordes elípticios</label></br>
+<label class="valores">Radio Superior Izquierdo</label></br>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeTopLeft1Radius"/>
+  <spam id="valorRangeTopLeft1Radius"></spam></br>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeTopLeft2Radius"/>
+  <spam id="valorRangeTopLeft2Radius"></spam></br>
+<label class="valores">Radio Superior Derecho</label></br>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeTopRight1Radius"/>
+  <spam id="valorRangeTopRight1Radius"></spam></br>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeTopRight2Radius"/>
+  <spam id="valorRangeTopRight2Radius"></spam></br>
+<label class="valores">Radio Inferior Derecho</label></br>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeBottomRight1Radius"/>
+  <spam id="valorRangeBottomRight1Radius"></spam></br>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeBottomRight2Radius"/>
+  <spam id="valorRangeBottomRight2Radius"></spam></br>
+<label class="valores">Radio Inferior Izquierdo</label></br>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeBottomLeft1Radius"/>
+  <spam id="valorRangeBottomLeft1Radius"></spam></br>
+  <input type="range" min="0" max="100" value='0' name="elipStyle" id="rangeBottomLeft2Radius"/>
+  <spam id="valorRangeBottomLeft2Radius"></spam></br>
+</div>
+  <div id="botones">
+     <input type="reset" name ="reset" value="Reset" id="reset">
+     <input type="button" value="Código HTML" name="botonCodigo" id='botonCodigo'>
+  </div>
+    </form>
+
+
+
+          </article>
+    </div>
+    <div class="parte2">
+        <div id="solucion">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora beatae assumenda ad, impedit cumque ea praesentium, unde inventore, adipisci quisquam, qui vero! Explicabo quae rerum, magni, libero consectetur ad voluptatem.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quod laudantium doloribus, voluptatem quae rem consequuntur facere, distinctio similique cumque nobis vel quos assumenda natus placeat itaque illo quasi possimus.</p>
+
+        </div>
+    </div>
+    <div class="parte3">
+        <div id="codigo_html" class="codigo_html">
+              <img id="copy_paste" src="../../../assets/images/copy_paste.svg" title='copiar portapapeles'/>
+            <div id='html'>
+              <div id="borderAll"></div>
+              <div id="borderTopColor"></div>
+              <div id="borderRightColor"></div>
+              <div id="borderBottomColor"></div>
+              <div id="borderLeftColor"></div>
+              <div id="borderStyleAll"></div>
+              <div id="borderTopStyle"></div>
+              <div id="borderRightStyle"></div>
+              <div id="borderBottomStyle"></div>
+              <div id="borderLeftStyle"></div>
+              <div id="borderWidthAll"></div>
+              <div id="borderTopWidth"></div>
+              <div id="borderRightWidth"></div>
+              <div id="borderBottomWidth"></div>
+              <div id="borderLeftWidth"></div>
+              <div id="borderTopLeftElipse"></div>
+              <div id="borderTopRightElipse"></div>
+              <div id="borderBottomRightElipse"></div>
+              <div id="borderBottomLeftRadius"></div>
+              <div id=borderAllRadius></div>
+              <div id="borderTopLRadius"></div>
+              <div id="borderTopRRadius"></div>
+              <div id="borderBottomRRadius"></div>
+              <div id="borderBottomLRadius"></div>
+
+            </div>
+            <div id='img_copied'>
+              <svg height="100" width="100">
+              <circle cx="50" cy="50" r="40" stroke="red" stroke-width="3" fill="transparent" />
+              <text x="21" y="55" fill="red">Copied!</text>
+              <circle cx="50" cy="50" r="33" stroke="red" stroke-width="3" fill="transparent" />
+              </svg>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+    <hr>
+<footer>
+
+<p>&copy;Berana Social Media and Marketing 2016</p><p>Contacto</p><p>Redes Sociales</p>
+</footer>
+<div class="redes">
+        <a href="http://facebook.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/face.png" target="_blank"></a>
+        <a href="https://twitter.com/bermartinv2" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/twitter.jpg" ></a>
+        <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
+        <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a>
+</div>
+<div id="arrow_top">
+    <img src="../../../assets/images/arrow_top.png" id="image_arrow_top"/>
+</div>
+<script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
+<script type="text/javascript" src="../../../assets/javascript/herramienta_border.js"></script>
+</body>
+</html>

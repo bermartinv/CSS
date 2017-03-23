@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable= yes ">
 <meta charset="UTF-8">
@@ -11,12 +11,9 @@
 <meta name="robots" content="index,follow" >
 <link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
 <link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
-<link rel="stylesheet" href="https://bermartinv.github.io/css/bower_components/normalize-css/normalize.css" />
-<link rel="stylesheet" href="../../../assets/css/bordes.css" type="text/css"/>
-
 <link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
-<title>Aprende CSS3 - flex</title>
-
+<title>Aprende CSS3 | filter</title>
+    <link rel="stylesheet" href="https://bermartinv.github.io/css/bower_components/normalize-css/normalize.css" />
     <!-- El enlace a Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
@@ -33,35 +30,56 @@
   ga('create', 'UA-85220689-1', 'auto');
   ga('send', 'pageview');
 </script>
+<script src="https://bermartinv.github.io/css/bower_components/jquery/dist/jquery.min.js"></script>
 
-<script type="text/javascript" async src="../../../assets/javascript/mostrar.js"></script>
+
+
+
 </head>
 <body>
-  <div class='loader'></div>
+  <div class="loader"></div>
 <header>
     <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
     <nav >
         <ul class="browser">
             <li><a href="https://bermartinv.github.io/css/index.html">Inicio</a></li>
             <li><a href="https://bermartinv.github.io/css/files/history.html">Historia</a></li>
-            <li ><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
+            <li class="active"><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
             <li><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
-            <li class="active"><a href="../../taller/menu_taller.html">Taller</a></li>
+            <li><a href="../../taller/menu_taller.html">Taller</a></li>
             <li><a href="">Contacto</a></li>
         </ul>
     </nav>
 </header>
 <div class="menu_inferior">
-    <p><a href="https://bermartinv.github.io/css/files/taller/menu_taller.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/taller/menu_taller.html"> Menu Taller</a> > <a class="menu_inf" href="">Flex</a> </p>
+    <p><a href="https://bermartinv.github.io/css/index.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> ><a class="menu_inf"  href="https://bermartinv.github.io/css/files/propiedades/menu_propiedades.html"> Propiedades</a> ><a href="" class="menu_inf"> filter</p></a>
 </div>
 <div class="contenido">
     <div class="columna1">
-
-            <article>
-
-                    <iframe src="https://slides.com/bermartinv/deck-1/embed" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-               </article>
-
+          <article>
+                         <p><strong>filter</strong>: Es una herramienta CSS que permite añadir efectos visuales de una imagen como si estuvieramos haciendolo con un editor de imagenes.                            </p>
+                         <div class="pulsador">
+                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                            <ul>
+                              <li title='difuminar'>blur()</li>
+                              <li title='brillo'>brightness()</li>
+                              <li title='contraste'>contrast()</li>
+                              <li title='sombra'>drop-shadow()</li>
+                              <li title='escala de grises'>grayscale()</li>
+                              <li title='rotar matiz'>hue-rotate()</li>
+                              <li title='invertir'>invert()</li>
+                              <li title='opacidad'>opacity()</li>
+                              <li title='saturacion'>saturate()</li>
+                              <li title='sepia'>sepia()</li>
+                              <li title=''>url() - para aplicarfiltros SVG</li>
+                              <li title='personalizado'>custom() </li>
+                            </ul>
+                         </div>
+                        <p>Comentar que se pueden aplicar varios estilos distintos a la vez.</p>
+                        <p><a class="menu_inf" title="Pulse aqui" href="https://bermartinv.github.io/css/files/herramientas/filter/filter.html">Herramienta para ver como trabajan las características de filter.</a></p>
+              </article>
     </div>
     <div class="columna2">
         <aside class="enlaces">
@@ -88,8 +106,9 @@
         <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a>
 </div>
 <div id="arrow_top">
-    <img src="../../../assets/images/arrow_top.png" id="image_arrow_top"/>
+    <img src="https://bermartinv.github.io/css/assets/images/arrow_top.png" id="image_arrow_top"/>
 </div>
 <script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
+<script type="text/javascript" src="../../../assets/javascript/mostrar.js"></script>
 </body>
 </html>
