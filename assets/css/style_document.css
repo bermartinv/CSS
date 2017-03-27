@@ -256,12 +256,7 @@ input:focus{
     background:#ffd11a;
 }
 
-/* * * * * * * * COLUMNA1 * * * * * * * * * */
-/*           HERRAMIENTA BACKGROUND         */
-.background-position{
-    border:solid thin black;
-    margin-bottom: 10px;
-}
+
 /* * * * * * * * COLUMNA2 * * * * * * * * * */
 .columna2{
     width:20vw;

@@ -1,16 +1,37 @@
+
+.background-position{
+    border:solid thin black;
+    margin: 10px;
+    padding: 10px;
+
+}
+#medida_filter{
+  display:flex;
+  flex-direction:column;
+
+}
 input[type=button],input[type=reset]{
   color:#006699;
   line-height:2em;
   background-color:rgba(255, 204, 204, 0.7);
   border-radius:15px;
   padding:0 15px 0 5px;
-  width:100px;
+  width:200px;
   border:solid thin black;
 }
 input[type=button]:hover,input[type=reset]:hover{
   border:solid 2px black;
   box-shadow:2px 2px 15px black;
   cursor:pointer;
+}
+label input[type=number]{
+  width:70px;
+  position:absolute;
+  right:10px;
+  border-radius : 5%;
+  margin:0px;
+  padding:0px;
+  font-size:1em;
 }
 label{
   font-size:2em;
@@ -81,7 +102,7 @@ input[type='radio']:checked + label:after{
 .valores{
   padding-left:5%;
 }
-#color_border,#estilo_border,#ancho_border,#redondos,#elipses{
+#color_border,#estilo_border,#ancho_border,#redondos,#elipses,#medida_filter{
   background:rgba(255, 204, 204, 0.7);
   position:relative;
 }
@@ -98,4 +119,13 @@ input[name=radioAll],input[name=elipStyle]{
 }
 .opacitable{
   opacity:0.2;
+}
+select option:first-of-type{
+  color:lightgrey;
+}
+select:focus{
+  outline: none;
+}
+input[type=reset]:focus,input[type=button]:focus{
+  outline:none;
 }

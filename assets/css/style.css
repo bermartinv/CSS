@@ -14,7 +14,7 @@ body{
 }
 .portada{
 
-    //background-size:cover;
+    /background-size:cover;
     background-repeat: no-repeat;
     background-image: url('../images/valencia.jpg');
     /*position: relative;*/
@@ -203,40 +203,12 @@ body{
 
     }
 }
-/*
-@media screen and (max-width:520px){
-    body{
 
-
-    }
+@media screen and (max-height:720px){
     .portada{
-        height:100vw;
-        width:100vh;
-        background-image:url('../../assets/images/valencia.svg');
-
-
+      background:linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+      background-size:auto;
+      height:100%;
+      width:100%;
     }
-    .menu{
-    }
-    .menu li a{
-        width:50px;
-        height:10px;
-        margin:5px;
-        font-size: 0.5rem;
-        border: 3px double green;
-        border-radius: 120px;
-        padding: 28px 10px;
-        font-weight:bold;
-        text-shadow:5px 2px 4px darkgreen;
-    }
-    .menu li:hover a{
-        animation:none;
-    }
-    .menu li:nth-child(4) a{
-        padding-right:15px!important;
-        margin-left:0px !important;
-    }
-
-
 }
-*/
