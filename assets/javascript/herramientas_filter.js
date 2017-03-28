@@ -13,8 +13,10 @@ copy_paste();
 function deshabilitar (){
   var elementos = document.getElementsByName('medida');
   var losinputs = document.querySelectorAll('.valores');
-  document.getElementById('html_filter').innerHTML = '';
+
   document.getElementById('solucion').style.filter = 'none';
+  document.getElementById('select_filter').value= '';
+  document.getElementById('html_filter').innerHTML = '';
   for(var i = 0 ; i < elementos.length ; i++){
       elementos[i].disabled = true;
       losinputs[i].style.opacity = 0.2;
@@ -38,16 +40,11 @@ function analizar(){
         losinputs[0].style.opacity = 1;
         elementos[0].addEventListener('input',function(){
                   imagen.style.filter = 'blur('+elementos[0].value+'px)';
-                  mostrar(elementos[0].value);
                   objeto.medida = elementos[0].value;
                   objeto.estilo = 'blur';
+                  objeto.tipo_medida = 'px';
                   document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'px);';
-                      /*if (objeto.medida > 200){
-                        alert ('Te has pasado de numero');
-                        deshabilitar();
-                        elementos[0].value = '';
-                        element_select = losinputs[0].value;
-                      }*/
+                  filtrarDatos(objeto.tipo_medida,objeto.medida);
           })
 
     }else if (element_select.options[2].selected) {
@@ -58,7 +55,9 @@ function analizar(){
                   objeto.estilo = 'brightness';
                   imagen.style.filter = objeto.estilo+'('+elementos[2].value+'%)';
                   objeto.medida = elementos[2].value;
+                  objeto.tipo_medida = '%%';
                   document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';
+                  filtrarDatos(objeto.tipo_medida,objeto.medida);
           })
     }else if (element_select.options[3].selected) {
               deshabilitar();
@@ -68,67 +67,81 @@ function analizar(){
                         objeto.estilo = 'contrast';
                         imagen.style.filter = objeto.estilo+'('+elementos[2].value+'%)';
                         objeto.medida = elementos[2].value;
+                        objeto.tipo_medida = '%%';
                         document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';
+                        filtrarDatos(objeto.tipo_medida,objeto.medida);
                 })
     }else if (element_select.options[4].selected) {
                         deshabilitar();
                         elementos[1].disabled = false;
                         losinputs[1].style.opacity = 1;
                         elementos[1].addEventListener('input',function(){
-                                  objeto.estilo = 'grayscale';
-                                  imagen.style.filter = objeto.estilo+'('+elementos[1].value+'%)';
-                                  objeto.medida = elementos[1].value;
-                                  document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';
+                        objeto.estilo = 'grayscale';
+                        imagen.style.filter = objeto.estilo+'('+elementos[1].value+'%)';
+                        objeto.medida = elementos[1].value;
+                        objeto.tipo_medida = '%';
+                        document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';
+                        filtrarDatos(objeto.tipo_medida,objeto.medida);
                           })
     }else if (element_select.options[5].selected) {
                         deshabilitar();
                         elementos[3].disabled = false;
                         losinputs[3].style.opacity = 1;
                         elementos[3].addEventListener('input',function(){
-                                  objeto.estilo = 'hue-rotate';
-                                  imagen.style.filter = objeto.estilo+'('+elementos[3].value+'deg)';
-                                  objeto.medida = elementos[3].value;
-                                  document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'deg);';
+                        objeto.estilo = 'hue-rotate';
+                        imagen.style.filter = objeto.estilo+'('+elementos[3].value+'deg)';
+                        objeto.medida = elementos[3].value;
+                        objeto.tipo_medida = 'deg';
+                        document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'deg);';
+                        filtrarDatos(objeto.tipo_medida,objeto.medida);
                           })
       }else if (element_select.options[6].selected) {
                         deshabilitar();
                         elementos[1].disabled = false;
                         losinputs[1].style.opacity = 1;
                         elementos[1].addEventListener('input',function(){
-                                  objeto.estilo = 'invert';
-                                  imagen.style.filter = objeto.estilo+'('+elementos[1].value+'%';
-                                  objeto.medida = elementos[1].value;
-                                  document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';
+                        objeto.estilo = 'invert';
+                        imagen.style.filter = objeto.estilo+'('+elementos[1].value+'%';
+                        objeto.medida = elementos[1].value;
+                        objeto.tipo_medida = '%';
+                        document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';
+                        filtrarDatos(objeto.tipo_medida,objeto.medida);
                           })
       }else if (element_select.options[7].selected) {
                         deshabilitar();
                         elementos[1].disabled = false;
                         losinputs[1].style.opacity = 1;
                         elementos[1].addEventListener('input',function(){
-                                  objeto.estilo = 'opacity';
-                                  imagen.style.filter = objeto.estilo+'('+elementos[1].value+'%)';
-                                  objeto.medida = elementos[1].value;
-                                  document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';
+                        objeto.estilo = 'opacity';
+                        imagen.style.filter = objeto.estilo+'('+elementos[1].value+'%)';
+                        objeto.medida = elementos[1].value;
+                        objeto.tipo_medida = '%';
+                        document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';
+                        filtrarDatos(objeto.tipo_medida,objeto.medida);
                           })
       }else if (element_select.options[8].selected) {
                         deshabilitar();
                         elementos[2].disabled = false;
                         losinputs[2].style.opacity = 1;
                         elementos[2].addEventListener('input',function(){
-                                  objeto.estilo = 'saturate';
-                                  imagen.style.filter = objeto.estilo+'('+elementos[2].value+'%)';
-                                  objeto.medida = elementos[2].value;
-                                  document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';
+                        objeto.estilo = 'saturate';
+                        imagen.style.filter = objeto.estilo+'('+elementos[2].value+'%)';
+                        objeto.medida = elementos[2].value;
+                        objeto.tipo_medida = '%%';
+                        document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';
+                        filtrarDatos(objeto.tipo_medida,objeto.medida);
                         })
       }else if (element_select.options[9].selected) {
                         deshabilitar();
                         elementos[1].disabled = false;
                         losinputs[1].style.opacity = 1;
                         elementos[1].addEventListener('input',function(){
-                                  objeto.estilo = 'sepia';
-                                  imagen.style.filter = objeto.estilo+'('+elementos[1].value+'%)';
-                                  objeto.medida = elementos[1].value;
-                                  document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';                                           })
+                        objeto.estilo = 'sepia';
+                        imagen.style.filter = objeto.estilo+'('+elementos[1].value+'%)';
+                        objeto.medida = elementos[1].value;
+                        objeto.tipo_medida = '%';
+                        document.getElementById('html_filter').innerHTML ='filter: '+ objeto.estilo + '('+objeto.medida+'%);';
+                      filtrarDatos(objeto.tipo_medida,objeto.medida);           })
         }else{
           alert ('Hola que tal');
         }
@@ -177,6 +190,35 @@ function copy_paste(){
 
                                       })
 }
-function mostrar(valor){
-  alert (valor);
+function filtrarDatos(tipo,valor){
+  switch (tipo) {
+    case 'px':
+
+      if (valor > 200){
+        alert ('Debe introducir un número inferior a 200');
+        deshabilitar();
+      }
+      break;
+    case '%':
+      if (valor > 100){
+        alert ('Debe introducir un número inferior a 100');
+        deshabilitar();
+      }
+        break;
+    case '%%':
+      if (valor > 1000){
+        alert ('Debe introducir un número inferior a 1000');
+        deshabilitar();
+      }
+          break;
+    case 'deg':
+      if (valor > 360){
+        alert ('Debe introducir un número inferior a 360');
+        deshabilitar();
+      }
+            break;
+
+    default:
+
+  }
 }
