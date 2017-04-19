@@ -1,9 +1,8 @@
-window.onload = function(){
 
     herramienta_background();
     copy_paste();
     mostrarCodigo();
-}
+
 
 function herramienta_background(){
 
