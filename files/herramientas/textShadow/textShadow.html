@@ -26,7 +26,7 @@
             font-family: 'Roboto', sans-serif;
         -->
 <script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
-<script type="text/javascript" src="../../../assets/javascript/textshadow.js"></<script>
+
 <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -62,25 +62,25 @@
     <div class="parte1">
           <article>
            <div class="datos">
-   <form name='formulario_filter' id='formulario_border'>
+   <form name='formulario_textshadow' id='formulario_border'>
      <label>Seleccione un efecto
 
 
 
 <div  class="background-position" id="medida_filter">
   <label class='valores'>Sombra horizontal X en px
-  <input name = 'medida' id = 'sombraX' type = 'number' min = '0' max = '200' /></label><br/>
+  <input name = 'sombraX' id = 'sombraX' type = 'number' min = '0' max = '200'  /></label><br/>
   <label class='valores'>Sombra vertical Y en px
-  <input name = 'medida' id = 'sombraY' type = 'number' min = '0' max = '200' /></label><br/>
+  <input name = 'sombraY' id = 'sombraY' type = 'number' min = '0' max = '200' /></label><br/>
   <label class='valores'>Difuminar (blur) en px
-  <input name = 'medida' id = 'blur' type = 'number' min = '0' max = '200' /></label><br/>
+  <input name = 'blur' id = 'blur' type = 'number' min = '0' max = '200' /></label><br/>
   <label class='valores'>Color sombra
-  <input name = 'medida' id = 'color' type = 'color'/></label><br/>
+  <input name = 'color' id = 'color' type = 'color'/></label><br/>
   <label class='valores'>Texto a poner sombra</label>
-  <input name = 'medida' id = 'texto' type = 'text' maxlength="200" /><br/>
+  <input name = 'texto' id = 'texto' type = 'text' maxlength="200" /><br/>
 </div>
   <div id="botones">
-     <input type="reset" name ="reset" value="Reset" id="reset">
+     <input type="button" name ="reset" value="Reset" id="reset">
      <input type="button" value="Código HTML" name="botonCodigo" id='botonCodigo'>
   </div>
     </form>
@@ -100,7 +100,7 @@
         <div id="codigo_html" class="codigo_html">
               <img id="copy_paste" src="../../../assets/images/copy_paste.svg" title='copiar portapapeles'/>
             <div id='html'>
-              <div id="html_filter"></div>
+              <div id="html_textshadow"></div>
 
             </div>
             <div id='img_copied'>
@@ -131,5 +131,6 @@
     <img src="../../../assets/images/arrow_top.png" id="image_arrow_top"/>
 </div>
 <script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
+<script type="text/javascript" src="../../../assets/javascript/textshadow.js"></script>
 </body>
 </html>

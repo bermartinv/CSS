@@ -129,3 +129,89 @@ select:focus{
 input[type=reset]:focus,input[type=button]:focus{
   outline:none;
 }
+
+/* popup de alerta si no se introducen los datos que se requieren*/
+#popup{
+  background-color:coral;
+  border:solid thin black;
+  color:DarkOliveGreen ;
+  position:absolute;
+  height:20%;
+  width:60vw;
+  top:30vh;
+  left:15vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:2em;
+  z-index:2;
+  display:none;
+}
+#popup div p{
+  margin:20px 10px 10px 10px;
+}
+#boton_popup{
+  //display:inline-block;
+  border:solid thin blue;
+  border-radius:10px;
+  text-align:center;
+  width:80px;
+  height:40px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  left:40%;
+  color:darkblue;
+  background:lightblue;
+  font-size:1em;
+  padding-left:20px;
+}
+#boton_popup:hover{
+  cursor:pointer;
+}
+.close{
+  z-index:3;
+}
+#close{
+  position:absolute;
+  top:-5%;
+  right:0.5%;
+}
+#close:hover{
+  cursor:pointer;
+}
+@media screen and (max-width:850px){
+  #popup{
+    height:30%;
+    width:70%;
+  }
+  #boton_popup{
+    width:60px;
+    height:40px;
+    font-size:.8em;
+  }
+
+}
+/*
+.animation{
+  animation-name:popup;
+  animation-duration:4s;
+  animation-timing-function:ease-in-out;
+
+}
+
+@keyframes popup{
+  from
+  { top:-35%;left:25%}
+  to
+  { top:20%;left:25%}
+}
+#close{
+  position:absolute;
+  top:-5%;
+  right:0.5%;
+}
+#close:hover{
+  cursor:pointer;
+}

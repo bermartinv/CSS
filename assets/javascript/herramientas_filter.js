@@ -195,25 +195,26 @@ function filtrarDatos(tipo,valor){
     case 'px':
 
       if (valor > 200){
-        alert ('Debe introducir un número inferior a 200');
+        pop_alert(200);
         deshabilitar();
       }
       break;
     case '%':
       if (valor > 100){
         alert ('Debe introducir un número inferior a 100');
+        pop_alert(100);
         deshabilitar();
       }
         break;
     case '%%':
       if (valor > 1000){
-        alert ('Debe introducir un número inferior a 1000');
+        pop_alert(1000);
         deshabilitar();
       }
           break;
     case 'deg':
       if (valor > 360){
-        alert ('Debe introducir un número inferior a 360');
+        pop_alert(360);
         deshabilitar();
       }
             break;
@@ -222,3 +223,22 @@ function filtrarDatos(tipo,valor){
 
   }
 }
+
+function pop_alert(valor){
+  var popup = document.getElementById('popup');
+  document.getElementById('valor_filter').innerHTML = valor;
+  alert (window.pageYOffset);
+  popup.style.top = (window.pageYOffset+100)+'px';
+    if (popup.style.display == 'block'){
+      popup.style.display = 'none';
+    } else {
+      popup.style.display = 'block';
+    }
+
+  document.getElementById('boton_popup').addEventListener('click',function(){
+    popup.style.display = 'none';
+  });
+  document.getElementById('close').addEventListener('click',function(){
+    popup.style.display = 'none';
+  });
+};

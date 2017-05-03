@@ -238,6 +238,9 @@ code{
         margin:10px;
         overflow:scroll;
     }
+#solucion img{
+  width:100%;
+}
 .parte2{
     background-attachment: scroll;
 }
@@ -489,7 +492,7 @@ footer p{
 
 /* RESPONSIVE */
 @media screen and (max-width:850px){
-    bodt{
+    body{
         font-size:1.1rem;
     }
     .browser{
