@@ -1,0 +1,103 @@
+/* estilo para los input range*/
+input[type='range'] {
+  display: block !important;
+  width: 250px;
+}
+#valor{
+    font-family: "Average",serif;
+    font-size: 1.3rem;
+    text-align: justify;
+    line-height: 1.2em;
+    color: dimgray;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+label{
+  display:block !important;
+}
+input[type='range']:focus {
+  outline: none;
+}
+/* Primero quitamos el estilo por defecto que tiene el input */
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+/* Estilo del thumb para webkit */
+input[type=range]::-webkit-slider-thumb {
+  background-color: #777;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  margin-top: -9px;
+}
+/* Estilo del thumb para moz */
+input[type=range]::-moz-range-thumb {
+  background-color: #777;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+/* Estilo para el thum para ms */
+input[type=range]::-ms-thumb {
+  background-color: #777;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+/* El estilo del track para webkit */
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #777;
+  height: 3px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+/* Estilo de track para mox */
+input[type=range]::-moz-range-track {
+  background-color: #777;
+  height: 3px;
+}
+/* Estilo del track para ms */
+input[type=range]::-ms-track {
+  background-color: #777;
+  height: 3px;
+}
+
+input[type=range]::-ms-fill-lower {
+  background-color: HotPink
+}
+
+input[type=range]::-ms-fill-upper {
+  background-color: black;
+} 
+
+.blur{
+  filter : 0px;
+  }
+.brightness{
+
+  }
+.contrast{
+
+  }
+.hue-rotate{
+
+  }
+.invert{
+
+  }
+.opacity{
+
+  }
+.saturate{
+
+  }
+.sepia{
+
+}

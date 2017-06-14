@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta namer="viewport" content="width=device-width,initial-scale=1,user-scalable= yes"/>
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Bernardo Martin Viudez">
+<meta name="application-name" content="Educacion basica CSS" >
+<meta name="keywords" content="css, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
+<meta name="robots" content="index,follow" >
+<link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
+<link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
+<link rel="stylesheet" href="https://bermartinv.github.io/css/bower_components/normalize-css/normalize.css" />
+<link rel="stylesheet" href="../../../assets/css/herramienta_border.css"/>
+<link rel="stylesheet" href="../../../assets/css/style_tools.css"/>
+<link rel="stylesheet" href="../../../assets/css/style_type_range.css"/>
+<link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
+<title>Aprende CSS3 | Herramienta filter II</title>
+
+    <!-- El enlace a Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+        <!--  Use the following CSS rules to specify these families:
+            font-family: 'Nothing You Could Do', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Roboto', sans-serif;
+        -->
+<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-85220689-1', 'auto');
+        ga('send', 'pageview');
+</script>
+
+
+
+</head>
+<body>
+<div class='loader'></div>
+<header>
+    <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
+    <nav >
+        <ul class="browser">
+            <li><a href="https://bermartinv.github.io/css/index.html">Inicio</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/history.html">Historia</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
+            <li class="active"><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
+            <li><a href="../../taller/menu_taller.html">Taller</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="menu_inferior">
+    <p><a href="https://bermartinv.github.io/css/files/herramientas.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a> > <a href="" class="menu_inf">filter II</a></p>
+</div>
+<div class="herramienta">
+    <div class="parte1">
+          <article>
+           <div class="datos">
+   <form name='formulario_filter2' id='formulario_border'>
+
+<div  class="background-position" id="medida_filter">
+  <label>Blur
+  <input type='range' min='0' max='100' name='blur' id='rango1' /><spam id='valor'></spam>
+  </label>
+  <label>Brightness
+  <input type='range' min='0' max='100' name='brightness' id='rango2' /><spam id='valor2'></spam>
+  </label>
+  <label>Contrast
+  <input type='range' min='0' max='100' name='contrast' id='rango1' /><spam id='valor'></spam>
+  </label>
+  <label>Hue-rotate
+  <input type='range' min='0' max='100' name='hue-rotate' id='rango2' /><spam id='valor2'></spam>
+  </label>
+  <label>Graysscale
+  <input type='range' min='0' max='100' name='graysscale' id='rango2' /><spam id='valor2'></spam>
+  </label>
+  <label>Invert
+  <input type='range' min='0' max='100' name='invert' id='rango1' /><spam id='valor'></spam>
+  </label>
+  <label>Opacity
+  <input type='range' min='0' max='100' name='opacity' id='rango2' /><spam id='valor2'></spam>
+  </label>
+  <label>Saturate
+  <input type='range' min='0' max='100' name='saturate' id='rango1' /><spam id='valor'></spam>
+  </label>
+  <label>Sepia
+  <input type='range' min='0' max='100' name='sepia' id='rango2' /><spam id='valor2'></spam>
+  </label>
+  
+
+</div>
+  <div id="botones">
+     <input type="reset" name ="reset" value="Reset" id="reset">
+     <input type="button" value="Código HTML" name="botonCodigo" id='botonCodigo'>
+  </div>
+    </form>
+
+
+
+          </article>
+    </div>
+    <div class="parte2">
+        <div  id="solucion" style = 'width:100%;
+    max-width:800px;height:100%' class = blur brightness contrast hue-rotate invert opacity saturate sepia >
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora beatae assumenda ad, impedit cumque ea praesentium, unde inventore, adipisci quisquam, qui vero! Explicabo quae rerum, magni, libero consectetur ad voluptatem.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quod laudantium doloribus, voluptatem quae rem consequuntur facere, distinctio similique cumque nobis vel quos assumenda natus placeat itaque illo quasi possimus.</p>-->
+            <img  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/392/redwood-ukulele-top.jpg" alt="ukulele">
+
+
+        </div>
+    </div>
+    <div class="parte3">
+        <div id="codigo_html" class="codigo_html">
+              <img id="copy_paste" src="../../../assets/images/copy_paste.svg" title='copiar portapapeles'/>
+            <div id='html'>
+              <div id="html_filter"></div>
+
+            </div>
+            <div id='img_copied'>
+              <svg height="100" width="100">
+              <circle cx="50" cy="50" r="40" stroke="red" stroke-width="3" fill="transparent" />
+              <text x="21" y="55" fill="red">Copied!</text>
+              <circle cx="50" cy="50" r="33" stroke="red" stroke-width="3" fill="transparent" />
+              </svg>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+    <hr>
+
+<footer>
+
+<p>&copy;Berana Social Media and Marketing 2016</p><p>Contacto</p><p>Redes Sociales</p>
+</footer>
+<div class="redes">
+        <a href="http://facebook.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/face.png" target="_blank"></a>
+        <a href="https://twitter.com/bermartinv2" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/twitter.jpg" ></a>
+        <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
+        <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a>
+</div>
+<div id='popup' class='animation'>
+  <div>
+    <p>Debe introducir un número inferior o igual a <span id='valor_filter'></span> para que su estilo de filter quede aceptable.</p>
+  <div id='boton_popup'>OK!</p>
+  </div>
+  <div id='close'><img src='http://prosetech.com/html5/Chapter%2002/close_icon.png'</div>
+</div>
+<div id="arrow_top">
+    <img src="../../../assets/images/arrow_top.png" id="image_arrow_top"/>
+</div>
+<script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
+<script type="text/javascript" src="../../../assets/javascript/input_range_val.js"></script>
+</body>
+</html>
