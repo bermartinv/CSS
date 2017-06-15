@@ -2,6 +2,7 @@
 input[type='range'] {
   display: block !important;
   width: 250px;
+  margin-top:5px;
 }
 #valor{
     font-family: "Average",serif;
@@ -9,11 +10,10 @@ input[type='range'] {
     text-align: justify;
     line-height: 1.2em;
     color: dimgray;
-    margin-bottom: 30px;
-    margin-top: 10px;
 }
 label{
   display:block !important;
+  margin-bottom: 0px !important;
 }
 input[type='range']:focus {
   outline: none;
