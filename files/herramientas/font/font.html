@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable= yes "/>
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Bernardo Martin Viudez">
+<meta name="application-name" content="Educacion basica CSS" >
+<meta name="keywords" content="css, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
+<meta name="robots" content="index,follow" >
+<link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
+<link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
+<link rel="stylesheet" href="https://bermartinv.github.io/css/bower_components/normalize-css/normalize.css" />
+<link rel="stylesheet" href="../../../assets/css/herramienta_border.css"/>
+<link rel="stylesheet" href="../../../assets/css/style_tools.css"/>
+<link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
+<title>Aprende CSS3 | font | Herramienta font</title>
+
+    <!-- El enlace a Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+        <!--  Use the following CSS rules to specify these families:
+            font-family: 'Nothing You Could Do', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Roboto', sans-serif;
+        -->
+<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-85220689-1', 'auto');
+        ga('send', 'pageview');
+</script>
+
+
+
+</head>
+<body>
+<div class='loader'></div>
+<header>
+    <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
+    <nav >
+        <ul class="browser">
+            <li><a href="https://bermartinv.github.io/css/index.html">Inicio</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/history.html">Historia</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
+            <li class="active"><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
+            <li><a href="../../taller/menu_taller.html">Taller</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="menu_inferior">
+    <p><a href="https://bermartinv.github.io/css/files/herramientas.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a><a class="menu_inf"  href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a> > <a href="" class="menu_inf">border</a></p>
+</div>
+<div class="herramienta">
+    <div class="parte1">
+          <article>
+           <div class="datos">
+   <form name='formulario_font' id='formulario_border'>
+    
+
+
+<div  class="background-position" id="medida_filter">
+  <div id='fontfamily'>
+      <label class='valores' >font-family</label>
+        <select name='fontfamily'>
+          <option value='none'>none</option>
+          <option value='cursive'>cursive</option>
+          <option value='sans-serif'>sans-serif</option>
+          <option value='Helvetica'>Helvetica</option>
+          <option value='Verdana'>Verdana</option>
+          <option value='Georgia'>Georgia</option>
+          <option value='FreeMono'>FreeMono</option>
+          <option value='Brush Script Std'>Brush Script Std</option>
+          <option value='Chalkduster'>Chalkduster</option>
+          <option value='fantasy'>fantasy</option>
+        </select>
+  </div>
+  <div id='fontsize'>
+      <label class='valores'>Indique que tipo de medida quiere</label><br/>
+      <label for='palabra_clave'>Palabra clave</label>
+        <input type='radio' name='palabra_clave' id='palabra_clave'/><br/>
+      <label for='valor'>Valor numérico</label>
+        <input type='radio' name='valor' id='valor'/>
+      <br/><br/>
+        <div id='seleccion_fontsize'>
+            <label class='valores' for='seleccion_palabra_clave'> Elija una palabra clave
+            <select id='seleccion_palabra_clave'>
+              <option value='none'>none</option>
+              <option value='xx_small'>xx_small</option>
+              <option value='x-samll'>x-small</option>
+              <option value='small'>small</option>
+              <option value='medium'>medium</option>
+              <option value='large'>large</option>
+              <option value='x-large'>x-large</option>
+              <option value='xx-large'>xx-large</option>
+              <option value='smaller'>smaller</option>
+              <option value='larger'>larger</option>
+            </select><br/>
+            <label for='valor_fontsize'>Elija tamaño</label><br/>
+            <input type='range' id='valor_fontsize' min='0' max='30'><br/>
+            <label for='unidad_valor_fontsize'>Unidad de medida</label>
+            <select id='unidad_valor_fontsize'>
+              <option value='px'>px</option>
+              <option value='em'>em</option>
+              <option value='%'>%</option>
+            </select>
+        </div>
+  </div>
+
+  <div id='font-weight'>
+    <label class='valores'>Indique font-weight</label><br/>
+    <select id='valor_weight'>
+      <option value='none'>none</option>
+      <option value='normal'>normal</option>
+      <option value="bold">bold</option>
+      <option value="bolder">bolder</option>
+      <option value='lighter'>lighter</option>
+      <option value='100'>100</option>
+      <option value='200'>200</option>
+      <option value='300'>300</option>
+      <option value='400'>400</option>
+      <option value='500'>500</option>
+      <option value='600'>600</option>
+      <option value='700'>700</option>
+      <option value='800'>800</option>
+      <option value='900'>900</option>
+    </select><br/>
+  </div>
+
+  <div id='font-style'>
+    <label class='valores'>Indique que estilo de fuente quiere</label><br/>
+      <select id='valor-font-style'>
+        <option value='none'>none</option>
+        <option value='normal'>normal</option>
+        <option value='italic'>italic</option>
+        <option value='oblique'>oblique</option>
+      </select><br/>
+  </div>
+
+  <div id='font-variant'>
+    <label class='valores'>Indique la opcion para font-variant</label><br/>
+      <select id='valor-font-variant'>
+        <option value='none'>none</option>
+        <option value='normal'>normal</option>
+        <option value='small-caps'>small-caps</option>
+      </select><br/>
+  </div>
+  <div id='font-stretch'>
+    <label class='valores'>Indica que stretch quieres tu texto</label><br/>
+      <select id='valor-font-stretch'>
+        <option value='none'>none</option>
+        <option value='normal'>normal</option>
+        <option value='wider'>wider</option>
+        <option value='narrower'>narrower</option>
+        <option value='ultra-condensed'>ultra-condensed</option>
+        <option value='condensed'>condensed</option>
+        <option value='semi-condensed'>semi-condensed</option>
+        <option value='semi-expanded'>semi-expanded</option>
+        <option value='expanded'>expanded</option>
+        <option value='extra-expanded'>extra-expanded</option>
+        <option value='ultra-expanded'>ultra-expanded</option>
+      </select>
+
+</div>
+  <div id="botones">
+     <input type="button" name ="reset" value="Reset" id="reset">
+     <input type="button" value="Código HTML" name="botonCodigo" id='botonCodigo'>
+  </div>
+    </form>
+</div>
+
+
+          </article>
+    </div>
+    <div class="parte2">
+        <div id="solucion">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora beatae assumenda ad, impedit cumque ea praesentium, unde inventore, adipisci quisquam, qui vero! Explicabo quae rerum, magni, libero consectetur ad voluptatem.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quod laudantium doloribus, voluptatem quae rem consequuntur facere, distinctio similique cumque nobis vel quos assumenda natus placeat itaque illo quasi possimus.</p>
+
+        </div>
+    </div>
+    <div class="parte3">
+        <div id="codigo_html" class="codigo_html">
+              <img id="copy_paste" src="../../../assets/images/copy_paste.svg" title='copiar portapapeles'/>
+            <div id='html'>
+              <div id="borderAll"></div>
+              <div id="borderTopColor"></div>
+              <div id="borderRightColor"></div>
+              <div id="borderBottomColor"></div>
+              <div id="borderLeftColor"></div>
+              <div id="borderStyleAll"></div>
+              <div id="borderTopStyle"></div>
+              <div id="borderRightStyle"></div>
+              <div id="borderBottomStyle"></div>
+              <div id="borderLeftStyle"></div>
+              <div id="borderWidthAll"></div>
+              <div id="borderTopWidth"></div>
+              <div id="borderRightWidth"></div>
+              <div id="borderBottomWidth"></div>
+              <div id="borderLeftWidth"></div>
+              <div id="borderTopLeftElipse"></div>
+              <div id="borderTopRightElipse"></div>
+              <div id="borderBottomRightElipse"></div>
+              <div id="borderBottomLeftRadius"></div>
+              <div id=borderAllRadius></div>
+              <div id="borderTopLRadius"></div>
+              <div id="borderTopRRadius"></div>
+              <div id="borderBottomRRadius"></div>
+              <div id="borderBottomLRadius"></div>
+
+            </div>
+            <div id='img_copied'>
+              <svg height="100" width="100">
+              <circle cx="50" cy="50" r="40" stroke="red" stroke-width="3" fill="transparent" />
+              <text x="21" y="55" fill="red">Copied!</text>
+              <circle cx="50" cy="50" r="33" stroke="red" stroke-width="3" fill="transparent" />
+              </svg>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+    <hr>
+<footer>
+
+<p>&copy;Berana Social Media and Marketing 2016</p><p>Contacto</p><p>Redes Sociales</p>
+</footer>
+<div class="redes">
+        <a href="http://facebook.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/face.png" target="_blank"></a>
+        <a href="https://twitter.com/bermartinv2" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/twitter.jpg" ></a>
+        <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
+        <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a>
+</div>
+<div id="arrow_top">
+    <img src="../../../assets/images/arrow_top.png" id="image_arrow_top"/>
+</div>
+<script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
+<script type="text/javascript" src="../../../assets/javascript/herramienta_border.js"></script>
+</body>
+</html>

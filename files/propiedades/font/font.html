@@ -58,194 +58,124 @@
     <div class="columna1">
           <article>
             <article>
-                <p>Los <strong>bordes</strong> definen como dice su palabra los
-                  bordes de algún contenido que queremos remarcar. Podemos
-                  distinguir varias características para definir el borde.</p>
+                <p>La característica <strong>font </strong> define las características de las fuentes de nuestro texto que utilizamos 
+                en nuestra app o web. </p>
+                <p>Vamos a definir las características que engloba <strong>font</strong>
 
-                <p><strong>border-width:</strong> Con esta característica definimos el
-                  ancho del borde que queremos definir. Además de definir el ancho del borde
-                podemos especificar si queremos indicar la medida a uno de los bordes
-              del contenedor</p>
+                <p><strong>1. font-family:</strong> Define el tipo de fuente que vamos a utilizar. Tenemos que destacar que podemos indicar varios 
+                tipos separados entre comas, con la razón de que si nuestro sistema no soporta el tipo de fuente, intentará utilizar el siguiente tipo de fuente, así hasta poder escribir nuestro texto por el sisema.</p>
+                <p>Además cuando el nombre de tipo de letras esté formado por más de una palabra, el nombre estará escrito entre comillas.</p>
+              <div class="pulsador">
+                     <p>Tipos de font-family<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                    </div>
+                    <div class="ejemplo">
+                        <ul>
+                            <li>serif</li>
+                            <li>sans-serif</li>
+                            <li>cursive</li>
+                            <li>monospace</li>
+                            <li>fantasy</li>
+                            <li>fangsong (chino)</li> 
+                            <li>emoji</li>
+                            <li>math</li>
+
+                        </ul>
+                        <img alt='Ejemplo de tipo de familia' title='Ejemplo tipos de letra' src='../../../assets/images/font-family.png'/>
+                      </div><br/><br/>
+              <p><strong>2. font-size:</strong> Indicamos la medida de nuestras fuentes, podemos usar para especificar la medida palabras clave, podemos usar %, y podemos usar <a href='../../referencia/unidades/unidades_menu.html'>unidades</a>.</p>
+                <p>Además cuando el nombre de tipo de letras esté formado por más de una palabra, el nombre estará escrito entre comillas.</p>
               <div class="pulsador">
                      <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
                     </div>
                     <div class="ejemplo">
                         <ul>
-                            <li>border-width</li>
-                            <li>border-top-width</li>
-                            <li>border-right-width</li>
-                            <li>border-bottom-width</li>
-                            <li>border-left-width</li>
+                            <li>xx-small</li>
+                            <li>x-small</li>
+                            <li>small</li>
+                            <li>medium</li>
+                            <li>large</li>
+                            <li>x-large</li>
+                            <li>xx-large</li>
+                            <li>smaller</li>
+                            <li>larger</li>
+                            <li>unidades</li>
+                            <li>%</li>
                         </ul>
                       </div><br/><br/>
-                <p> Además podemos definir el ancho del borde con palabras ya definidas</p>
+                <p><strong>3. font-weight:</strong> Indicamos el espesor de las fuentes que vamos a usar. Como sucedía anteriormente definimos sus valores con palabras claves o valores numéricos.</p>
+              <div class="pulsador">
+                     <p>Valores <img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                    </div>
+                    <div class="ejemplo">
+                        <ul>
+                            <li>normal</li>
+                            <li>bold</li>
+                            <li>bolder</li>
+                            <li>lighter</li>
+                            <li>100</li>
+                            <li>200</li>
+                            <li>300</li>
+                            <li>400</li>
+                            <li>500</li>
+                            <li>600</li>
+                            <li>700</li>
+                            <li>800</li>
+                            <li>900</li>
+                        </ul>
+                      </div><br/><br/>
+                <p><strong>4. font-style:</strong> Especificamos el estilo de nuestra fuente.</p>
+              <div class="pulsador">
+                     <p>Valores <img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                    </div>
+                    <div class="ejemplo">
+                        <ul>
+                            <li>normal</li>
+                            <li>italic</li>
+                            <li>oblique</li>
+                        </ul>
+                      </div><br/><br/>
+              <p><strong>5. font-variant:</strong> Indicamos si nuestra fuente estárá en mayúsculas o minúsculas.</p>
+              <div class="pulsador">
+                     <p>Valores <img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                    </div>
+                    <div class="ejemplo">
+                        <ul>
+                            <li>normal</li>
+                            <li>small-caps</li>
+                        </ul>
+                      </div><br/><br/>
+              <p><strong>6. font-stretch:</strong> Especificamos la separación de entre letra y letra de nuestra fuente.</p>
+              <div class="pulsador">
+                     <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                    </div>
+                    <div class="ejemplo">
+                        <ul>
+                            <li>normal</li>
+                            <li>wider</li>
+                            <li>narrower</li>
+                            <li>ultra-condensed</li>
+                            <li>condensed</li>
+                            <li>semi-condensed</li>
+                            <li>semi-expanded</li>
+                            <li>expanded</li>
+                            <li>extra-expanded</li>
+                            <li>ultra-expanded</li>
+                        </ul>
+                      </div><br/><br/>
+               
+                <p>Además podemos usar la forma abreviado usando <pre>font: font-style || font-variant || font-weight || font-stretch || font-size || font-family </pre></p>
+                <p>Tenemos otras características que aunque todavía no se encuentran como estandar en todos los navegadores en alguno 
+                de ellos si se estan usando hace tiempo, pero para su uso deberiamos comprobar ne CanIUse en que navegador usar,
+                 <a target='_blank' href='https://caniuse.com/#search=font-size-adjust'>font-size-adjust</a>, <a target='_blank' href='https://caniuse.com/#search=font-kerning'>font-kerning</a>, <a href='https://caniuse.com/#search=font-rendering-controls' target='_blank'>font-rendering-controls</a> ..... </p>
                 <div class="pulsador">
-                       <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                      </div>
-                      <div class="ejemplo">
-                          <ul>
-                              <li class='thin'>thin</li>
-                              <li class='medium'>medium</li>
-                              <li class='thick'>thick</li>
-                          </ul>
-                        </div><br/><br/>
-                <p><strong>border-color: </strong> Especificamos el color del borde.
-                  Al igual que la característica anterior podemos especificar
-                  que borde del contenedor queremos darle color.</p>
-                  <div class="pulsador">
-                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                        </div>
-                        <div class="ejemplo">
-                            <ul>
-                                <li>border-color</li>
-                                <li>border-top-color</li>
-                                <li>border-right-color</li>
-                                <li>border-bottom-color</li>
-                                <li>border-left-color</li>
-                            </ul>
-                          </div><br/><br/>
-               <p><strong>border-style : </strong>Definimos el tipo de borde que
-                 queremos darle a nuestro contenedor. Como sucedía en los otros
-                 casos podemos especificar algún lado para darle un tipo de estilo
-                 diferente.</p>
-                 <div class="pulsador">
-                        <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                       </div>
-                       <div class="ejemplo">
-                           <ul>
-                               <li>border-style</li>
-                               <li>border-top-style</li>
-                               <li>border-right-style</li>
-                               <li>border-bottom-style</li>
-                               <li>border-left-style</li>
-                           </ul>
-                         </div><br/><br/>
-                         <div class="pulsador">
-                                <p>Tipo de estilos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                               </div>
-                               <div class="ejemplo">
-                                   <ul>
-                                       <li class="none">none</li>
-                                       <li class="hidden">hidden</li>
-                                       <li class="dotted">dotted</li>
-                                       <li class="dashed">dashed</li>
-                                       <li class="solid">solid</li>
-                                       <li class="double">double</li>
-                                       <li class="groove">groove</li>
-                                       <li class="ridge">ridge</li>
-                                       <li class="inset">inset</li>
-                                       <li class="outset">outset</li>
-                                   </ul>
-                                 </div><br/><br/>
-                  <p><strong>La forma abreviada : </strong><code>
-                    &#60;border-width> &#60;border-color> &#60;border-style></code></p>
-                 <p><strong>border-radius : </strong> nos permite redondear las esquinas
-                   de los bordes. Anteriormente que existiera esta característica
-                   CSS los diseñadores web tenían que agregar las esquinas redondeadas
-                   con imagenes lo que hacía más costoso este diseño redondeado de los
-                   bordes.</p>
-                   <p> Podemos definir todos los bordes de igual tamaño en ese caso sólo
-                     pondremos una medida de nuestros bordes. </p>
-                   <p>Aunque también se puede definir una medida para cada esquina. </p>
-                   <div class="pulsador">
-                          <p>Orden definición bordes<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                         </div>
-                         <div class="ejemplo">
-                             <ul>
-                                 <li>superior-izquierda</li>
-                                 <li>superior-derecha</li>
-                                 <li>inferior-derecha</li>
-                                 <li>inferior-izquierda</li>
-
-                             </ul>
-                           </div><br/><br/>
-                    <p>También se pueden definir con dos valores. En cuyo caso,
-                      el primer valor sería para el borde superior-izquierda e
-                      inferior-derecha y el otro valor sería para superior-derecha
-                      e inferior-izquierda.</p>
-                    <p>Incluso podriamos definir sólo tres valores.En este caso,
-                        el primer valor define el borde superior-izquierda, el segundo
-                        valor define dos bordes el superior-derecha y el inferior-izquierda
-                         y el último valor define el borde inferior-derecha.</p>
-                    <p>Se puede ir más lejos y en vez de usar la forma abreviada podriamos definir cada valor por separado, indicando en cada momento a que lado del borde va asignado.</p>
-                    <div class="pulsador">
-                           <p>Definición bordes<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                          </div>
-                          <div class="ejemplo">
-                              <ul>
-                                  <li class='btlr'>border-top-left-radius</li>
-                                  <li class='btrr'>border-top-right-radius</li>
-                                  <li class='bbrr'>border-bottom-right-radius</li>
-                                  <li class='bblr'>border-bottom-left-radius</li>
-
-                              </ul>
-                            </div><br/><br/>
-          <p>Aún se puede rizar más el rizo en el caso de los bordes y es que se
-             pueden crear esquinas asimétricas y no serán circulares, si no
-             elípticas. Si a los bordes anteriormente mencionados le damos dos
-             valores se creará una esquina elíptica. También está la forma
-             abreviada en la cual se tendrá que separar el valor de los radios
-             horizontal y vertical con una barra inclinada.</p>
-          <p>Recordad que se pueden usar distintas unidades de medida para indicar el tamaño de los bordes que queremos darle.</p>
-             <div class="pulsador">
                     <p>Códigos de ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
                    </div>
                    <div class="ejemplo">
-                     <p data-height="265" data-theme-id="0" data-slug-hash="MJVBRK" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="border" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/MJVBRK/">border</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                     <p data-height="265" data-theme-id="0" data-slug-hash="boNxMJ" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="font" class="codepen">See the Pen <a href="https://codepen.io/bermartinv/pen/boNxMJ/">font</a> by Bernardo Martin (<a href="https://codepen.io/bermartinv">@bermartinv</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                      </div><br/><br/>
-             <p><a class="menu_inf" title="Pulse aqui" href="https://bermartinv.github.io/css/files/herramientas/border/herramienta_border.html">Herramienta para ver como trabajan las características de border.</a></p>
-          <p>Tenemos también la propiedad <strong>outline</strong>, la cual nos dibuja también un
-             borde alrededor de un elemento pero no podemos especificar ninguno
-              de los bordes además no pertenece al modelo de caja por lo que no
-               afectará a la posición del elemento ni a los adyacentes. Se puede
-               definir con su forma abreviada o con cada característica como sucedía
-                con <code>border</code>.</p>
-               <div class="pulsador">
-                      <p>Código de ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                     </div>
-                     <div class="ejemplo">
-                       <p data-height="265" data-theme-id="0" data-slug-hash="zNjEYj" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="outline" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/zNjEYj/">outline</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                       </div><br/><br/>
-          <p><strong>border-image : </strong> Es otra característica que podemos definir a nuestros bordes. Está definido por tres elementos</p>
-          <code> border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30% repeat;</code></br>
-          <code>  border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30 round;</code></br>
-          <code> border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30 20 15 22 stretch;</code></br>
-          <br/><br/>
-          <div class="pulsador">
-                 <p>Elementos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                </div>
-                <div class="ejemplo">
-                      <ul>
-                          <li>url('dirección de la imagen')</li>
-                          <li>medida : se puede poner las cuatro medidas o una. La unidad de medida es % (se puede especificar o no)</li>
-                          <li>estilo del borde
-                            <ul>
-                              <li>repeat</li>
-                              <li>round</li>
-                              <li>stretch</li>
-                              <li>space</li>
-                            </ul>
-                         </li>
-                      </ul>
-                    </div><br/><br/>
-          <p>También se puede especificar de una manera independiente cada característica</p>
-          <div class="pulsador">
-                 <p>Elementos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                </div>
-                <div class="ejemplo">
-                      <ul>
-                          <li>border-image-source: url ('dirección imagen')</li>
-                          <li>border-image-width : medida de ancho</li>
-                          <li>border-image-outset : especifica la cantidad por la cual el área de imagen de borde se extiende más allá de la caja de borde</li>
-                          <li>border-image-repeat : como se repite la imagen sobre el borde (round, repeat, stretch, space)</li>
-                          <li>border-image-slice : como se corta la imagen del borde.</p>
-                      </ul>
-                    </div><br/><br/>
-                    <p>Mas informacion :</p>
-                    <p><a class="menu_inf" title="Pulse aqui" href='https://www.w3.org/TR/css3-background/#border-radius' target="_blank">Especificación w3c border-radius</a></p>
-                    <p><a class = "menu_inf" title = "Pulse aqui" href='https://www.w3.org/TR/css3-background/#border-images' target="_blank"><p> Especificación w3c border-images</a></p>
+                <p>Para comenzar y jugar un poco con las características de font puedes ir a nuestra herramienta <a href='../../herramientas/font/font.html'>(Pulsa aquí).</a></p>
+                <p>Además otra manera que tenemos para usar fuentes nuevas es usando la regla @fontface. <a href='../../taller/fontface/fontface.html'>(Si quieres más información sobre @fonface pulsa aquí)</a></p>
                </article>
     </div>
     <div class="columna2">
