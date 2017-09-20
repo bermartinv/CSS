@@ -106,13 +106,16 @@ input[type='radio']:checked + label:after{
   background:rgba(255, 204, 204, 0.7);
   position:relative;
 }
-input[type=color],select[name=estiloFour],select[name=estiloAll]{
+input[type=color],select[name=estiloFour],select[name=estiloAll],select[name=fontfamily],select[name=stretch],select[name=variant],
+select[name=fontstyle],select[name=fontweight],select[name=clave],select[name=px]{
   position:absolute;
-  right:10px;
+  right:20px;
   border-radius : 5%;
   margin:0;
   padding:0;
 }
+
+  
 input[name=widthAll],input[name=widthFour],input[name=radioFour],
 input[name=radioAll],input[name=elipStyle]{
   margin-left:30%;
@@ -193,6 +196,22 @@ input[type=reset]:focus,input[type=button]:focus{
   }
 
 }
+#seleccion_fontsize{
+  border:solid thin black;
+  padding: 10px 0;
+}
+label[for='valor_fontsize']{
+  margin:20px !important;
+}
+label[for='valor_fontsize'] + input{
+  float:right;
+  margin-left:40px !important;
+  margin-top:10px !important;
+  margin-bottom:0px !important;
+  padding-right: 10px;
+
+}
+
 /*
 .animation{
   animation-name:popup;

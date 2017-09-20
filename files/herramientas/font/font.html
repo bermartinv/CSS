@@ -14,6 +14,8 @@
 <link rel="stylesheet" href="https://bermartinv.github.io/css/bower_components/normalize-css/normalize.css" />
 <link rel="stylesheet" href="../../../assets/css/herramienta_border.css"/>
 <link rel="stylesheet" href="../../../assets/css/style_tools.css"/>
+<link rel="stylesheet" href="../../../assets/css/style_fontsize.css"/>
+<link rel="stylesheet" href="../../../assets/css/style_type_range.css"/>
 <link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
 <title>Aprende CSS3 | font | Herramienta font</title>
 
@@ -54,7 +56,7 @@
     </nav>
 </header>
 <div class="menu_inferior">
-    <p><a href="https://bermartinv.github.io/css/files/herramientas.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a><a class="menu_inf"  href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a> > <a href="" class="menu_inf">border</a></p>
+    <p><a href="https://bermartinv.github.io/css/files/herramientas.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a><a class="menu_inf"  href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a> > <a href="" class="menu_inf">font</a></p>
 </div>
 <div class="herramienta">
     <div class="parte1">
@@ -67,7 +69,7 @@
 <div  class="background-position" id="medida_filter">
   <div id='fontfamily'>
       <label class='valores' >font-family</label>
-        <select name='fontfamily'>
+        <select name='fontfamily' id='valor_fontfamily'>
           <option value='none'>none</option>
           <option value='cursive'>cursive</option>
           <option value='sans-serif'>sans-serif</option>
@@ -78,21 +80,20 @@
           <option value='Brush Script Std'>Brush Script Std</option>
           <option value='Chalkduster'>Chalkduster</option>
           <option value='fantasy'>fantasy</option>
-        </select>
+        </select><br/><br/>
   </div>
   <div id='fontsize'>
-      <label class='valores'>Indique que tipo de medida quiere</label><br/>
-      <label for='palabra_clave'>Palabra clave</label>
-        <input type='radio' name='palabra_clave' id='palabra_clave'/><br/>
-      <label for='valor'>Valor numérico</label>
-        <input type='radio' name='valor' id='valor'/>
-      <br/><br/>
+      <label class='valores'>font-size</label><br/>
+      
+        <input  type='radio' name='font_size' id='palabra_clave' value='palabra_clave'/><label for='palabra_clave'>Palabra clave</label>
+        <input type='radio' name='font_size' id='valor' value='valor'/><label for='valor'>Valor numérico</label>
+
         <div id='seleccion_fontsize'>
-            <label class='valores' for='seleccion_palabra_clave'> Elija una palabra clave
-            <select id='seleccion_palabra_clave'>
+            <label class='valores' for='seleccion_palabra_clave'> Elija una palabra clave</label>
+            <select id='seleccion_palabra_clave' name='clave'>
               <option value='none'>none</option>
-              <option value='xx_small'>xx_small</option>
-              <option value='x-samll'>x-small</option>
+              <option value='xx-small'>xx_small</option>
+              <option value='x-small'>x-small</option>
               <option value='small'>small</option>
               <option value='medium'>medium</option>
               <option value='large'>large</option>
@@ -100,21 +101,20 @@
               <option value='xx-large'>xx-large</option>
               <option value='smaller'>smaller</option>
               <option value='larger'>larger</option>
-            </select><br/>
-            <label for='valor_fontsize'>Elija tamaño</label><br/>
-            <input type='range' id='valor_fontsize' min='0' max='30'><br/>
-            <label for='unidad_valor_fontsize'>Unidad de medida</label>
-            <select id='unidad_valor_fontsize'>
+            </select><br/><br/>
+            <label  for='valor_fontsize'>Elija tamaño</label>
+            <input type='range' id='valor_fontsize' min='0' max='30'><span id='valor_input'></span><br/><br/>
+            <label class='valores' for='unidad_valor_fontsize'>Unidad de medida</label>
+            <select id='unidad_valor_fontsize' name='px'>
               <option value='px'>px</option>
-              <option value='em'>em</option>
-              <option value='%'>%</option>
-            </select>
+            </select><br/><br/>
         </div>
+        <br/>
   </div>
 
   <div id='font-weight'>
-    <label class='valores'>Indique font-weight</label><br/>
-    <select id='valor_weight'>
+    <label class='valores'>font-weight</label>
+    <select id='valor_weight' name='fontweight'>
       <option value='none'>none</option>
       <option value='normal'>normal</option>
       <option value="bold">bold</option>
@@ -129,30 +129,30 @@
       <option value='700'>700</option>
       <option value='800'>800</option>
       <option value='900'>900</option>
-    </select><br/>
+    </select><br/><br/>
   </div>
 
   <div id='font-style'>
-    <label class='valores'>Indique que estilo de fuente quiere</label><br/>
-      <select id='valor-font-style'>
+    <label class='valores'>font-style</label>
+      <select id='valor_font_style' name=fontstyle>
         <option value='none'>none</option>
         <option value='normal'>normal</option>
         <option value='italic'>italic</option>
         <option value='oblique'>oblique</option>
-      </select><br/>
+      </select><br/><br/>
   </div>
 
   <div id='font-variant'>
-    <label class='valores'>Indique la opcion para font-variant</label><br/>
-      <select id='valor-font-variant'>
+    <label class='valores'>font-variant</label>
+      <select id='valor_font_variant' name='variant'>
         <option value='none'>none</option>
         <option value='normal'>normal</option>
         <option value='small-caps'>small-caps</option>
-      </select><br/>
+      </select><br/><br/>
   </div>
   <div id='font-stretch'>
-    <label class='valores'>Indica que stretch quieres tu texto</label><br/>
-      <select id='valor-font-stretch'>
+    <label class='valores' name='stretch'>font-stretch</label>
+      <select id='valor_font_stretch' name='stretch'>
         <option value='none'>none</option>
         <option value='normal'>normal</option>
         <option value='wider'>wider</option>
@@ -165,6 +165,7 @@
         <option value='extra-expanded'>extra-expanded</option>
         <option value='ultra-expanded'>ultra-expanded</option>
       </select>
+      <br/><br/>
 
 </div>
   <div id="botones">
@@ -188,31 +189,13 @@
         <div id="codigo_html" class="codigo_html">
               <img id="copy_paste" src="../../../assets/images/copy_paste.svg" title='copiar portapapeles'/>
             <div id='html'>
-              <div id="borderAll"></div>
-              <div id="borderTopColor"></div>
-              <div id="borderRightColor"></div>
-              <div id="borderBottomColor"></div>
-              <div id="borderLeftColor"></div>
-              <div id="borderStyleAll"></div>
-              <div id="borderTopStyle"></div>
-              <div id="borderRightStyle"></div>
-              <div id="borderBottomStyle"></div>
-              <div id="borderLeftStyle"></div>
-              <div id="borderWidthAll"></div>
-              <div id="borderTopWidth"></div>
-              <div id="borderRightWidth"></div>
-              <div id="borderBottomWidth"></div>
-              <div id="borderLeftWidth"></div>
-              <div id="borderTopLeftElipse"></div>
-              <div id="borderTopRightElipse"></div>
-              <div id="borderBottomRightElipse"></div>
-              <div id="borderBottomLeftRadius"></div>
-              <div id=borderAllRadius></div>
-              <div id="borderTopLRadius"></div>
-              <div id="borderTopRRadius"></div>
-              <div id="borderBottomRRadius"></div>
-              <div id="borderBottomLRadius"></div>
-
+              <div id="codigoFamily"></div>
+              <div id="codigoSize"></div>
+              <div id="codigoWeight"></div>
+              <div id="codigoStyle"></div>
+              <div id="codigoVariant"></div>
+              <div id="codigoStretch"></div>
+              
             </div>
             <div id='img_copied'>
               <svg height="100" width="100">
@@ -242,6 +225,6 @@
     <img src="../../../assets/images/arrow_top.png" id="image_arrow_top"/>
 </div>
 <script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
-<script type="text/javascript" src="../../../assets/javascript/herramienta_border.js"></script>
+<script type="text/javascript" src="../../../assets/javascript/herramienta_fontfamily.js"></script>
 </body>
 </html>
