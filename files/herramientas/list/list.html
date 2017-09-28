@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable= yes" >
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Bernardo Martin Viudez">
+<meta name="application-name" content="Educacion basica CSS" >
+<meta name="keywords" content="css, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
+<meta name="robots" content="index,follow" >
+<link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
+<link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
+<link rel="stylesheet" href="https://bermartinv.github.io/css/bower_components/normalize-css/normalize.css" />
+<link rel="stylesheet" href="../../../assets/css/herramienta_border.css"/>
+<link rel="stylesheet" href="../../../assets/css/style_tools.css"/>
+<link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
+<title>Aprende CSS3 | CSS Styling Lists</title>
+
+    <!-- El enlace a Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+        <!--  Use the following CSS rules to specify these families:
+            font-family: 'Nothing You Could Do', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Roboto', sans-serif;
+        -->
+<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/mostrar.js"></script>
+
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-85220689-1', 'auto');
+        ga('send', 'pageview');
+</script>
+
+
+
+</head>
+<body>
+<div class='loader'></div>
+<header>
+    <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
+    <nav >
+        <ul class="browser">
+            <li><a href="https://bermartinv.github.io/css/index.html">Inicio</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/history.html">Historia</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
+            <li class="active"><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
+            <li><a href="../../taller/menu_taller.html">Taller</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="menu_inferior">
+    <p><a href="https://bermartinv.github.io/css/files/herramientas.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a> > <a href="" class="menu_inf">List and makers</a></p>
+</div>
+
+<div class="herramienta">
+    <div class="parte1">
+          <article>
+           <div class="datos">
+   <form name='formulario_textshadow' id='formulario_border'>
+     <label>Seleccione un efecto
+
+
+
+<div  class="background-position" id="medida_filter">
+  <label  class='valores'>Que tipo de lista desea</label>
+    <input  type='radio' name='list' id='desordenado' value='desordenado'/><label for='desordenado'>Desordenado &#60;ul&#62;</label>
+    <input type='radio' name='list' id='ordenado' value='ordenado'/><label for='ordenado'>Ordenado &#60;ol&#62;</label>
+  <div id='type'>
+  <label class='valores' for='list_type'>list-style-type</label>
+  <select id='list_type' name='type'/>
+      <option value='none'>none</option>
+      <option value='circle'>circle</option>
+      <option value='disc'>disc</option>
+      <option value='square'>square</option>
+      <option value='armenian'>armenian</option>
+      <option value='cjk-ideographic'>cjk-ideographic</option>
+      <option value='decimal'>decimal</option>
+      <option value='decimal-leading-zero'>decimal-leading-zero</option>
+      <option value='georgian'>georgian</option>
+      <option value='hebrew'>hebrew</option>
+      <option value='hiragana'>hiragan</option>
+      <option value='hiragana-iroha'>hiragana-iroha</option>
+      <option value='katakana'>katakana</option>
+      <option value='katakana-iroha'>katakana-iroha</option>
+      <option value='lower-alpha'>lower-alpha</option>
+      <option value='lower-greek'>lower-greek</option>
+      <option value='lower-latin'>lower-latin</option>
+      <option value='lower-roman'>lower-roman</option>
+      <option value='upper-alpha'>upper-alpha</option>
+      <option value='upper-greek'>upper-greek</option>
+      <option value='upper-latin'>upper-latin</option>
+      <option value='upper-roman'>upper-roman</option>
+  </select>
+  </div>
+  <div id='style'>
+  <label for='position' class='valores'>list-style-position</label>
+  <select id='position' name='position'>
+      <option value='none'>none</option>
+      <option value='outside'>outside</option>
+      <option value='inside'>inside</option>
+  </select>
+  </div>
+  </div>
+ 
+  <div id="botones">
+     <input type="button" name ="reset" value="Reset" id="reset">
+     <input type="button" value="Código CSS" name="botonCodigo" id='botonCodigo'>
+  </div>
+    </form>
+
+
+
+          </article>
+    </div>
+    <div class="parte2">
+        <div id="solucion" >
+        <ul id='li_desordenada'>Elementos desordenados
+          <li>Uno</li>
+          <li>Dos</li>
+          <li>Tres</li>
+          <li>Cuatro</li>
+          <li>Cinco</li>
+          <li>Seis</li>
+          <li>Siete</li>
+          <li>Ocho</li>
+          <li>Nueve</li>
+          <li>Diez</li>
+        </ul>
+        <ol id="li_ordenada">Elementos ordenados
+          <li>Uno</li>
+          <li>Dos</li>
+          <li>Tres</li>
+          <li>Cuatro</li>
+          <li>Cinco</li>
+          <li>Seis</li>
+          <li>Siete</li>
+          <li>Ocho</li>
+          <li>Nueve</li>
+          <li>Diez</li>
+        </ol>
+
+
+        </div>
+    </div>
+    <div class="parte3">
+        <div id="codigo_html" class="codigo_html">
+              <img id="copy_paste" src="../../../assets/images/copy_paste.svg" title='copiar portapapeles'/>
+            <div id='html'>
+              <div id="listStyleType"></div>
+              <div id="listStylePosition"></div>
+
+            </div>
+            <div id='img_copied'>
+              <svg height="100" width="100">
+              <circle cx="50" cy="50" r="40" stroke="red" stroke-width="3" fill="transparent" />
+              <text x="21" y="55" fill="red">Copied!</text>
+              <circle cx="50" cy="50" r="33" stroke="red" stroke-width="3" fill="transparent" />
+              </svg>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+    <hr>
+<footer>
+
+<p>&copy;Berana Social Media and Marketing 2016</p><p>Contacto</p><p>Redes Sociales</p>
+</footer>
+<div class="redes">
+        <a href="http://facebook.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/face.png" target="_blank"></a>
+        <a href="https://twitter.com/bermartinv2" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/twitter.jpg" ></a>
+        <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
+        <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a>
+</div>
+<div id="arrow_top">
+    <img src="../../../assets/images/arrow_top.png" id="image_arrow_top"/>
+</div>
+<script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
+<script type="text/javascript" src="../../../assets/javascript/list.js"></script>
+</body>
+</html>

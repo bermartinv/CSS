@@ -237,9 +237,29 @@ code{
         padding:10px;
         margin:10px;
         overflow:scroll;
+        display:flex;
     }
 #solucion img{
-  width:100%;
+    width:100%;
+}
+#solucion ul,ol{
+    font-size:20px;
+    font-weight:bold;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    list-style-position:inside;
+}
+#solucion ul li,#solucion ol li{
+   padding:0;margin:0;
+   height:50px;
+   width:250px;
+   padding: 15px 40px;
+}
+#solucion ul li:nth-child(even),#solucion ol li:nth-child(even){
+    background:#b5e7a0;
+}
+#solucion ul li:nth-child(odd),#solucion ol li:nth-child(odd){
+    background:#86af49;
 }
 .parte2{
     background-attachment: scroll;

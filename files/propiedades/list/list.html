@@ -58,194 +58,69 @@
     <div class="columna1">
           <article>
             <article>
-                <p>Los <strong>bordes</strong> definen como dice su palabra los
-                  bordes de algún contenido que queremos remarcar. Podemos
-                  distinguir varias características para definir el borde.</p>
+                <p>En HTML podemos encontrar dos formas de clsificar las <strong>listas</strong>, por una parte tenemos las que estan desordenados y usamos las etiquetas &#60;ul&#62; y las listas que estan ordenadas y usamos las etiquetas &#60;ol&#62;.</p>
 
-                <p><strong>border-width:</strong> Con esta característica definimos el
-                  ancho del borde que queremos definir. Además de definir el ancho del borde
-                podemos especificar si queremos indicar la medida a uno de los bordes
-              del contenedor</p>
+                <p>Dentro de las listas podemos dotarles características css a los valores de cada etiqueta, estas características son margin y padding, sin contar que podemos definir las fuentes de nuestro texto<a href='../font/font.html' target="_blank" >(+ info)</a>.</p>
+                <p>Para definir los estilos de las listas tenemos las siguientes características</p>
+                <p><strong>1.list-style-type</strong>: define el tipo de marcador para cada elemento de la lista</p>
               <div class="pulsador">
                      <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
                     </div>
                     <div class="ejemplo">
                         <ul>
-                            <li>border-width</li>
-                            <li>border-top-width</li>
-                            <li>border-right-width</li>
-                            <li>border-bottom-width</li>
-                            <li>border-left-width</li>
+                          <li>circle</li>
+                          <li>disc</li>
+                          <li>square</li>
+                          <li>armenian</li>
+                          <li>cjk-ideographic</li>
+                          <li>decimal</li>
+                          <li>decimal-leading-zero</li>
+                          <li>georgian</li>
+                          <li>hebrew</li>
+                          <li>hiragana</li>
+                          <li>hiragana-iroha</li>
+                          <li>katakana</li>
+                          <li>katakana-iroha</li>
+                          <li>lower-alpha</li>
+                          <li>lower-greek</li>
+                          <li>lower-latin</li>
+                          <li>lower-roman</li>
+                          <li>upper-alpha</li>
+                          <li>upper-greek</li>
+                          <li>upper-latin</li>
+                          <li>upper-roman</li>
+                          <li>none</li>
                         </ul>
                       </div><br/><br/>
-                <p> Además podemos definir el ancho del borde con palabras ya definidas</p>
+                <p> <strong>2.list-style-image</strong>: con esta característica podemos adjuntar una imagen que queramos para usar de marcador.</p>
                 <div class="pulsador">
-                       <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                       <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
                       </div>
                       <div class="ejemplo">
                           <ul>
-                              <li class='thin'>thin</li>
-                              <li class='medium'>medium</li>
-                              <li class='thick'>thick</li>
+                              <li>list-style-image: url('nombre_imagen.extension imagen')</li>
                           </ul>
                         </div><br/><br/>
-                <p><strong>border-color: </strong> Especificamos el color del borde.
-                  Al igual que la característica anterior podemos especificar
-                  que borde del contenedor queremos darle color.</p>
+                <p><strong>3.list-style-position</strong>: indicamos si el marcador queda dentro del elemento con el texto (inside) o si queda fuera(outside).</p>
                   <div class="pulsador">
                          <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
                         </div>
                         <div class="ejemplo">
                             <ul>
-                                <li>border-color</li>
-                                <li>border-top-color</li>
-                                <li>border-right-color</li>
-                                <li>border-bottom-color</li>
-                                <li>border-left-color</li>
+                                <li>inside</li>
+                                <li>outside</li>
                             </ul>
                           </div><br/><br/>
-               <p><strong>border-style : </strong>Definimos el tipo de borde que
-                 queremos darle a nuestro contenedor. Como sucedía en los otros
-                 casos podemos especificar algún lado para darle un tipo de estilo
-                 diferente.</p>
+               <p><strong>4.list-style</strong>: la forma abreviada para poder definir las características de los marcadores en las listas.</p>
                  <div class="pulsador">
-                        <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                        <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
                        </div>
                        <div class="ejemplo">
                            <ul>
-                               <li>border-style</li>
-                               <li>border-top-style</li>
-                               <li>border-right-style</li>
-                               <li>border-bottom-style</li>
-                               <li>border-left-style</li>
+                               <li>list-style: list-style-type list-style-position list-style-image;</li>
                            </ul>
                          </div><br/><br/>
-                         <div class="pulsador">
-                                <p>Tipo de estilos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                               </div>
-                               <div class="ejemplo">
-                                   <ul>
-                                       <li class="none">none</li>
-                                       <li class="hidden">hidden</li>
-                                       <li class="dotted">dotted</li>
-                                       <li class="dashed">dashed</li>
-                                       <li class="solid">solid</li>
-                                       <li class="double">double</li>
-                                       <li class="groove">groove</li>
-                                       <li class="ridge">ridge</li>
-                                       <li class="inset">inset</li>
-                                       <li class="outset">outset</li>
-                                   </ul>
-                                 </div><br/><br/>
-                  <p><strong>La forma abreviada : </strong><code>
-                    &#60;border-width> &#60;border-color> &#60;border-style></code></p>
-                 <p><strong>border-radius : </strong> nos permite redondear las esquinas
-                   de los bordes. Anteriormente que existiera esta característica
-                   CSS los diseñadores web tenían que agregar las esquinas redondeadas
-                   con imagenes lo que hacía más costoso este diseño redondeado de los
-                   bordes.</p>
-                   <p> Podemos definir todos los bordes de igual tamaño en ese caso sólo
-                     pondremos una medida de nuestros bordes. </p>
-                   <p>Aunque también se puede definir una medida para cada esquina. </p>
-                   <div class="pulsador">
-                          <p>Orden definición bordes<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                         </div>
-                         <div class="ejemplo">
-                             <ul>
-                                 <li>superior-izquierda</li>
-                                 <li>superior-derecha</li>
-                                 <li>inferior-derecha</li>
-                                 <li>inferior-izquierda</li>
-
-                             </ul>
-                           </div><br/><br/>
-                    <p>También se pueden definir con dos valores. En cuyo caso,
-                      el primer valor sería para el borde superior-izquierda e
-                      inferior-derecha y el otro valor sería para superior-derecha
-                      e inferior-izquierda.</p>
-                    <p>Incluso podriamos definir sólo tres valores.En este caso,
-                        el primer valor define el borde superior-izquierda, el segundo
-                        valor define dos bordes el superior-derecha y el inferior-izquierda
-                         y el último valor define el borde inferior-derecha.</p>
-                    <p>Se puede ir más lejos y en vez de usar la forma abreviada podriamos definir cada valor por separado, indicando en cada momento a que lado del borde va asignado.</p>
-                    <div class="pulsador">
-                           <p>Definición bordes<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                          </div>
-                          <div class="ejemplo">
-                              <ul>
-                                  <li class='btlr'>border-top-left-radius</li>
-                                  <li class='btrr'>border-top-right-radius</li>
-                                  <li class='bbrr'>border-bottom-right-radius</li>
-                                  <li class='bblr'>border-bottom-left-radius</li>
-
-                              </ul>
-                            </div><br/><br/>
-          <p>Aún se puede rizar más el rizo en el caso de los bordes y es que se
-             pueden crear esquinas asimétricas y no serán circulares, si no
-             elípticas. Si a los bordes anteriormente mencionados le damos dos
-             valores se creará una esquina elíptica. También está la forma
-             abreviada en la cual se tendrá que separar el valor de los radios
-             horizontal y vertical con una barra inclinada.</p>
-          <p>Recordad que se pueden usar distintas unidades de medida para indicar el tamaño de los bordes que queremos darle.</p>
-             <div class="pulsador">
-                    <p>Códigos de ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                   </div>
-                   <div class="ejemplo">
-                     <p data-height="265" data-theme-id="0" data-slug-hash="MJVBRK" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="border" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/MJVBRK/">border</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                     </div><br/><br/>
-             <p><a class="menu_inf" title="Pulse aqui" href="https://bermartinv.github.io/css/files/herramientas/border/herramienta_border.html">Herramienta para ver como trabajan las características de border.</a></p>
-          <p>Tenemos también la propiedad <strong>outline</strong>, la cual nos dibuja también un
-             borde alrededor de un elemento pero no podemos especificar ninguno
-              de los bordes además no pertenece al modelo de caja por lo que no
-               afectará a la posición del elemento ni a los adyacentes. Se puede
-               definir con su forma abreviada o con cada característica como sucedía
-                con <code>border</code>.</p>
-               <div class="pulsador">
-                      <p>Código de ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                     </div>
-                     <div class="ejemplo">
-                       <p data-height="265" data-theme-id="0" data-slug-hash="zNjEYj" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="outline" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/zNjEYj/">outline</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                       </div><br/><br/>
-          <p><strong>border-image : </strong> Es otra característica que podemos definir a nuestros bordes. Está definido por tres elementos</p>
-          <code> border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30% repeat;</code></br>
-          <code>  border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30 round;</code></br>
-          <code> border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30 20 15 22 stretch;</code></br>
-          <br/><br/>
-          <div class="pulsador">
-                 <p>Elementos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                </div>
-                <div class="ejemplo">
-                      <ul>
-                          <li>url('dirección de la imagen')</li>
-                          <li>medida : se puede poner las cuatro medidas o una. La unidad de medida es % (se puede especificar o no)</li>
-                          <li>estilo del borde
-                            <ul>
-                              <li>repeat</li>
-                              <li>round</li>
-                              <li>stretch</li>
-                              <li>space</li>
-                            </ul>
-                         </li>
-                      </ul>
-                    </div><br/><br/>
-          <p>También se puede especificar de una manera independiente cada característica</p>
-          <div class="pulsador">
-                 <p>Elementos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                </div>
-                <div class="ejemplo">
-                      <ul>
-                          <li>border-image-source: url ('dirección imagen')</li>
-                          <li>border-image-width : medida de ancho</li>
-                          <li>border-image-outset : especifica la cantidad por la cual el área de imagen de borde se extiende más allá de la caja de borde</li>
-                          <li>border-image-repeat : como se repite la imagen sobre el borde (round, repeat, stretch, space)</li>
-                          <li>border-image-slice : como se corta la imagen del borde.</p>
-                      </ul>
-                    </div><br/><br/>
-                    <p>Mas informacion :</p>
-                    <p><a class="menu_inf" title="Pulse aqui" href='https://www.w3.org/TR/css3-background/#border-radius' target="_blank">Especificación w3c border-radius</a></p>
-                    <p><a class = "menu_inf" title = "Pulse aqui" href='https://www.w3.org/TR/css3-background/#border-images' target="_blank"><p> Especificación w3c border-images</a></p>
+                        <p>Podemos ver ejemplos con la herramienta de list makers<a href='../../herramientas/list.html' target="_blank">(Pulse aquí)</a></p>
                </article>
     </div>
     <div class="columna2">
