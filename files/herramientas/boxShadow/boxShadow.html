@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="../../../assets/css/herramienta_border.css"/>
 <link rel="stylesheet" href="../../../assets/css/style_tools.css"/>
 <link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
-<title>Aprende CSS3 | text-shadow | Herramienta text-shadow</title>
+<title>Aprende CSS3 | box-shadow | Herramienta box-shadow</title>
 
     <!-- El enlace a Google fonts -->
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
@@ -54,14 +54,14 @@
     </nav>
 </header>
 <div class="menu_inferior">
-    <p><a href="https://bermartinv.github.io/css/files/herramientas.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a> > <a href="" class="menu_inf">text-shadow</a></p>
+    <p><a href="https://bermartinv.github.io/css/files/herramientas.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a> > <a href="" class="menu_inf">box-shadow</a></p>
 </div>
 
 <div class="herramienta">
     <div class="parte1">
           <article>
            <div class="datos">
-   <form name='formulario_textshadow' id='formulario_border'>
+   <form name='formulario_boxshadow' id='formulario_border'>
      <label>Seleccione un efecto
 
 
@@ -73,10 +73,12 @@
   <input name = 'sombraY' id = 'sombraY' type = 'number' min = '0' max = '200' /></label><br/>
   <label class='valores'>Difuminar (blur) en px
   <input name = 'blur' id = 'blur' type = 'number' min = '0' max = '200' /></label><br/>
+  <label class='valores'>Radio propagación en px
+  <input name = 'radio_propagacion' id = 'radio_propagacion' type = 'number' min = '0' max = '200' /></label><br/>
   <label class='valores'>Color sombra
   <input name = 'color' id = 'color' type = 'color'/></label><br/>
-  <label class='valores'>Texto a poner sombra</label>
-  <input name = 'texto' id = 'texto' type = 'text' maxlength="200" /><br/>
+  <input type='checkbox' name='inset' id='inset'/><label for='inset'>Sombra interna</label><br/>
+  
 </div>
   <div id="botones">
      <input type="button" name ="reset" value="Reset" id="reset">
@@ -99,7 +101,7 @@
         <div id="codigo_html" class="codigo_html">
               <img id="copy_paste" src="../../../assets/images/copy_paste.svg" title='copiar portapapeles'/>
             <div id='html'>
-              <div id="html_textshadow"></div>
+              <div id="html_boxshadow"></div>
 
             </div>
             <div id='img_copied'>
@@ -130,6 +132,6 @@
     <img src="../../../assets/images/arrow_top.png" id="image_arrow_top"/>
 </div>
 <script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
-<script type="text/javascript" src="../../../assets/javascript/textshadow.js"></script>
+<script type="text/javascript" src="../../../assets/javascript/boxshadow.js"></script>
 </body>
 </html>

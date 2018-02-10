@@ -42,10 +42,10 @@ ul li{
 li{
   padding-bottom:1.2rem;
 }
-input[type='radio']{
+input[type='radio'],input[type=checkbox]{
   display:none;
 }
-input[type=radio]+label{
+input[type=radio]+label, input[type=checkbox]+label{
   color:#606060   ;
   padding:7px 5px 2px 51px;
   display:inline-block;
@@ -56,7 +56,10 @@ input[type=radio]+label{
   /* se puede añadir transiciones
   transition: all 0.3s ease; */
 }
-input[type=radio]+label:hover{
+ input[type=checkbox]+label{
+  margin-left: -35px;
+ }
+input[type=radio]+label:hover, input[type=checkbox]+label:hover{
   text-shadow: 2px 2px 8px #FF0000;
 }
 input[type=radio]+label:before{
@@ -71,6 +74,18 @@ input[type=radio]+label:before{
   left:17px;
   top:4px;
 }
+input[type=checkbox]+label:before{
+  content:'';
+  width:17px;
+  height:17px;
+  display:inline-block;
+  background:none;
+  border:solid 3px;
+  position:absolute;
+  right:17px;
+  top:4px;
+  border-radius:3px;
+}
 input[type=radio]+label:after{
   content:'';
   width:17px;
@@ -82,14 +97,25 @@ input[type=radio]+label:after{
   left:17px;
   top:4px;
 }
+input[type=checkbox]+label:after{
+  border-radius:3px;
+  content:'';
+  width:17px;
+  height:17px;
+  display:inline-block;
+  border:solid 3px;
+  position:absolute;
+  right:17px;
+  top:4px;
+}
 
-input[type='radio']:checked + label{
+input[type='radio']:checked + label,  input[type=checkbox]:checked + label{
+  color:#006699;
+} 
+input[type='radio']:checked + label:before,  input[type=checkbox]:checked + label:before{
   color:#006699;
 }
-input[type='radio']:checked + label:before{
-  color:#006699;
-}
-input[type='radio']:checked + label:after{
+input[type='radio']:checked + label:after,  input[type=checkbox]:checked + label:after{
   content:'';
   background:#006699;
 }

@@ -7,13 +7,12 @@
 <meta name="keywords" content="HTML,CSS,XML,JavaScript">
 <meta name="author" content="Bernardo Martin Viudez">
 <meta name="application-name" content="Educacion basica CSS" >
-<meta name="keywords" content="css, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
+<meta name="keywords" content="css, box-shadow, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
 <meta name="robots" content="index,follow" >
 <link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
 <link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
 <link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
-<title>Aprende CSS3 | text-shadow</title>
-    <link rel="stylesheet" href="https://bermartinv.github.io/css/bower_components/normalize-css/normalize.css" />
+<title>Aprende CSS3 | box-shadow</title>
     <!-- El enlace a Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
@@ -52,36 +51,36 @@
     </nav>
 </header>
 <div class="menu_inferior">
-    <p><a href="https://bermartinv.github.io/css/index.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> ><a class="menu_inf"  href="https://bermartinv.github.io/css/files/propiedades/menu_propiedades.html"> Propiedades</a> ><a href="" class="menu_inf"> text-shadow</p></a>
+    <p><a href="https://bermartinv.github.io/css/index.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> ><a class="menu_inf"  href="https://bermartinv.github.io/css/files/propiedades/menu_propiedades.html"> Propiedades</a> ><a href="" class="menu_inf"> box-shadow</p></a>
 </div>
 <div class="contenido">
     <div class="columna1">
           <article>
-                         <p><strong>Text-shadow</strong>: Se utiliza para añadir sombra a los textos que tenemos en nuestras etiquetas.
+                         <p><strong>Box-shadow</strong>: Se utiliza para añadir sombra a los bordes que tenemos en nuestras etiquetas.
 
                             </p>
-                        <p><strong>1. Primer valor</strong>: Indica la sombra en el eje de las coordenadas x, eje horizontal. Si su valor es positivo la sombra se desplaza hacia la derecha, al contrario, si es negativo la sombra se desplaza hacia la izquierda</p>
+                        <p><strong>1. Primer valor</strong>: Indica la sombra en el eje de las coordenadas x, eje horizontal. Si su valor es positivo la sombra se desplaza hacia la derecha, al contrario, si es negativo la sombra se desplaza hacia la izquierda.</p>
                         <p><strong>2. Segundo valor</strong>: Indica la sombra en el eje de las coordenadas y, eje vertical. Si su valor es positivo la sombra se desplaza hacia abajo, al contrario, si es negativo la sombra se desplaza hacia arriba.</p>
-                        <p><strong>3. Tercer valor (blur)</strong>: Marca la medida de desenfoque de la sombra.</p>
-                        <p><strong>4. Color de la sombra</strong>: Indica el color de la sombra que hemos creado. Se puede especificar el color de todas las maneras posibles : por el nombre del color, por su codigo (#fff), por su RGBa, por su HSLa.</p>
+                        <p><strong>3. Tercer valor (blur)</strong>: Es opcional. Marca la medida de desenfoque de la sombra.</p>
+                        <p><strong>4. Radio propagación sombra</strong>: Es opcional. Los valores positivos aumentan el tamaño de la sombra, los valores negativos disminuyen el tamaño. El valor predeterminado es 0 (la sombra es del mismo tamaño que el desenfoque).
+                        <p><strong>5. Color de la sombra</strong>: Indica el color de la sombra que hemoscreado. Se puede especificar el color de todas las maneras posibles : por el nombre del color, por su codigo (#fff), por su RGBa, por su HSLa.</p>
                         <div class="pulsador">
                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
                         </div>
                         <div class="ejemplo">
-                          <p data-height="265" data-theme-id="0" data-slug-hash="zZopgr" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="text-shadow 1" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/zZopgr/">text-shadow 1</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                          <p data-height="265" data-theme-id="0" data-slug-hash="paeOJz" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="boton-shadow" class="codepen">See the Pen <a href="https://codepen.io/bermartinv/pen/paeOJz/">boton-shadow</a> by Bernardo Martin (<a href="https://codepen.io/bermartinv">@bermartinv</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
                         </div><br/>
-                        <p>Además se pueden dar más de una sombra a un mismo elemento separando los valores entre comas.</p>
+                        <p>Además podemos hacer que nuestra sombra se dirija hacía dentro del objeto. Para ello tendremos que añadir como primer argumento <strong>inset</strong> a la propiedad box-shadow. </p>
                         <div class="pulsador">
                         <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
                         </div>
                         <div class="ejemplo">
-                          <p data-height="265" data-theme-id="0" data-slug-hash="gmLvbK" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="text-shadow 2" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/gmLvbK/">text-shadow 2</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
+                          <p data-height="265" data-theme-id="0" data-slug-hash="vdxzNd" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="box-shadow-inset" class="codepen">See the Pen <a href="https://codepen.io/bermartinv/pen/vdxzNd/">box-shadow-inset</a> by Bernardo Martin (<a href="https://codepen.io/bermartinv">@bermartinv</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
                         </div><br/>
-                        <p><a class="menu_inf" title="Pulse aqui" href="https://bermartinv.github.io/css/files/herramientas/textShadow/textShadow.html">Herramienta para ver como trabajan las características de border.</a></p>
+                        <p><a class="menu_inf" title="Pulse aqui" href="https://bermartinv.github.io/css/files/herramientas/boxShadow/boxShadow.html">Herramienta para ver como trabajan las características de box-shadow.</a></p>
               </article>
     </div>
     <div class="columna2">
