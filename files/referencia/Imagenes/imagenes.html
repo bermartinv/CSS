@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="../../../assets/css/bordes.css" type="text/css"/>
 
 <link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
+<link href="https://bermartinv.github.io/css/assets/css/prism.css" rel="stylesheet" />
 <title>Aprende CSS3 - border</title>
 
     <!-- El enlace a Google fonts -->
@@ -51,31 +52,59 @@
     </nav>
 </header>
 <div class="menu_inferior">
-    <p><a href="https://bermartinv.github.io/css/files/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> > <a class="menu_inf" href="https://bermartinv.github.io/css/files/propiedades/menu_propiedades.html">Propiedades</a> > <a href="" class="menu_inf">Bordes</a></p>
+    <p><a href="https://bermartinv.github.io/css/files/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> > <a class="menu_inf" href="https://bermartinv.github.io/css/files/referencia/Imagenes/imagenes.html">Imagenes</a> </p>
 </div>
 <div class="contenido">
     <div class="columna1">
           <article>
-            <p>Los <strong>bordes</strong> definen como dice su palabra los
-                  bordes de algún contenido que queremos remarcar. Podemos
-                  distinguir varias características para definir el borde.</p>
+            <p>Muy lejos ha quedado el uso inicial de <strong>img</strong>. Todo diseño web viene influenciado por cómo quedarán las imagenes en en layout. Al principio de las páginas web no habían tanta implicación de los tamaños de las imagenes en el diseño, y se incrustaban con el tamaño con el que estaban realizadas. Posteriormente se fue redefiniendo los tamaños de las imagenes con su ancho y alto para que acoplasen en un diseño. Posteriormente al aparecer los dispositivos como móviles y tablets se fue haciendo más complicado que una imagen quedase bien en todos los dispositiovos de ahí a que todos los diseños fueran responsive. Y qué decir actualmente acoplar diseños web definido su estilo como "mobile first" y que sean responsive hasta para televisores 4K.</p>
 
-                <p><strong>border-width:</strong> Con esta característica definimos el
-                  ancho del borde que queremos definir. Además de definir el ancho del borde
-                podemos especificar si queremos indicar la medida a uno de los bordes
-              del contenedor</p>
+            <p>Las primeras modificaciones que haciamos en <strong>img</strong> se hacían directamente dentro de la etiqueta, tan solo con añadir <strong>width</strong> y <strong>height</strong> esra suficiente.</p>
+            <div class="pulsador">
+                    <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                   </div>
+                   <div class="ejemplo">
+                     <p data-height="265" data-theme-id="0" data-slug-hash="MVjBOV" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="image1" class="codepen">See the Pen <a href="https://codepen.io/bermartinv/pen/MVjBOV/">image1</a> by Bernardo Martin (<a href="https://codepen.io/bermartinv">@bermartinv</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                     </div><br/><br/>
+            <p>Después se empezó a ser más purista y se definía <strong>width</strong> y <strong>height</strong> dentro del CSS.  
+                 <div class="pulsador">
+                    <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                   </div>
+                   <div class="ejemplo">
+                     <p data-height="265" data-theme-id="0" data-slug-hash="NYRBBg" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="imagen2" class="codepen">See the Pen <a href="https://codepen.io/bermartinv/pen/NYRBBg/">imagen2</a> by Bernardo Martin (<a href="https://codepen.io/bermartinv">@bermartinv</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                     </div><br/><br/>
+            <p> Apareció también la etiqueta <strong>figure</strong> en la que podemos incrustar una imagen como la etiqueta <strong>img</strong>, pero además podemos añadir una descripción de la imagen con la etiqueta <strong>figcaption</strong>.</p>
               <div class="pulsador">
-                     <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                    </div>
-                    <div class="ejemplo">
-                        <ul>
-                            <li>border-width</li>
-                            <li>border-top-width</li>
-                            <li>border-right-width</li>
-                            <li>border-bottom-width</li>
-                            <li>border-left-width</li>
-                        </ul>
-                      </div><br/><br/>
+                    <p>Ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                   </div>
+                   <div class="ejemplo">
+                     <p data-height="265" data-theme-id="0" data-slug-hash="LdRJGp" data-default-tab="html,result" data-user="bermartinv" data-embed-version="2" data-pen-title="imagen 3" class="codepen">See the Pen <a href="https://codepen.io/bermartinv/pen/LdRJGp/">imagen 3</a> by Bernardo Martin (<a href="https://codepen.io/bermartinv">@bermartinv</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                     </div><br/><br/> 
+            <p>Apareció la etiqueta <strong>picture</strong>. Sirve como contenedor de imagenes las cuales sólo una de ellas será elegida por el navegador para ser utilizada.
+            Se indicarán varias etiquetas <strong>source</strong> y una sola etiqueta <strong>img</strong>, esta última representará la imagen que cogerá el navegador que no soporte la etiqueta <strong>picture</strong>.</p>
+            <p>Para indicar la dirección url de las etiquetas <strong>source</strong> utilizaremos el atributo <strong>srcset</strong> a diferencia de <strong>src</strong> que lo hacemos en <strong>img</strong>.</p>
+            <p>También podemos indicar con el atributo <strong>media</strong> que imagen será usada por el navegador según el tamaño del dispositivo. Además podemos usar el atributo <strong>landscape</strong> para indicar la orientación del dispositivo, sus posibles opciones son <strong>lanscape</strong> o <strong>portrait</strong>.</p>
+            <div class="pulsador">
+                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                        </div>
+                        <div class="ejemplo">
+                            <pre><code class="language-css">
+                                <picture>
+    source srcset="http://placeimg.com/200/300/people" media="(max-width: 400px) and (orientation: landscape)">
+    source srcset="http://placeimg.com/200/300/animals"  media="(max-width: 400px) and (orientation: portrait)">
+    source srcset="http://placeimg.com/500/300/people"  media="(max-width: 799px) and (min-width:401px) and (min-width:401px) and (orientation: portrait)">
+    source srcset="http://placeimg.com/800/500/people"  media="(max-width: 999px) and (min-width:800px) and (min-width:601px) and (orientation: landscape)">
+    source srcset="http://placeimg.com/1000/700/people"  media="(min-width: 1000px) and (orientation: landscape)">
+    img src="http://placeimg.com/1000/480/arch" alt="My default rwerimage">
+                                    </picture>
+                          var x=0;</code></pre>
+                          </div><br/><br/>
+
+
+
                 <p> Además podemos definir el ancho del borde con palabras ya definidas</p>
                 <div class="pulsador">
                        <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
@@ -276,6 +305,6 @@
 </div>
 <script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
 <script type="text/javascript" src="../../../assets/javascript/mostrar.js"></script>
-
+<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/prism.js"></script>
 </body>
 </html>
