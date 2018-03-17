@@ -15,7 +15,6 @@
 <link rel="stylesheet" href="../../../assets/css/bordes.css" type="text/css"/>
 
 <link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
-<link href="https://bermartinv.github.io/css/assets/css/prism.css" rel="stylesheet" />
 <title>Aprende CSS3 - border</title>
 
     <!-- El enlace a Google fonts -->
@@ -35,6 +34,7 @@
   ga('send', 'pageview');
 </script>
 
+dfdfdf
 </head>
 <body>
   <div class='loader'></div>
@@ -52,7 +52,7 @@
     </nav>
 </header>
 <div class="menu_inferior">
-    <p><a href="https://bermartinv.github.io/css/files/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> > <a class="menu_inf" href="https://bermartinv.github.io/css/files/referencia/Imagenes/imagenes.html">Imagenes</a> </p>
+    <p><a href="https://bermartinv.github.io/css/files/referencia.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> > <a class="menu_inf" href="https://bermartinv.github.io/css/files/propiedades/menu_propiedades.html">Propiedades</a> > <a href="" class="menu_inf">Bordes</a></p>
 </div>
 <div class="contenido">
     <div class="columna1">
@@ -92,188 +92,58 @@
                         </div>
                         <div class="ejemplo">
                             <pre><code class="language-css">
-                                <picture>
-    <source srcset="http://placeimg.com/200/300/people" media="(max-width: 400px) and (orientation: landscape)">
-    <source srcset="http://placeimg.com/200/300/animals"  media="(max-width: 400px) and (orientation: portrait)">
-    <source srcset="http://placeimg.com/500/300/people"  media="(max-width: 799px) and (min-width:401px) and (min-width:401px) and (orientation: portrait)">
-    <source srcset="http://placeimg.com/800/500/people"  media="(max-width: 999px) and (min-width:800px) and (min-width:601px) and (orientation: landscape)">
-    <source srcset="http://placeimg.com/1000/700/people"  media="(min-width: 1000px) and (orientation: landscape)">
-    <img src="http://placeimg.com/1000/480/arch" alt="My default rwerimage">
-                                    </picture>
-                         </code></pre>
-                          </div><br/><br/>
+     &#60;picture>
+        &#60;source srcset="http://placeimg.com/200/300/people" media="(max-width: 400px) and (orientation: landscape)">
+        &#60;source srcset="http://placeimg.com/200/300/animals"  media="(max-width: 400px) and (orientation: portrait)">
+        &#60;source srcset="http://placeimg.com/500/300/people"  media="(max-width: 799px) and 
+                    (min-width:401px) and (min-width:401px) and (orientation: portrait)">
+        &#60;source srcset="http://placeimg.com/800/500/people"  media="(max-width: 999px) and 
+                    (min-width:800px) and (min-width:601px) and (orientation: landscape)">
+        &#60;source srcset="http://placeimg.com/1000/700/people"  media="(min-width: 1000px) and 
+                    (orientation: landscape)">
+        &#60;img src="http://placeimg.com/1000/480/arch" alt="My default rwerimage">
+      &#60;/picture>
+                      </div><br/><br/>  
+              <p>Con  <strong>srcset</strong> indicamos la imagen que usará el navegador y además indicamos algunos requisitos que debe tener nuestro dispositivo, este atributo se puede usar tanto con la etiqueta img como con picture. Estos requisitos pueden ser: densidad de pixeles, tamaño, por formato de archivo, por orientación de la pantalla</p>
+              <p>Por el tamaño del dispositivo, podemos seleccionar una imagen determinado por el tamaño del dispositivo</p>
+              <pre>
+                <code>
+                  &#60;source media="(min-width: 1280px)" sizes="50vw"
+                                      srcset="imagen200.jpg 200w,
+                                              imagen400.jpg 400w,
+                                              imagen800.jpg 800w,
+                                              imagen1200.jpg 1200w,
+                                              imagen1600.jpg 1600w,
+                                              imagen.jpg 2000w" >
+                </code>
+              </pre>
+              <p>Por la densidad de pixeles del viewport, por ejemplo si tenemos un dispositivo con pantalla de retina indicaremos en el archivo x2 </p>
+              <pre>
+                <code>
+                  &#60;img src="imagen_dispositivo_movil.jpg" srcset="imagen_dispositivo_movil_HD.jpg 2x"/>
+                </code>
+              </pre>  
+              <p>Por el formato del archivo, podemos hacer que los navegadores que son capaces de usar imagenes en formato webp usan una imagen y los navegadores que no, usen otra imagen.
+              <pre>
+                <code>
+                  &#60;picture>
+                    &#60;source type="image/webp" srcset="flor.webp">
+                    &#60;img src="flor.jpg" alt="Flor primavera" >
+                  &#60;/picture>
+                </code>
+              </pre>
+              <p>Ya lo hemos usado anteriormente, pero podemos indicar la orientación del viewport.</p>
+              <pre>
+                <code>
+                  &#60;picture>
+                    &#60;source srcset="http://placeimg.com/200/300/people" media="(orientation: landscape)">
+                    &#60;source srcset="http://placeimg.com/200/300/animals"  media="(orientation: portrait)">
+                  &#60;/picture>
+                </code>
+              </pre>
+            <p>Puede encontrar más información en forma de slide</p>
+            <p><a class="menu_inf" title="Pulse aqui" href='http://slides.com/bermartinv/deck-13#/' target="_blank">Slide sobre imagenes</a></p>
 
-
-
-                <p> Además podemos definir el ancho del borde con palabras ya definidas</p>
-                <div class="pulsador">
-                       <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                      </div>
-                      <div class="ejemplo">
-                          <ul>
-                              <li class='thin'>thin</li>
-                              <li class='medium'>medium</li>
-                              <li class='thick'>thick</li>
-                          </ul>
-                        </div><br/><br/>
-                <p><strong>border-color: </strong> Especificamos el color del borde.
-                  Al igual que la característica anterior podemos especificar
-                  que borde del contenedor queremos darle color.</p>
-                  <div class="pulsador">
-                         <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                        </div>
-                        <div class="ejemplo">
-                            <ul>
-                                <li>border-color</li>
-                                <li>border-top-color</li>
-                                <li>border-right-color</li>
-                                <li>border-bottom-color</li>
-                                <li>border-left-color</li>
-                            </ul>
-                          </div><br/><br/>
-               <p><strong>border-style : </strong>Definimos el tipo de borde que
-                 queremos darle a nuestro contenedor. Como sucedía en los otros
-                 casos podemos especificar algún lado para darle un tipo de estilo
-                 diferente.</p>
-                 <div class="pulsador">
-                        <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                       </div>
-                       <div class="ejemplo">
-                           <ul>
-                               <li>border-style</li>
-                               <li>border-top-style</li>
-                               <li>border-right-style</li>
-                               <li>border-bottom-style</li>
-                               <li>border-left-style</li>
-                           </ul>
-                         </div><br/><br/>
-                         <div class="pulsador">
-                                <p>Tipo de estilos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                               </div>
-                               <div class="ejemplo">
-                                   <ul>
-                                       <li class="none">none</li>
-                                       <li class="hidden">hidden</li>
-                                       <li class="dotted">dotted</li>
-                                       <li class="dashed">dashed</li>
-                                       <li class="solid">solid</li>
-                                       <li class="double">double</li>
-                                       <li class="groove">groove</li>
-                                       <li class="ridge">ridge</li>
-                                       <li class="inset">inset</li>
-                                       <li class="outset">outset</li>
-                                   </ul>
-                                 </div><br/><br/>
-                  <p><strong>La forma abreviada : </strong><code>
-                    &#60;border-width> &#60;border-color> &#60;border-style></code></p>
-                 <p><strong>border-radius : </strong> nos permite redondear las esquinas
-                   de los bordes. Anteriormente que existiera esta característica
-                   CSS los diseñadores web tenían que agregar las esquinas redondeadas
-                   con imagenes lo que hacía más costoso este diseño redondeado de los
-                   bordes.</p>
-                   <p> Podemos definir todos los bordes de igual tamaño en ese caso sólo
-                     pondremos una medida de nuestros bordes. </p>
-                   <p>Aunque también se puede definir una medida para cada esquina. </p>
-                   <div class="pulsador">
-                          <p>Orden definición bordes<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                         </div>
-                         <div class="ejemplo">
-                             <ul>
-                                 <li>superior-izquierda</li>
-                                 <li>superior-derecha</li>
-                                 <li>inferior-derecha</li>
-                                 <li>inferior-izquierda</li>
-
-                             </ul>
-                           </div><br/><br/>
-                    <p>También se pueden definir con dos valores. En cuyo caso,
-                      el primer valor sería para el borde superior-izquierda e
-                      inferior-derecha y el otro valor sería para superior-derecha
-                      e inferior-izquierda.</p>
-                    <p>Incluso podriamos definir sólo tres valores.En este caso,
-                        el primer valor define el borde superior-izquierda, el segundo
-                        valor define dos bordes el superior-derecha y el inferior-izquierda
-                         y el último valor define el borde inferior-derecha.</p>
-                    <p>Se puede ir más lejos y en vez de usar la forma abreviada podriamos definir cada valor por separado, indicando en cada momento a que lado del borde va asignado.</p>
-                    <div class="pulsador">
-                           <p>Definición bordes<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                          </div>
-                          <div class="ejemplo">
-                              <ul>
-                                  <li class='btlr'>border-top-left-radius</li>
-                                  <li class='btrr'>border-top-right-radius</li>
-                                  <li class='bbrr'>border-bottom-right-radius</li>
-                                  <li class='bblr'>border-bottom-left-radius</li>
-
-                              </ul>
-                            </div><br/><br/>
-          <p>Aún se puede rizar más el rizo en el caso de los bordes y es que se
-             pueden crear esquinas asimétricas y no serán circulares, si no
-             elípticas. Si a los bordes anteriormente mencionados le damos dos
-             valores se creará una esquina elíptica. También está la forma
-             abreviada en la cual se tendrá que separar el valor de los radios
-             horizontal y vertical con una barra inclinada.</p>
-          <p>Recordad que se pueden usar distintas unidades de medida para indicar el tamaño de los bordes que queremos darle.</p>
-             <div class="pulsador">
-                    <p>Códigos de ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                   </div>
-                   <div class="ejemplo">
-                     <p data-height="265" data-theme-id="0" data-slug-hash="MJVBRK" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="border" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/MJVBRK/">border</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                     </div><br/><br/>
-             <p><a class="menu_inf" title="Pulse aqui" href="https://bermartinv.github.io/css/files/herramientas/border/herramienta_border.html">Herramienta para ver como trabajan las características de border.</a></p>
-          <p>Tenemos también la propiedad <strong>outline</strong>, la cual nos dibuja también un
-             borde alrededor de un elemento pero no podemos especificar ninguno
-              de los bordes además no pertenece al modelo de caja por lo que no
-               afectará a la posición del elemento ni a los adyacentes. Se puede
-               definir con su forma abreviada o con cada característica como sucedía
-                con <code>border</code>.</p>
-               <div class="pulsador">
-                      <p>Código de ejemplo<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                     </div>
-                     <div class="ejemplo">
-                       <p data-height="265" data-theme-id="0" data-slug-hash="zNjEYj" data-default-tab="css,result" data-user="bermartinv" data-embed-version="2" data-pen-title="outline" class="codepen">See the Pen <a href="http://codepen.io/bermartinv/pen/zNjEYj/">outline</a> by Bernardo Martin (<a href="http://codepen.io/bermartinv">@bermartinv</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-                       </div><br/><br/>
-          <p><strong>border-image : </strong> Es otra característica que podemos definir a nuestros bordes. Está definido por tres elementos</p>
-          <code> border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30% repeat;</code></br>
-          <code>  border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30 round;</code></br>
-          <code> border-image: url("http://www.norabrowndesign.com/css-experiments/images/border3.png") 30 20 15 22 stretch;</code></br>
-          <br/><br/>
-          <div class="pulsador">
-                 <p>Elementos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                </div>
-                <div class="ejemplo">
-                      <ul>
-                          <li>url('dirección de la imagen')</li>
-                          <li>medida : se puede poner las cuatro medidas o una. La unidad de medida es % (se puede especificar o no)</li>
-                          <li>estilo del borde
-                            <ul>
-                              <li>repeat</li>
-                              <li>round</li>
-                              <li>stretch</li>
-                              <li>space</li>
-                            </ul>
-                         </li>
-                      </ul>
-                    </div><br/><br/>
-          <p>También se puede especificar de una manera independiente cada característica</p>
-          <div class="pulsador">
-                 <p>Elementos<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
-                </div>
-                <div class="ejemplo">
-                      <ul>
-                          <li>border-image-source: url ('dirección imagen')</li>
-                          <li>border-image-width : medida de ancho</li>
-                          <li>border-image-outset : especifica la cantidad por la cual el área de imagen de borde se extiende más allá de la caja de borde</li>
-                          <li>border-image-repeat : como se repite la imagen sobre el borde (round, repeat, stretch, space)</li>
-                          <li>border-image-slice : como se corta la imagen del borde.</p>
-                      </ul>
-                    </div><br/><br/>
-                    <p>Mas informacion :</p>
-                    <p><a class="menu_inf" title="Pulse aqui" href='https://www.w3.org/TR/css3-background/#border-radius' target="_blank">Especificación w3c border-radius</a></p>
-                    <p><a class = "menu_inf" title = "Pulse aqui" href='https://www.w3.org/TR/css3-background/#border-images' target="_blank"><p> Especificación w3c border-images</a></p>
-              
                </article>
     </div>
     <div class="columna2">
@@ -305,6 +175,6 @@
 </div>
 <script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
 <script type="text/javascript" src="../../../assets/javascript/mostrar.js"></script>
-<script type="text/javascript" src="https://bermartinv.github.io/css/assets/javascript/prism.js"></script>
+
 </body>
 </html>
