@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable= yes ">
 <meta charset="UTF-8">
@@ -9,12 +9,11 @@
 <meta name="application-name" content="Educacion basica CSS" >
 <meta name="keywords" content="css, estilo web, aprende css desde cero,tutorial css,aprende diseño web,css3" >
 <meta name="robots" content="index,follow" >
-<link rel="stylesheet" type="text/css" href="https://bermartinv.github.io/css/assets/css/style_document.css" />
+<link rel="stylesheet" type="text/css" href="../../../assets/css/style_document.css" />
 <link rel="shortcut icon"  href="https://bermartinv.github.io/css/assets/images/logo.ico"  size="16x16" type="image/png"/>
-
 <link rel="canonical" value="https://bermartinv.github.io/css/index.html"/>
-<title>Aprende CSS3 |Herramientas</title><!DOCTYPE html>
-
+<title>Aprende CSS3 | box-sizing</title><!DOCTYPE html>
+    <link rel="stylesheet" href="https://bermartinv.github.io/css/bower_components/normalize-css/normalize.css" />
     <!-- El enlace a Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nothing+You+Could+Do|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
@@ -23,7 +22,6 @@
             font-family: 'Indie Flower', cursive;
             font-family: 'Roboto', sans-serif;
         -->
-
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -32,37 +30,56 @@
   ga('create', 'UA-85220689-1', 'auto');
   ga('send', 'pageview');
 </script>
-</head>
+<script src="https://bermartinv.github.io/css/bower_components/jquery/dist/jquery.min.js"></script>
 
+
+
+
+</head>
 <body>
-  <div class='loader'></div>
+  <div class="loader"></div>
 <header>
     <img src="https://bermartinv.github.io/css/assets/images/logo.png" />
     <nav >
         <ul class="browser">
             <li><a href="https://bermartinv.github.io/css/index.html">Inicio</a></li>
             <li><a href="https://bermartinv.github.io/css/files/history.html">Historia</a></li>
-            <li><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
-            <li class="active"><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
-            <li><a href="taller/menu_taller.html">Taller</a></li>
+            <li class="active"><a href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a></li>
+            <li><a href="https://bermartinv.github.io/css/files/herramientas.html">Herramientas</a></li>
+            <li><a href="../../taller/menu_taller.html">Taller</a></li>
             <li><a href="">Contacto</a></li>
         </ul>
     </nav>
 </header>
+<div class="menu_inferior">
+    <p><a href="https://bermartinv.github.io/css/index.html"><img src="https://bermartinv.github.io/css/assets/images/home.png" class="img_menu_inf"></a>><a class="menu_inf"  href="https://bermartinv.github.io/css/files/referencia.html">Referencia</a> ><a class="menu_inf"  href="https://bermartinv.github.io/css/files/propiedades/menu_propiedades.html"> Propiedades</a> ><a href="" class="menu_inf"> object-fit</p></a>
+</div>
 <div class="contenido">
     <div class="columna1">
-          <ul class="sub_menu">
-               <li><a href="https://bermartinv.github.io/css/files/herramientas/medidas_relativa_absoluta/relativa_absoluta.html">Unidades</a></li>
-               <li><a href="https://bermartinv.github.io/css/files/herramientas/background/herramienta_background.html">background</a></li>
-               <li><a href="https://bermartinv.github.io/css/files/herramientas/border/herramienta_border.html">border</a></li>
-               <li><a href="https://bermartinv.github.io/css/files/herramientas/filter/filter.html">filter</a></li>
-               <li><a href="herramientas/filter/filter2.html">filter II</a></li>
-               <li><a href="herramientas/textShadow/textShadow.html">text-shadow</a></li>
-               <li><a href="herramientas/boxShadow/boxShadow.html">box-shadow</a></li>
-               <li><a href="herramientas/font/font.html">font</a></li>
-               <li><a href="herramientas/list/list.html">list</a></li>
-               <li><a href="herramientas/object-fit/object-fit-tool.html">object-fit</a></li>
-          </ul>
+          <article>
+                         
+                        <p><strong>object-fit:</strong> esta propiedad es usada en caso que queramos definir el tamaño de las etiquetas de img o de video para que se ajuste a su contenedor.</p>
+                        <div class="pulsador">
+                               <p>Valores<img src="https://bermartinv.github.io/css/assets/images/double_arrow_bottom.png" class="flecha"></p>
+                              </div>
+                              <div class="ejemplo">
+                                  <ul>
+                                      <li>fill</li>
+                                      <li>contain</li>
+                                      <li>cover</li>
+                                      <li>none</li>
+                                      <li>scale-down</li>
+                                  </ul>
+                                </div><br/><br/>
+        
+                        <p><strong>fill</strong>: este es el valor por defecto, estira la imagen para que se ajuste al cuadro de contenido, independientemente de su relación de aspecto. </p>
+                        <p><strong>contain</strong>:aumenta o disminuye el tamaño de la imagen para llenar el cuadro conservando su relación de aspecto.</p>
+                        <p><strong>cover</strong>:la imagen llenará el alto y el ancho de su caja, una vez más manteniendo su relación de aspecto pero a menudo recortando la imagen en el proceso.</p>
+                        <p><strong>none</strong>:la imagen ignorará la altura y el ancho del elemento primario y conservará su tamaño original.</p>
+                        <p><strong>scale-down</strong>:la imagen comparará la diferencia entre none y contain para encontrar el tamaño de objeto concreto más pequeño.</p>
+                        <br/>
+
+              </article>
     </div>
     <div class="columna2">
         <aside class="enlaces">
@@ -79,8 +96,8 @@
 </div>
     <hr>
 <footer>
+
 <p>&copy;Berana Social Media and Marketing 2016</p><p>Contacto</p><p>Redes Sociales</p>
-<p>Hola que tal</p>
 </footer>
 <div class="redes">
         <a href="http://facebook.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/face.png" target="_blank"></a>
@@ -88,6 +105,10 @@
         <a href="https://plus.google.com/u/0/"><img src="https://bermartinv.github.io/css/assets/images/gplus.png"></a>
         <a href="https://github.com/bermartinv" target="_blank"><img src="https://bermartinv.github.io/css/assets/images/github.png"></a>
 </div>
-<script type="text/javascript" src="../assets/javascript/inicio.js"></script>
+<div id="arrow_top">
+    <img src="https://bermartinv.github.io/css/assets/images/arrow_top.png" id="image_arrow_top"/>
+</div>
+<script type="text/javascript" src="../../../assets/javascript/inicio.js"></script>
+<script type="text/javascript" src="../../../assets/javascript/mostrar.js"></script>
 </body>
 </html>
