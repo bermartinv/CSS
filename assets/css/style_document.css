@@ -348,6 +348,8 @@ input:focus{
 .redes a:nth-child(n):hover img{
     width:65px;
 }
+
+
 /* * * * * * * * * * * * * * * * * * * */
 /*E S T I L O  H E R R A M I E N T A S */
 /* * * * * * * * * * * * * * * * * * * */
@@ -469,9 +471,16 @@ footer{
 footer p{
     padding-left:15px;
     padding-right:15px;
-    border-right:solid thin grey;
     font-size:0.9rem;
 }
+
+.copy{
+    display : inline-flex;
+    justify-content: center;
+    align-content: flex-start;
+
+}
+
 
 
 /* * * * * * * * * * * * * * * * * * * */
