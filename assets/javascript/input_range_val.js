@@ -78,7 +78,7 @@ function editarEstilo(tipo,cantidad,valor,imagen){
 	objetoFilter.total = 'blur(' + objetoFilter.blur + ') ' + 'brightness(' + objetoFilter.brightness + ') ' + 'contrast(' + objetoFilter.contrast + ') ' + 'grayscale(' + objetoFilter.grayscale + ') ' + 'hue-rotate(' + objetoFilter.hue_rotate + ') ' + 'invert(' + objetoFilter.invert + ') ' + 'opacity(' + objetoFilter.opacity + ') ' + 'saturate(' + objetoFilter.saturate + ') ' + 'sepia(' +objetoFilter.sepia + ')'  ;
 		console.log(objetoFilter.total);
 		imagen.style.filter = objetoFilter.total;
-		document.getElementById('html_filter').innerHTML = 'filter: "' + objetoFilter.total + '" ;' ;
+		document.getElementById('html_filter').innerHTML = 'filter: ' + objetoFilter.total + ' ;' ;
 }
 	
 }
