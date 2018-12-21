@@ -25,4 +25,7 @@
       .solucion-texto-mix{
           font-size: 50vw;
       }
+      .solucion-mix{
+          overflow: hidden;
+      }
   }
